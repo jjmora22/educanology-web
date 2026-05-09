@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -8,6 +9,7 @@ import {
   BrainCircuit,
   Building2,
   CalendarDays,
+  Check,
   ChevronRight,
   Cpu,
   Euro,
@@ -191,7 +193,7 @@ export default function Home() {
             <motion.h1
               variants={fadeUp}
               transition={{ duration: 0.8 }}
-              className="max-w-5xl text-5xl font-black leading-[0.92] tracking-[-0.065em] text-[#17202a] md:text-6xl lg:text-[4.8rem] xl:text-[4rem]"
+              className="max-w-5xl text-5xl font-black leading-[0.92] tracking-[-0.065em] text-[#17202a] md:text-4xl lg:text-[4rem] xl:text-[4rem]"
             >
               <span className="block">Educação para uma nova</span>
               <span className="block">inteligência humana.</span>
@@ -247,15 +249,16 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.94, y: 20 }}
+            initial={{ opacity: 0, scale: 0.96, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
-            className="relative"
+            className="relative lg:-mt-2"
           >
+            {/* Tag flotante superior izquierdo */}
             <motion.div
-              animate={{ y: [0, -12, 0], rotate: [0, 1.5, 0] }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-5 top-17 z-20 hidden rounded-3xl border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:block"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -right-0 top-0 z-20 hidden rounded-3xl border border-white/70 bg-white/85 p-3 shadow-xl backdrop-blur md:block"
             >
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl bg-[#2db795]/15 p-3 text-[#24675a]">
@@ -270,25 +273,21 @@ export default function Home() {
               </div>
             </motion.div>
 
+            {/* Tag flotante inferior derecho, fuera de la imagen */}
             <motion.div
-              animate={{ y: [0, 14, 0], rotate: [0, -1.2, 0] }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.4,
-              }}
-              className="absolute -right-2 bottom-40 z-20 hidden rounded-3xl border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:block"
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
+              className="absolute bottom-[9.5rem] right-0 z-20 hidden rounded-3xl border border-white/70 bg-white/85 px-5 py-4 shadow-xl backdrop-blur md:block"
             >
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl bg-[#6f3e5c]/15 p-3 text-[#6f3e5c]">
-                  <Euro className="h-5 w-5" />
+                  <Check className="h-5 w-5" />
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-[#58736b]">
-                    Financiamento
+                    Evidência
                   </p>
-                  <p className="font-black">Fundos europeus</p>
+                  <p className="font-black">Decisões melhores</p>
                 </div>
               </div>
             </motion.div>
@@ -296,57 +295,108 @@ export default function Home() {
             <div className="absolute -left-8 -top-8 h-32 w-32 rounded-full bg-[#2db795]/30 blur-2xl" />
             <div className="absolute -bottom-8 -right-8 h-40 w-40 rounded-full bg-[#6f3e5c]/20 blur-2xl" />
 
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/65 p-5 shadow-2xl shadow-slate-900/10 backdrop-blur-xl">
-              <div className="rounded-[1.5rem] bg-[#17202a] p-6 text-white">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm uppercase tracking-[0.28em] text-[#8ce2cc]">
-                    Learning ecosystem
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/65 p-4 shadow-2xl shadow-slate-900/10 backdrop-blur-xl">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
+                <Image
+                  src="/images/hero-learning.png"
+                  alt="Aprendizagem colaborativa apoiada por tecnologia e inteligência artificial"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#17202a]/28 via-transparent to-white/5" />
+
+                {/* Etiqueta pequeña superior */}
+                <div className="absolute left-15 top-18 rounded-2xl border border-white/40 bg-white/78 px-4 py-3 backdrop-blur">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#58736b]">
+                    IA humanista
                   </p>
-                  <Lightbulb className="h-6 w-6 text-[#8ce2cc]" />
+                  <p className="mt-1 text-sm font-bold text-[#17202a]">
+                    Personalização com propósito
+                  </p>
                 </div>
 
-                <div className="relative mt-12">
-                  <div className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-[#8ce2cc] via-white/20 to-transparent" />
+                {/* Tarjeta negra superior izquierda animada */}
+                <motion.div
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute left top-2 max-w-[22rem] rounded-2xl border border-white/20 bg-[#17202a]/78 px-5 py-4 text-white shadow-lg backdrop-blur"
+                >
+                  <div className="flex items-center gap-2">
+                    <BookOpenCheck className="h-4 w-4 text-[#8ce2cc]" />
+                    <p className="text-sm font-bold">Percurso personalizado</p>
+                  </div>
+                  <p className="mt-1 text-xs text-white/72">
+                    Ritmo, apoio e conteúdos adaptados
+                  </p>
+                </motion.div>
 
-                  {[
-                    ["Infraestrutura", "Equipamentos, conectividade, plataformas"],
-                    ["Pedagogia", "Projetos, professores, aprendizagem ativa"],
-                    ["IA responsável", "Personalização, evidência, apoio docente"],
-                    ["Impacto", "Competências, inclusão, território"],
-                  ].map(([title, text], index) => (
-                    <motion.div
-                      key={title}
-                      initial={{ opacity: 0, x: 18 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.08 }}
-                      className="relative mb-5 ml-14 rounded-2xl border border-white/10 bg-white/8 px-5 py-4"
-                    >
-                      <div className="absolute -left-[2.55rem] top-5 flex h-7 w-7 items-center justify-center rounded-full bg-[#8ce2cc] text-xs font-black text-[#17202a]">
-                        {index + 1}
-                      </div>
-                      <p className="font-bold">{title}</p>
-                      <p className="mt-1 text-sm text-white/60">{text}</p>
-                    </motion.div>
-                  ))}
+                {/* Tarjeta negra inferior izquierda animada */}
+                <motion.div
+                  animate={{ y: [0, 6, 0] }}
+                  transition={{ duration: 6.4, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                  className="absolute bottom-11 left-4 max-w-[20rem] rounded-2xl border border-white/20 bg-[#17202a]/78 px-5 py-4 text-white shadow-lg backdrop-blur"
+                >
+                  <div className="flex items-center gap-2">
+                    <GraduationCap className="h-4 w-4 text-[#8ce2cc]" />
+                    <p className="text-sm font-bold">Apoio ao professor</p>
+                  </div>
+                  <p className="mt-1 text-xs text-white/72">
+                    Mais contexto para orientar melhor
+                  </p>
+                </motion.div>
+
+                {/* Tarjeta blanca inferior centro-derecha */}
+                <motion.div
+                  animate={{ y: [0, 5, 0] }}
+                  transition={{ duration: 6.8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  className="absolute bottom-28 right-0 rounded-2xl border border-white/40 bg-white/82 px-5 py-4 shadow-lg backdrop-blur"
+                >
+                  <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#58736b]">
+                    Famílias · Escola · Dados
+                  </p>
+                  <p className="mt-1 text-sm font-bold text-[#17202a]">
+                    Visibilidade e acompanhamento
+                  </p>
+                </motion.div>
+              </div>
+
+              {/* Tarjetas inferiores */}
+              <div className="mt-5 grid gap-3 sm:grid-cols-3">
+                <div className="rounded-2xl bg-[#f7f3ee] px-4 py-4">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#58736b]">
+                    Preferências
+                  </p>
+                  <p className="mt-1 font-bold text-[#17202a]">
+                    Diferentes formas de aprender
+                  </p>
                 </div>
 
-                <div className="mt-8 rounded-3xl bg-[#f7f3ee] p-5 text-[#17202a]">
-                  <p className="text-sm font-bold text-[#6f3e5c]">
-                    Não vendemos tecnologia.
+                <div className="rounded-2xl bg-[#f7f3ee] px-4 py-4">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#58736b]">
+                    Evidência
                   </p>
-                  <p className="mt-2 text-2xl font-black tracking-tight">
-                    Desenhamos transformação educativa.
+                  <p className="mt-1 font-bold text-[#17202a]">
+                    Dados úteis para decidir melhor
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-[#f7f3ee] px-4 py-4">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#58736b]">
+                    Alcance
+                  </p>
+                  <p className="mt-1 font-bold text-[#17202a]">
+                    Mais apoio para alunos e famílias
                   </p>
                 </div>
               </div>
             </div>
           </motion.div>
-        </div>
-
+        </div>      
         <a
           href="mailto:hello@educanology.eu?subject=Reuni%C3%A3o%20de%2045%20minutos%20com%20Educanology"
-          className="fixed bottom-5 right-5 z-50 hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
+          className="fixed bottom-5 right-5 z-99999 hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
         >
           <CalendarDays className="h-5 w-5" />
           Reunião de 45 min
