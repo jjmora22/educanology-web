@@ -297,18 +297,20 @@ export default function Home() {
 
             <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/65 p-4 shadow-2xl shadow-slate-900/10 backdrop-blur-xl">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
-                <Image
-                  src="/images/hero-learning.png"
-                  alt="Aprendizagem colaborativa apoiada por tecnologia e inteligência artificial"
-                  fill
-                  priority
-                  className="object-cover"
-                />
+              <Image
+                src="/images/hero-learning.png"
+                alt="Aprendizagem colaborativa apoiada por tecnologia e inteligência artificial"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 620px"
+                quality={92}
+                className="object-cover"
+              />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-[#17202a]/28 via-transparent to-white/5" />
 
                 {/* Etiqueta pequeña superior */}
-                <div className="absolute left-15 top-18 rounded-2xl border border-white/40 bg-white/78 px-4 py-3 backdrop-blur">
+                <div className="absolute left-20.5 top-20 rounded-2xl border border-white/40 bg-white/78 px-4 py-3 backdrop-blur">
                   <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#58736b]">
                     IA humanista
                   </p>
@@ -321,7 +323,7 @@ export default function Home() {
                 <motion.div
                   animate={{ y: [0, -6, 0] }}
                   transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute left top-2 max-w-[22rem] rounded-2xl border border-white/20 bg-[#17202a]/78 px-5 py-4 text-white shadow-lg backdrop-blur"
+                  className="absolute left top-1 max-w-[22rem] rounded-2xl border border-white/20 bg-[#17202a]/78 px-5 py-4 text-white shadow-lg backdrop-blur"
                 >
                   <div className="flex items-center gap-2">
                     <BookOpenCheck className="h-4 w-4 text-[#8ce2cc]" />
