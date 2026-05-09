@@ -398,7 +398,7 @@ export default function Home() {
         </div>      
         <a
           href="mailto:hello@educanology.eu?subject=Reuni%C3%A3o%20de%2045%20minutos%20com%20Educanology"
-          className="fixed bottom-5 right-5 z-99999 hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
+          className="fixed bottom-5 right-5 z-[99999] hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
         >
           <CalendarDays className="h-5 w-5" />
           Reunião de 45 min
