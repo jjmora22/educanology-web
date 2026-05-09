@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import EducanologyAgent from "@/components/EducanologyAgent";
 import {
   ArrowRight,
   BadgeCheck,
@@ -126,7 +127,7 @@ const insights = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f7f3ee] text-[#17202a]">
+    <main className="min-h-screen bg-[#f7f3ee] text-[#17202a]">
       <section className="relative isolate min-h-screen px-6 py-8 md:px-10 lg:px-16">
         <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top_left,_rgba(45,183,149,0.30),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(111,62,92,0.25),_transparent_34%),linear-gradient(180deg,_#fffaf3_0%,_#f7f3ee_58%,_#edf7f3_100%)]" />
         <div className="learning-grid absolute inset-0 -z-10 opacity-[0.42]" />
@@ -167,12 +168,6 @@ export default function Home() {
             </a>
           </nav>
 
-          <a
-            href="mailto:hello@educanology.eu?subject=Pedido%20de%20reuni%C3%A3o%20Educanology"
-            className="hidden rounded-full bg-[#17202a] px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-slate-900/10 transition hover:-translate-y-0.5 hover:bg-[#6f3e5c] md:inline-flex"
-          >
-            Agendar reunião
-          </a>
         </motion.header>
 
         <div className="mx-auto grid max-w-7xl items-start gap-10 pt-8 md:pt-10 lg:grid-cols-[1.03fr_0.97fr] lg:pt-14">
@@ -303,7 +298,6 @@ export default function Home() {
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 620px"
-                quality={92}
                 className="object-cover"
               />
 
@@ -396,13 +390,6 @@ export default function Home() {
             </div>
           </motion.div>
         </div>      
-        <a
-          href="mailto:hello@educanology.eu?subject=Reuni%C3%A3o%20de%2045%20minutos%20com%20Educanology"
-          className="fixed bottom-5 right-5 z-[99999] hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
-        >
-          <CalendarDays className="h-5 w-5" />
-          Reunião de 45 min
-        </a>
       </section>
 
       <section id="desafio" className="px-6 py-24 md:px-10 lg:px-16">
@@ -800,6 +787,14 @@ export default function Home() {
           <p>educanology.eu · hello@educanology.eu</p>
         </div>
       </footer>
+      <a
+        href="mailto:hello@educanology.eu?subject=Reuni%C3%A3o%20de%2045%20minutos%20com%20Educanology"
+        className="fixed bottom-5 right-5 z-[2147483647] hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
+      >
+        <CalendarDays className="h-5 w-5" />
+        Reunião de 45 min
+      </a>
+      <EducanologyAgent />
     </main>
   );
 }
