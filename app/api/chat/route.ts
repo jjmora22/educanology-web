@@ -5,11 +5,6 @@ import { getKnowledgeBase } from "@/lib/agent/knowledge";
 
 export const runtime = "nodejs";
 
-const deepseek = new OpenAI({
-  apiKey: process.env.DEEPSEEK_API_KEY,
-  baseURL: process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
-});
-
 type ChatMessage = {
   role: "user" | "assistant" | "system";
   content: string;
@@ -17,6 +12,20 @@ type ChatMessage = {
 
 export async function POST(req: Request) {
   try {
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "Missing DEEPSEEK_API_KEY" },
+        { status: 500 }
+      );
+    }
+
+    const deepseek = new OpenAI({
+      apiKey,
+      baseURL: process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
+    });
+
     const body = await req.json();
     const messages = body.messages as ChatMessage[] | undefined;
 
@@ -38,13 +47,6 @@ export async function POST(req: Request) {
       );
     }
 
-    if (!process.env.DEEPSEEK_API_KEY) {
-      return NextResponse.json(
-        { error: "Missing DEEPSEEK_API_KEY" },
-        { status: 500 }
-      );
-    }
-
     const knowledgeBase = getKnowledgeBase();
 
     const completion = await deepseek.chat.completions.create({
@@ -56,10 +58,10 @@ export async function POST(req: Request) {
           role: "system",
           content: `${SYSTEM_PROMPT}
 
-BASE DE CONOCIMIENTO:
+BASE DE CONHECIMENTO:
 ${knowledgeBase}
 
-Usa la base de conocimiento como referencia principal. Si algo no está en la base, responde con prudencia y explica que puede revisarlo el equipo de Educanology.`,
+Usa a base de conhecimento como referência principal. Se algo não estiver na base, responde com prudência e explica que a equipa da Educanology pode analisar o caso.`,
         },
         ...messages.slice(-10),
       ],
