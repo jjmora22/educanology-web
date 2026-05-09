@@ -255,7 +255,7 @@ export default function Home() {
             <motion.div
               animate={{ y: [0, -12, 0], rotate: [0, 1.5, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-5 top-17 z-20 hidden rounded-3xl border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:block"
+              className="absolute -left-5 top-10 z-20 hidden rounded-3xl border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:block"
             >
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl bg-[#2db795]/15 p-3 text-[#24675a]">
@@ -278,7 +278,7 @@ export default function Home() {
                 ease: "easeInOut",
                 delay: 0.4,
               }}
-              className="absolute -right-2 bottom-40 z-20 hidden rounded-3xl border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:block"
+              className="absolute -right-2 bottom-16 z-20 hidden rounded-3xl border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:block"
             >
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl bg-[#6f3e5c]/15 p-3 text-[#6f3e5c]">
