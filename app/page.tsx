@@ -392,7 +392,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── VÍDEO SHOWCASE ──────────────────────────────────────────────────── */}
+      {/* ─── BANNER SHOWCASE ─────────────────────────────────────────────────── */}
       <section className="px-6 pb-10 md:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <motion.div
@@ -400,19 +400,17 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.75 }}
-            className="relative overflow-hidden rounded-[2rem] bg-[#17202a] shadow-2xl shadow-slate-900/20"
+            className="relative overflow-hidden rounded-[2rem] shadow-2xl shadow-slate-900/15"
           >
-            {/* Vídeo em loop, muted, autoplay */}
-            <video
-              src="/videos/nina_estudiando.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-[320px] w-full object-cover md:h-[480px]"
-            />
-            {/* Overlay com gradiente e texto */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#17202a]/85 via-[#17202a]/40 to-transparent" />
+            <div className="relative h-[320px] w-full md:h-[440px]">
+              <Image
+                src="/images/nueva_educacion_1.png"
+                alt="Estudantes e professores a trabalhar em projeto de design e prototipagem — laboratório de aprendizagem ativa"
+                fill
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#17202a]/85 via-[#17202a]/50 to-[#17202a]/10" />
+            </div>
             <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-14">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#8ce2cc]">
                 O futuro que já existe
@@ -420,7 +418,7 @@ export default function Home() {
               <h2 className="mt-4 max-w-xl text-3xl font-black leading-tight text-white md:text-5xl">
                 Aprendizagem ativa. Tecnologia com propósito. Pessoas no centro.
               </h2>
-              <p className="mt-5 max-w-lg text-lg text-white/70">
+              <p className="mt-5 max-w-md text-lg text-white/70">
                 É isto que a Educanology ajuda a construir — em escolas, municípios e governos.
               </p>
               <div className="mt-8">
@@ -437,7 +435,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── GALERIA DE FOTOS (nova secção) ─────────────────────────────────── */}
+      {/* ─── GALERIA DE FOTOS ────────────────────────────────────────────────── */}
       <section className="overflow-hidden px-6 py-16 md:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <motion.p
@@ -450,86 +448,42 @@ export default function Home() {
             Aprendizagem que se vê
           </motion.p>
 
-          {/* Grid editorial: 3 colunas, alturas variadas */}
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-            {/* Foto grande à esquerda */}
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0 }}
-              className="col-span-2 row-span-2 overflow-hidden rounded-[1.5rem] md:col-span-1 md:row-span-2"
-            >
-              <div className="relative h-72 w-full md:h-full md:min-h-[480px]">
-                <Image src={photos[0].src} alt={photos[0].alt} fill className="object-cover object-top" />
-              </div>
-            </motion.div>
-
-            {/* Fotos top row */}
-            {[photos[1], photos[2]].map((photo, i) => (
+          {/* Grid de cards verticais — formato natural das fotos */}
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+            {[
+              { src: "/images/foto_1.png",   alt: "Estudante com óculos a trabalhar com tecnologia, sorrindo" },
+              { src: "/images/imagen_2.png", alt: "Equipa de estudantes a desenvolver projeto com hardware" },
+              { src: "/images/foto_6.png",   alt: "Estudantes a trabalhar com eletrónica e programação" },
+              { src: "/images/foto_8.png",   alt: "Grupo a colaborar em projeto de inovação educativa" },
+              { src: "/images/foto_9.png",   alt: "Estudantes a trabalhar juntos num laptop" },
+              { src: "/images/imagen_1.png", alt: "Aprendizagem colaborativa apoiada por tecnologia" },
+            ].map((photo, i) => (
               <motion.div
                 key={photo.src}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: 0.1 * (i + 1) }}
+                transition={{ duration: 0.6, delay: i * 0.08 }}
                 className="overflow-hidden rounded-[1.5rem]"
               >
-                <div className="relative h-56 w-full md:h-[232px]">
-                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-top" />
+                {/* aspect-[2/3] = slot vertical — formato natural de estas fotos */}
+                <div className="relative aspect-[2/3] w-full">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover object-center"
+                  />
                 </div>
               </motion.div>
             ))}
-
-            {/* Foto grande derecha */}
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="row-span-2 overflow-hidden rounded-[1.5rem]"
-            >
-              <div className="relative h-56 w-full md:h-full md:min-h-[480px]">
-                <Image src={photos[3].src} alt={photos[3].alt} fill className="object-cover object-top" />
-              </div>
-            </motion.div>
-
-            {/* Fotos bottom row */}
-            {[photos[4], photos[5], photos[6]].map((photo, i) => (
-              <motion.div
-                key={photo.src}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: 0.1 * (i + 4) }}
-                className="overflow-hidden rounded-[1.5rem]"
-              >
-                <div className="relative h-48 w-full md:h-[232px]">
-                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-top" />
-                </div>
-              </motion.div>
-            ))}
-
-            {/* Foto final larga */}
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.7 }}
-              className="col-span-2 overflow-hidden rounded-[1.5rem] md:col-span-1"
-            >
-              <div className="relative h-48 w-full md:h-[232px]">
-                <Image src={photos[7].src} alt={photos[7].alt} fill className="object-cover object-top" />
-              </div>
-            </motion.div>
           </div>
 
-          {/* Caption de la galeria */}
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
             className="mt-6 text-center text-sm text-[#58736b]"
           >
             Escolas, laboratórios, municípios e organizações que já estão a transformar a educação.
@@ -674,16 +628,34 @@ export default function Home() {
                 className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#17202a]/80 via-[#17202a]/40 to-transparent" />
+              {/* Label de experiência — enquadramento essencial */}
+              <div className="absolute left-8 top-8 md:left-12 md:top-10">
+                <p className="text-xs font-bold uppercase tracking-[0.3em] text-white/50">
+                  A experiência que trazemos
+                </p>
+              </div>
               {/* Stats overlay */}
               <div className="absolute inset-0 flex items-end p-8 md:p-12">
-                <div className="grid grid-cols-3 gap-6 md:gap-12">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-6 md:gap-12">
                   {[
-                    { num: "+20", label: "Empresas EdTech", sub: "Consórcio E-xample" },
-                    { num: "5", label: "Fases de transformação", sub: "Método Educanology" },
-                    { num: "4", label: "Regiões de atuação", sub: "PT · ES · Europa · LATAM" },
+                    {
+                      num: "+20",
+                      label: "Empresas EdTech do ecosistema português",
+                      sub: "Conhecidas em detalhe — consórcio E-xample",
+                    },
+                    {
+                      num: "e.Escola",
+                      label: "Programa nacional de inclusão digital",
+                      sub: "Participação direta na governação",
+                    },
+                    {
+                      num: "PT · ES · EU · LATAM",
+                      label: "Regiões onde temos experiência",
+                      sub: "Rede construída ao longo de anos",
+                    },
                   ].map(({ num, label, sub }) => (
                     <div key={num}>
-                      <p className="text-3xl font-black text-[#8ce2cc] md:text-5xl">{num}</p>
+                      <p className="text-2xl font-black text-[#8ce2cc] md:text-4xl">{num}</p>
                       <p className="mt-1 text-sm font-black text-white md:text-base">{label}</p>
                       <p className="mt-0.5 text-xs text-white/50">{sub}</p>
                     </div>
