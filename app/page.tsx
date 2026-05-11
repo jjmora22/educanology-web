@@ -1079,28 +1079,51 @@ export default function Home() {
       </section>
 
       {/* ─── FOOTER ──────────────────────────────────────────────────────────── */}
-      <footer className="border-t border-[#17202a]/10 px-6 py-10 md:px-10 lg:px-16">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-sm text-[#41514c] md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="font-black text-[#17202a]">Educanology</p>
-            <p className="mt-1">Consultoria educativa · Política pública · IA responsável</p>
-            <p className="mt-1">Portugal · Espanha · Europa · América Latina</p>
-          </div>
-          <div className="text-right">
-            <p>© 2026 Educanology Lda. Todos os direitos reservados.</p>
-            <p className="mt-1">
-              <a href="https://educanology.eu" className="hover:text-[#2db795] transition-colors">educanology.eu</a>
-              {" · "}
-              <a href="mailto:hello@educanology.eu" className="hover:text-[#2db795] transition-colors">hello@educanology.eu</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+  <footer className="border-t border-[#17202a]/10 px-6 py-10 md:px-10 lg:px-16">
+    <div className="mx-auto flex max-w-7xl flex-col gap-8 text-sm text-[#41514c] md:flex-row md:items-start md:justify-between">
+      <div>
+        <p className="font-black text-[#17202a]">Educanology</p>
+        <p className="mt-1">Consultoria educativa · Política pública · IA responsável</p>
+        <p className="mt-1">Portugal · Espanha · Europa · América Latina</p>
+
+        <nav className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold">
+          <a href="/aviso-legal" className="hover:text-[#2db795] transition-colors">
+            Aviso legal
+          </a>
+          <a href="/politica-de-privacidade" className="hover:text-[#2db795] transition-colors">
+            Política de privacidade
+          </a>
+          <a href="/politica-de-cookies" className="hover:text-[#2db795] transition-colors">
+            Política de cookies
+          </a>
+          <a href="/termos-de-utilizacao" className="hover:text-[#2db795] transition-colors">
+            Termos de utilização
+          </a>
+        </nav>
+      </div>
+
+      <div className="md:text-right">
+        <p>© 2026 Educanology Lda. Todos os direitos reservados.</p>
+        <p className="mt-1">
+          <a href="https://educanology.eu" className="hover:text-[#2db795] transition-colors">
+            educanology.eu
+          </a>
+          {" · "}
+          <a href="mailto:hello@educanology.eu" className="hover:text-[#2db795] transition-colors">
+            hello@educanology.eu
+          </a>
+        </p>
+        <p className="mt-3 max-w-md text-xs text-[#58736b] md:ml-auto">
+          Informação legal e políticas de privacidade/cookies disponíveis nos links do rodapé.
+        </p>
+      </div>
+    </div>
+  </footer>
 
       {/* ─── CTA FLOTANTE ────────────────────────────────────────────────────── */}
       <a
         href="mailto:hello@educanology.eu?subject=Reuni%C3%A3o%20de%2045%20minutos%20com%20Educanology"
-        className="fixed bottom-5 right-5 z-[2147483647] hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:-translate-y-1 hover:bg-[#6f3e5c] md:flex"
+        className="fixed bottom-6 right-5 z-[2147483647] hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:bg-[#6f3e5c] md:flex"
       >
         <CalendarDays className="h-5 w-5" />
         Reunião de 45 min

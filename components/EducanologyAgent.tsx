@@ -80,7 +80,7 @@ export default function EducanologyAgent() {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-8 left-8 z-[2147483647] hidden items-center gap-3 rounded-full border border-white/20 bg-[#6f3e5c] px-6 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/35 transition hover:-translate-y-1 hover:bg-[#17202a] md:flex"
+        className="fixed bottom-6 left-5 z-[2147483647] hidden items-center gap-3 rounded-full border border-white/20 bg-[#6f3e5c] px-6 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/35 transition hover:bg-[#17202a] md:flex"
       >
         <MessageCircle className="h-5 w-5" />
         Agente educativo
