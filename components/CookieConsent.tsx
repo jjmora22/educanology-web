@@ -111,7 +111,7 @@ export default function CookieConsent() {
         <button
           type="button"
           onClick={openSettings}
-          className="fixed bottom-4 left-4 z-[2147483645] rounded-full border border-[#17202a]/10 bg-white px-4 py-2 text-xs font-bold text-[#17202a] shadow-lg hover:border-[#6f3e5c]"
+          className="fixed bottom-24 left-4 z-[2147483645] rounded-full border border-[#17202a]/10 bg-white px-4 py-2 text-xs font-bold text-[#17202a] shadow-lg hover:border-[#6f3e5c] md:bottom-24"
         >
           Cookies
         </button>
