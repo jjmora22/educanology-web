@@ -71,9 +71,24 @@ export default function AvisoLegalPage() {
                 específico sem análise prévia do caso concreto.
               </p>
             </section>
+
+            <section>
+              <h2 className="text-xl font-black text-[#17202a]">6. Agente virtual e ferramentas de inteligência artificial</h2>
+                <p className="mt-3">
+                  O website pode disponibilizar um agente virtual baseado em inteligência artificial para
+                  orientação inicial, qualificação de oportunidades e apoio ao contacto com a Educanology.
+                  Este agente não substitui consultoria formal, não assume compromissos comerciais,
+                  jurídicos, financeiros ou técnicos, e as suas respostas devem ser validadas pela equipa
+                  da Educanology antes de qualquer decisão institucional.
+                </p>
+                <p className="mt-3">
+                  O utilizador não deve introduzir informação sensível, confidencial ou dados pessoais
+                  desnecessários no agente virtual.
+                </p>
+            </section>
   
             <section>
-              <h2 className="text-xl font-black text-[#17202a]">6. Ligações externas</h2>
+              <h2 className="text-xl font-black text-[#17202a]">7. Ligações externas</h2>
               <p className="mt-3">
                 Este website pode conter ligações para páginas externas. A Educanology não se
                 responsabiliza pelos conteúdos, políticas ou práticas de privacidade de websites de
@@ -82,7 +97,7 @@ export default function AvisoLegalPage() {
             </section>
   
             <section>
-              <h2 className="text-xl font-black text-[#17202a]">7. Lei aplicável</h2>
+              <h2 className="text-xl font-black text-[#17202a]">8. Lei aplicável</h2>
               <p className="mt-3">
                 O presente aviso legal rege-se pela legislação portuguesa aplicável, incluindo o
                 Decreto-Lei n.º 7/2004, o Regulamento Geral sobre a Proteção de Dados, a Lei n.º 58/2019
