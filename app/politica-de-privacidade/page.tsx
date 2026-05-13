@@ -36,6 +36,18 @@ export default function PoliticaPrivacidadePage() {
                 pedido de contacto, pedido de reunião ou interação com ferramentas digitais
                 disponibilizadas no website.
               </p>
+              <p className="mt-3">
+                Quando o utilizador interage com o agente virtual, a Educanology pode tratar os dados
+                fornecidos voluntariamente, como nome, email, organização, país/município, tema de interesse
+                e conteúdo da mensagem, com a finalidade de responder ao pedido, qualificar a oportunidade
+                e preparar eventual contacto comercial ou institucional.
+              </p>
+              <p className="mt-3">
+                O utilizador deve evitar introduzir dados sensíveis, confidenciais ou dados pessoais
+                desnecessários. As interações com o agente podem ser processadas por fornecedores
+                tecnológicos utilizados para disponibilizar a funcionalidade de inteligência artificial,
+                sempre de acordo com as condições aplicáveis e medidas razoáveis de segurança.
+              </p>
             </section>
   
             <section>
