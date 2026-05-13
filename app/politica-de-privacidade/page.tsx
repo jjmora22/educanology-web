@@ -85,14 +85,33 @@ export default function PoliticaPrivacidadePage() {
             <section>
               <h2 className="text-xl font-black text-[#17202a]">6. Partilha de dados com terceiros</h2>
               <p className="mt-3">
-                A Educanology poderá recorrer a prestadores de serviços tecnológicos, alojamento,
-                email, analítica, agendamento, ferramentas de IA ou plataformas de comunicação. Estes
-                terceiros apenas deverão tratar os dados nos termos contratados e em conformidade com a
-                legislação aplicável.
+                A Educanology poderá recorrer a prestadores de serviços tecnológicos necessários para
+                disponibilizar, manter, proteger e melhorar o website, bem como para gerir pedidos de
+                contacto, comunicações, análise estatística e funcionalidades baseadas em inteligência
+                artificial.
               </p>
+
               <p className="mt-3">
-                [CONFIRMAR: Google Analytics, Google Tag Manager, Calendly, Vercel, OpenAI ou outra
-                ferramenta do agente IA, YouTube/Vimeo, Meta Pixel.]
+                Estes prestadores poderão incluir serviços de alojamento e infraestrutura web, como
+                Vercel; serviços de desenvolvimento, versionamento e gestão técnica de código, como
+                GitHub; serviços de email e comunicação utilizados pela Educanology; ferramentas de
+                análise estatística, como Google Analytics 4, quando ativadas mediante consentimento;
+                e serviços de inteligência artificial utilizados para disponibilizar o agente virtual,
+                incluindo Vercel AI Gateway e os respetivos fornecedores de modelos de IA configurados
+                pela Educanology.
+              </p>
+
+              <p className="mt-3">
+                Estes terceiros apenas deverão tratar os dados pessoais na medida necessária para
+                prestar os respetivos serviços, de acordo com as condições contratadas, as instruções
+                aplicáveis e a legislação em vigor, incluindo o Regulamento Geral sobre a Proteção de
+                Dados.
+              </p>
+
+              <p className="mt-3">
+                A Educanology não vende dados pessoais a terceiros. Sempre que possível, serão adotadas
+                medidas de minimização, segurança e limitação de acesso, de forma a reduzir a exposição
+                de dados pessoais desnecessários.
               </p>
             </section>
   
