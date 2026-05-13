@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://educanology.eu"),
   title: "Educanology | Consultoria educativa e IA responsável",
   description:
     "Consultoria educativa, política pública, IA responsável, aprendizagem ativa, formação docente, FabLabs, MakerSpaces e modernização de escolas.",
