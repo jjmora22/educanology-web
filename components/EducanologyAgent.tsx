@@ -191,8 +191,10 @@ export default function EducanologyAgent() {
               </div>
 
               <p className="mt-3 text-xs leading-5 text-[#41514c]/70">
-                O agente orienta e qualifica oportunidades. Não substitui uma
-                consultoria formal nem assume compromissos comerciais.
+                O agente orienta e qualifica oportunidades. 
+                Não substitui uma consultoria formal nem assume compromissos comerciais. 
+                Por favor, não introduza informação sensível, confidencial 
+                ou dados pessoais desnecessários.
               </p>
             </div>
           </div>
