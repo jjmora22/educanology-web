@@ -1,15 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import EducanologyAgent from "@/components/EducanologyAgent";
+import FloatingConversion from "@/components/FloatingConversion";
+import SiteFooter from "@/components/SiteFooter";
+import SiteHeader from "@/components/SiteHeader";
 import {
   ArrowRight,
   BadgeCheck,
   BookOpenCheck,
   BrainCircuit,
   Building2,
-  CalendarDays,
   Check,
   ChevronRight,
   Euro,
@@ -131,22 +133,27 @@ const insights = [
   {
     title: "IA responsável na escola pública: como começar sem errar",
     tag: "IA na Educação",
+    href: "/blog/categoria/ia-na-educacao",
   },
   {
     title: "Municípios como motores de aprendizagem ao longo da vida",
     tag: "Política Municipal",
+    href: "/blog/categoria/politica-municipal",
   },
   {
     title: "Laboratórios STEAM com propósito pedagógico: além dos equipamentos",
     tag: "Laboratórios",
+    href: "/blog/categoria/laboratorios",
   },
   {
     title: "Da compra de equipamentos à transformação educativa real",
     tag: "Estratégia",
+    href: "/blog/categoria/estrategia",
   },
   {
     title: "Financiamento europeu para educação digital: guia para municípios",
     tag: "Financiamento",
+    href: "/blog/categoria/financiamento",
   },
 ];
 
@@ -172,34 +179,7 @@ export default function Home() {
         <div className="learning-grid absolute inset-0 -z-10 opacity-[0.42]" />
 
         {/* NAV */}
-        <motion.header
-          initial={{ opacity: 0, y: -18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="mx-auto flex max-w-7xl items-center justify-between"
-        >
-          <a href="#" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#6f3e5c] text-xl font-black text-white shadow-lg shadow-[#6f3e5c]/20">
-              E
-            </div>
-            <div>
-              <p className="text-xl font-black tracking-tight">Educanology</p>
-              <p className="text-xs uppercase tracking-[0.28em] text-[#58736b]">
-                Education · AI · Policy
-              </p>
-            </div>
-          </a>
-
-          <nav className="hidden items-center gap-7 text-sm font-medium text-[#3c4b47] md:flex">
-            <a href="#desafio" className="nav-link hover:text-[#2db795] transition-colors">Desafio</a>
-            <a href="#transformacao" className="nav-link hover:text-[#2db795] transition-colors">Transformação</a>
-            <a href="#municipios" className="nav-link hover:text-[#2db795] transition-colors">Municípios</a>
-            <a href="#ia" className="nav-link hover:text-[#2db795] transition-colors">IA</a>
-            <a href="#metodo" className="nav-link hover:text-[#2db795] transition-colors">Método</a>
-            <a href="#financiamento" className="nav-link hover:text-[#2db795] transition-colors">Financiamento</a>
-            <a href="#especialistas" className="nav-link hover:text-[#2db795] transition-colors">Especialistas</a>
-          </nav>
-        </motion.header>
+        <SiteHeader />
 
         {/* HERO GRID */}
         <div className="mx-auto grid max-w-7xl items-start gap-10 pt-8 md:pt-10 lg:grid-cols-[1.03fr_0.97fr] lg:pt-14">
@@ -1059,8 +1039,9 @@ export default function Home() {
 
               <div className="grid gap-4">
                 {insights.map((item) => (
-                  <div
+                  <Link
                     key={item.title}
+                    href={item.href}
                     className="flex items-center justify-between gap-4 rounded-3xl border border-white/10 bg-white/[0.06] p-5"
                   >
                     <div>
@@ -1070,7 +1051,7 @@ export default function Home() {
                       <p className="font-bold leading-6">{item.title}</p>
                     </div>
                     <Rocket className="h-5 w-5 shrink-0 text-[#8ce2cc]" />
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -1079,57 +1060,10 @@ export default function Home() {
       </section>
 
       {/* ─── FOOTER ──────────────────────────────────────────────────────────── */}
-  <footer className="border-t border-[#17202a]/10 px-6 py-10 md:px-10 lg:px-16">
-    <div className="mx-auto flex max-w-7xl flex-col gap-8 text-sm text-[#41514c] md:flex-row md:items-start md:justify-between">
-      <div>
-        <p className="font-black text-[#17202a]">Educanology</p>
-        <p className="mt-1">Consultoria educativa · Política pública · IA responsável</p>
-        <p className="mt-1">Portugal · Espanha · Europa · América Latina</p>
-
-        <nav className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold">
-          <a href="/aviso-legal" className="hover:text-[#2db795] transition-colors">
-            Aviso legal
-          </a>
-          <a href="/politica-de-privacidade" className="hover:text-[#2db795] transition-colors">
-            Política de privacidade
-          </a>
-          <a href="/politica-de-cookies" className="hover:text-[#2db795] transition-colors">
-            Política de cookies
-          </a>
-          <a href="/termos-de-utilizacao" className="hover:text-[#2db795] transition-colors">
-            Termos de utilização
-          </a>
-        </nav>
-      </div>
-
-      <div className="md:text-right">
-        <p>© 2026 Educanology Lda. Todos os direitos reservados.</p>
-        <p className="mt-1">
-          <a href="https://educanology.eu" className="hover:text-[#2db795] transition-colors">
-            educanology.eu
-          </a>
-          {" · "}
-          <a href="mailto:hello@educanology.eu" className="hover:text-[#2db795] transition-colors">
-            hello@educanology.eu
-          </a>
-        </p>
-        <p className="mt-3 max-w-md text-xs text-[#58736b] md:ml-auto">
-          Informação legal e políticas de privacidade/cookies disponíveis nos links do rodapé.
-        </p>
-      </div>
-    </div>
-  </footer>
+      <SiteFooter />
 
       {/* ─── CTA FLOTANTE ────────────────────────────────────────────────────── */}
-      <a
-        href="mailto:hello@educanology.eu?subject=Reuni%C3%A3o%20de%2045%20minutos%20com%20Educanology"
-        className="fixed bottom-6 right-5 z-[2147483647] hidden items-center gap-3 rounded-full bg-[#17202a] px-5 py-4 text-sm font-bold text-white shadow-2xl shadow-slate-900/25 transition hover:bg-[#6f3e5c] md:flex"
-      >
-        <CalendarDays className="h-5 w-5" />
-        Reunião de 45 min
-      </a>
-
-      <EducanologyAgent />
+      <FloatingConversion />
     </main>
   );
 }
