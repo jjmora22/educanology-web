@@ -44,6 +44,7 @@ export default function TermosUtilizacaoPage() {
                 <li>Tentar aceder indevidamente a sistemas, dados ou áreas restritas;</li>
                 <li>Introduzir vírus, malware ou código malicioso;</li>
                 <li>Reproduzir conteúdos protegidos sem autorização;</li>
+                <li>Introduzir informação sensível, confidencial ou dados pessoais desnecessários nas ferramentas digitais disponibilizadas;</li>
                 <li>Prejudicar a segurança, disponibilidade ou desempenho do website.</li>
               </ul>
             </section>
@@ -56,19 +57,81 @@ export default function TermosUtilizacaoPage() {
                 informativo inicial. A Educanology poderá rever, adaptar ou complementar qualquer
                 informação antes da tomada de decisões institucionais, técnicas, financeiras ou jurídicas.
               </p>
+              <p className="mt-3">
+                O agente virtual orienta e qualifica oportunidades, mas não substitui uma consultoria
+                formal, não assume compromissos comerciais e não vincula a Educanology a propostas,
+                orçamentos, contratos, prazos ou condições específicas de prestação de serviços.
+              </p>
+              <p className="mt-3">
+                O utilizador deve evitar introduzir informação sensível, confidencial ou dados pessoais
+                desnecessários nas interações com o agente virtual ou com outras ferramentas digitais
+                disponibilizadas no website.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-black text-[#17202a]">6. Contactos, pedidos e propostas</h2>
+              <p className="mt-3">
+                O envio de mensagens, pedidos de contacto, pedidos de reunião ou informações através
+                do website não constitui, por si só, a celebração de contrato, aceitação de proposta,
+                compromisso comercial ou obrigação de prestação de serviços por parte da Educanology.
+              </p>
+              <p className="mt-3">
+                Qualquer proposta comercial, plano de trabalho, orçamento, contrato ou compromisso
+                institucional deverá ser confirmado expressamente pela Educanology através dos meios
+                adequados.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-black text-[#17202a]">7. Propriedade intelectual</h2>
+              <p className="mt-3">
+                Salvo indicação em contrário, os conteúdos, textos, imagens, elementos gráficos,
+                estrutura, organização, marcas, metodologias, materiais e demais elementos
+                disponibilizados neste website pertencem à Educanology ou são utilizados com a devida
+                autorização.
+              </p>
+              <p className="mt-3">
+                A reprodução, distribuição, adaptação, comunicação pública ou utilização comercial
+                destes conteúdos sem autorização prévia e por escrito é proibida, exceto nos casos
+                permitidos por lei.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-black text-[#17202a]">8. Privacidade e cookies</h2>
+              <p className="mt-3">
+                O tratamento de dados pessoais realizado através do website é regulado pela Política
+                de Privacidade. A utilização de cookies e tecnologias similares é regulada pela Política
+                de Cookies, disponíveis neste website.
+              </p>
             </section>
   
             <section>
-              <h2 className="text-xl font-black text-[#17202a]">6. Limitação de responsabilidade</h2>
+              <h2 className="text-xl font-black text-[#17202a]">9. Limitação de responsabilidade</h2>
               <p className="mt-3">
                 A Educanology não se responsabiliza por danos resultantes de utilização indevida do
                 website, indisponibilidade temporária, erros técnicos, conteúdos de terceiros ou decisões
                 tomadas exclusivamente com base em informação geral disponibilizada no website.
               </p>
+              <p className="mt-3">
+                A Educanology não garante que o website esteja permanentemente disponível, livre de
+                erros ou que todos os conteúdos estejam sempre atualizados, embora procure manter a
+                informação correta, segura e adequada às finalidades do website.
+              </p>
             </section>
   
             <section>
-              <h2 className="text-xl font-black text-[#17202a]">7. Alterações</h2>
+              <h2 className="text-xl font-black text-[#17202a]">10. Ligações para websites de terceiros</h2>
+              <p className="mt-3">
+                O website pode conter ligações para websites, plataformas ou conteúdos de terceiros.
+                A Educanology não controla nem se responsabiliza pelo conteúdo, funcionamento,
+                políticas de privacidade ou práticas desses terceiros.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-black text-[#17202a]">11. Alterações</h2>
               <p className="mt-3">
                 A Educanology pode alterar estes termos a qualquer momento. A versão aplicável será a
                 publicada neste website em cada momento.
@@ -76,7 +139,7 @@ export default function TermosUtilizacaoPage() {
             </section>
   
             <section>
-              <h2 className="text-xl font-black text-[#17202a]">8. Lei aplicável</h2>
+              <h2 className="text-xl font-black text-[#17202a]">12. Lei aplicável</h2>
               <p className="mt-3">
                 Estes termos regem-se pela legislação portuguesa aplicável.
               </p>
