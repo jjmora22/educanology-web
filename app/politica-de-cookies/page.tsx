@@ -89,10 +89,10 @@ export default function PoliticaCookiesPage() {
                   </thead>
                   <tbody className="divide-y divide-[#17202a]/10">
                     <tr>
-                      <td className="p-4">cookie-consent</td>
+                      <td className="p-4">educanology-cookie-consent</td>
                       <td className="p-4">Educanology</td>
-                      <td className="p-4">Guardar preferências de consentimento do utilizador</td>
-                      <td className="p-4">12 meses</td>
+                      <td className="p-4">Guardar preferências de consentimento do utilizador no armazenamento local do navegador</td>
+                      <td className="p-4">Até 12 meses ou até eliminação pelo utilizador</td>
                       <td className="p-4">Necessário</td>
                     </tr>
                     <tr>
