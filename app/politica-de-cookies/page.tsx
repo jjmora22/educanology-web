@@ -27,7 +27,8 @@ export default function PoliticaCookiesPage() {
                 </li>
                 <li>
                   <strong>Cookies analíticos:</strong> ajudam a compreender a utilização do website e a
-                  melhorar conteúdos e desempenho.
+                  melhorar conteúdos e desempenho. Estes cookies apenas deverão ser ativados mediante
+                  consentimento prévio do utilizador.
                 </li>
                 <li>
                   <strong>Cookies funcionais:</strong> permitem recordar preferências ou ativar
@@ -35,7 +36,8 @@ export default function PoliticaCookiesPage() {
                 </li>
                 <li>
                   <strong>Cookies de marketing ou terceiros:</strong> podem ser usados para medição,
-                  campanhas, conteúdos incorporados ou plataformas externas.
+                  campanhas, conteúdos incorporados ou plataformas externas. Estes cookies apenas
+                  deverão ser ativados quando exista consentimento ou outro fundamento legal aplicável.
                 </li>
               </ul>
             </section>
@@ -47,6 +49,10 @@ export default function PoliticaCookiesPage() {
                 prévio, livre, específico, informado e inequívoco do utilizador. Os cookies necessários
                 ao funcionamento técnico do website podem ser utilizados sem consentimento prévio.
               </p>
+              <p className="mt-3">
+                A recusa de cookies não essenciais não impede a navegação no website, embora algumas
+                funcionalidades, medições estatísticas ou conteúdos de terceiros possam ficar limitados.
+              </p>
             </section>
   
             <section>
@@ -56,12 +62,18 @@ export default function PoliticaCookiesPage() {
                 painel de consentimento apresentado no website. Também pode alterar preferências no
                 navegador, bloqueando ou eliminando cookies.
               </p>
+              <p className="mt-3">
+                A qualquer momento, o utilizador poderá alterar ou retirar o consentimento anteriormente
+                prestado, quando essa funcionalidade estiver disponível no painel de consentimento do website.
+              </p>
             </section>
   
             <section>
               <h2 className="text-xl font-black text-[#17202a]">5. Cookies concretos utilizados</h2>
               <p className="mt-3">
-                Esta tabela deve ser confirmada antes da publicação final:
+                O website pode utilizar cookies necessários ao seu funcionamento técnico e, mediante
+                consentimento prévio do utilizador, cookies analíticos associados ao Google Analytics 4
+                para medição estatística de utilização do website.
               </p>
   
               <div className="mt-4 overflow-x-auto rounded-2xl border border-[#17202a]/10">
@@ -79,20 +91,32 @@ export default function PoliticaCookiesPage() {
                     <tr>
                       <td className="p-4">cookie-consent</td>
                       <td className="p-4">Educanology</td>
-                      <td className="p-4">Guardar preferências de consentimento</td>
+                      <td className="p-4">Guardar preferências de consentimento do utilizador</td>
                       <td className="p-4">12 meses</td>
                       <td className="p-4">Necessário</td>
                     </tr>
                     <tr>
-                      <td className="p-4">_ga / _gid</td>
-                      <td className="p-4">Google Analytics</td>
-                      <td className="p-4">Medição estatística de utilização do website</td>
-                      <td className="p-4">Variável</td>
+                      <td className="p-4">_ga</td>
+                      <td className="p-4">Google Analytics 4</td>
+                      <td className="p-4">Distinguir utilizadores para medição estatística de utilização do website</td>
+                      <td className="p-4">Até 2 anos</td>
+                      <td className="p-4">Analítico</td>
+                    </tr>
+                    <tr>
+                      <td className="p-4">_ga_&#123;container-id&#125;</td>
+                      <td className="p-4">Google Analytics 4</td>
+                      <td className="p-4">Manter o estado da sessão para medição estatística de utilização do website</td>
+                      <td className="p-4">Até 2 anos</td>
                       <td className="p-4">Analítico</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+  
+              <p className="mt-3 text-sm text-[#58736b]">
+                Os cookies analíticos apenas deverão ser carregados após o consentimento do utilizador.
+                Caso o utilizador rejeite cookies não essenciais, estes cookies não deverão ser ativados.
+              </p>
             </section>
   
             <section>
