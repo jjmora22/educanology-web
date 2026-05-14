@@ -1,0 +1,90 @@
+{
+  "id": "editorial-draft-2026-05-14-ia-responsavel-escola-publica",
+  "status": "draft",
+  "category": "ia-na-educacao",
+  "workingDay": "monday",
+  "title": "IA responsável na escola pública: começar pela pedagogia antes da ferramenta",
+  "summary": "Rascunho editorial sobre como escolas, agrupamentos e municípios podem iniciar a adoção de inteligência artificial com finalidade educativa, formação docente, governação e validação humana.",
+  "angle": "A inteligência artificial deve ser apresentada como infraestrutura de apoio à aprendizagem e ao trabalho docente, não como atalho para trabalhos de casa nem como substituto da decisão pedagógica.",
+  "mainVoice": "combined",
+  "reviewer": "Daniel",
+  "sources": [
+    {
+      "title": "UNESCO guidance on generative AI in education and research",
+      "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "publisher": "UNESCO",
+      "sourceType": "institutional",
+      "confidence": "high",
+      "requiresHumanVerification": true,
+      "confirmedFacts": [
+        "A UNESCO publicou orientação institucional sobre IA generativa na educação e investigação.",
+        "O documento enquadra a necessidade de governação, proteção dos estudantes e uso responsável de IA."
+      ],
+      "notes": "Confirmar a versão e data de publicação antes de usar em artigo final."
+    },
+    {
+      "title": "European Commission: Digital Education Action Plan",
+      "url": "https://education.ec.europa.eu/focus-topics/digital-education/action-plan",
+      "publisher": "European Commission",
+      "sourceType": "official",
+      "confidence": "high",
+      "requiresHumanVerification": true,
+      "confirmedFacts": [
+        "A Comissão Europeia mantém uma estratégia pública para educação digital.",
+        "A educação digital é tratada como uma prioridade de transformação educativa e de competências."
+      ],
+      "notes": "Usar apenas afirmações confirmadas na página oficial."
+    }
+  ],
+  "confirmedFacts": [
+    "Organizações internacionais e instituições públicas tratam a IA na educação como tema de governação, formação e responsabilidade.",
+    "A adoção de IA em contexto educativo exige validação humana, critérios pedagógicos e atenção à proteção de dados.",
+    "A estratégia digital educativa deve integrar tecnologia, competências, professores e objetivos de aprendizagem."
+  ],
+  "interpretation": [
+    "Para a Educanology, a pergunta central não deve ser que ferramenta usar, mas que problema educativo se pretende resolver.",
+    "A IA pode apoiar professores e alunos quando é enquadrada por regras claras, formação prática e avaliação contínua.",
+    "Municípios e escolas devem começar com pilotos pequenos, objetivos claros e acompanhamento próximo antes de escalar."
+  ],
+  "blogDraft": "## Contexto\n\nA inteligência artificial entrou no debate educativo com grande velocidade. Para escolas, agrupamentos e municípios, o desafio já não é apenas saber se a IA deve ser usada, mas como criar condições para que o seu uso seja responsável, útil e pedagogicamente relevante.\n\n## Factos confirmados\n\nInstituições internacionais e europeias têm vindo a tratar a educação digital e a IA como temas que exigem governação, formação e proteção dos alunos. A adoção de IA não pode ser reduzida à escolha de uma ferramenta: precisa de critérios, supervisão humana e finalidades educativas claras.\n\n## Interpretação Educanology\n\nA Educanology defende que a IA deve tornar a educação mais exigente e significativa, não mais superficial. Deve apoiar professores, ajudar a personalizar percursos, libertar tempo para acompanhamento humano e desenvolver pensamento crítico nos alunos.\n\n## Implicações práticas\n\nUma escola ou município pode começar por definir uma política simples de uso, formar docentes com casos reais e criar pilotos delimitados. O objetivo é aprender com segurança antes de escalar.\n\n## Como a Educanology pode ajudar\n\nA Educanology pode apoiar o diagnóstico, o desenho de políticas de uso, a formação docente, a definição de pilotos e a avaliação da implementação, sempre com validação humana e alinhamento institucional.",
+  "linkedInDraft": {
+    "hook": "A IA na escola pública não deve começar pela ferramenta. Deve começar pela pedagogia.",
+    "mainText": "A inteligência artificial pode apoiar professores, personalizar percursos e tornar a aprendizagem mais desafiante. Mas também pode criar ruído, dependência e usos superficiais se entrar na escola sem regras claras.\n\nPara a Educanology, o ponto de partida deve ser institucional e pedagógico:\n\n- Que problema educativo queremos resolver?\n- Que dados não devem ser introduzidos?\n- Que tarefas exigem validação humana?\n- Como formamos professores com casos reais?\n- Como avaliamos se a adoção está a melhorar a aprendizagem?\n\nA IA não deve ser um atalho para trabalhos de casa. Deve ser uma ferramenta para tornar a educação mais significativa, crítica e humana.",
+    "cta": "Municípios, escolas e organizações que queiram iniciar este caminho com responsabilidade podem falar connosco.",
+    "hashtags": [
+      "#Educação",
+      "#InteligenciaArtificial",
+      "#IAnaEducação",
+      "#EscolaPública",
+      "#TransformaçãoDigital"
+    ],
+    "suggestedFirstComment": "Artigo completo no blog da Educanology, com orientações para começar de forma segura e pedagogicamente útil.",
+    "blogLink": "https://educanology.eu/blog/ia-responsavel-escola-publica-como-comecar-sem-errar",
+    "imageReference": "editorial-image-2026-05-14-ia-responsavel-escola-publica"
+  },
+  "visualBrief": {
+    "id": "editorial-image-2026-05-14-ia-responsavel-escola-publica",
+    "contentId": "editorial-draft-2026-05-14-ia-responsavel-escola-publica",
+    "category": "ia-na-educacao",
+    "concept": "Professor e alunos numa escola pública portuguesa a usar tecnologia de forma colaborativa, com foco humano e pedagógico.",
+    "prompt": "Create a realistic editorial photograph for Educanology, a Portuguese educational consulting organisation. Scene: a public school classroom in Portugal, with a teacher supporting a small group of students using laptops and printed learning materials. The mood is thoughtful, human-centred and institutional. Technology is present but not dominant. European, Iberian, municipal and educational atmosphere. Natural light, realistic classroom, grounded public education context. No visible text on screens.",
+    "negativePrompt": "Avoid sci-fi aesthetics, cartoon robots, fake stock-photo perfection, chaotic collage, excessive text, empty iconography, unrealistic holograms, confidential documents or exaggerated futuristic interfaces.",
+    "blogHeroFormat": "16:9",
+    "linkedInFormat": "1.91:1",
+    "altText": "Professor a apoiar estudantes numa sala de aula com tecnologia usada de forma colaborativa e responsável.",
+    "visualCategoryStyle": "IA na Educação: human-centred AI in schools, teacher support, personalised learning and thoughtful technology use.",
+    "approvalStatus": "draft",
+    "reviewer": "Daniel",
+    "notes": "A imagem deve parecer institucional e realista, sem estética futurista exagerada."
+  },
+  "publicationChannels": {
+    "blog": {
+      "status": "draft"
+    },
+    "linkedIn": {
+      "status": "draft"
+    }
+  },
+  "createdAt": "2026-05-14T09:00:00+02:00",
+  "updatedAt": "2026-05-14T09:00:00+02:00"
+}
