@@ -1,0 +1,201 @@
+{
+  "id": "topic-proposal-batch-2026-05-14-ia-na-educacao",
+  "status": "pending_human_selection",
+  "category": "ia-na-educacao",
+  "workingDay": "monday",
+  "generatedAt": "2026-05-14T09:30:00+02:00",
+  "recommendedProposalId": "topic-ia-educacao-politica-uso-escola-publica",
+  "selectedProposalId": null,
+  "notes": "Lote de exemplo para seleção humana. As fontes devem ser verificadas antes de gerar o artigo final.",
+  "proposals": [
+    {
+      "id": "topic-ia-educacao-politica-uso-escola-publica",
+      "status": "pending_human_selection",
+      "title": "Como uma escola pública pode criar a sua primeira política de uso responsável de IA",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "Escolas, agrupamentos e municípios precisam de orientações práticas para usar IA com segurança, evitando tanto a proibição genérica como a adoção sem critérios.",
+      "confirmedFacts": [
+        "A UNESCO publicou orientação institucional sobre IA generativa na educação e investigação.",
+        "A Comissão Europeia mantém uma agenda pública para educação digital e competências digitais.",
+        "A adoção de IA em educação é tratada por instituições públicas como tema de governação, competências e responsabilidade."
+      ],
+      "interpretation": [
+        "Há uma oportunidade editorial para explicar que a primeira política de IA deve ser simples, operacional e compreensível para professores, alunos e famílias.",
+        "A Educanology pode posicionar-se como parceira para transformar preocupação institucional em regras, formação e pilotos concretos."
+      ],
+      "suggestedEducanologyAngle": "A IA na escola pública deve começar por uma política de uso curta, clara e pedagógica: que dados não introduzir, que tarefas exigem validação humana, que usos são aceitáveis e como formar professores com exemplos reais.",
+      "recommendedReviewer": "Daniel",
+      "sources": [
+        {
+          "title": "UNESCO guidance on generative AI in education and research",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+          "publisher": "UNESCO",
+          "sourceType": "institutional",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página apresenta orientação da UNESCO sobre IA generativa na educação e investigação."
+          ],
+          "notes": "Confirmar versão e data antes de usar no artigo final."
+        },
+        {
+          "title": "Digital Education Action Plan",
+          "url": "https://education.ec.europa.eu/focus-topics/digital-education/action-plan",
+          "publisher": "European Commission",
+          "sourceType": "official",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página apresenta a estratégia da Comissão Europeia para educação digital."
+          ],
+          "notes": "Usar apenas informação confirmada na página oficial."
+        }
+      ],
+      "recommendation": {
+        "priority": "high",
+        "score": 92,
+        "rationale": "Tema fundacional, útil para decisores públicos e diretamente alinhado com IA responsável, formação docente e implementação."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-14T09:30:00+02:00",
+      "updatedAt": "2026-05-14T09:30:00+02:00"
+    },
+    {
+      "id": "topic-ia-educacao-professores-carga-trabalho",
+      "status": "pending_human_selection",
+      "title": "IA como apoio ao professor: reduzir tarefas repetitivas sem perder critério pedagógico",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "A adoção de IA pode ser mais bem recebida quando é apresentada como apoio ao trabalho docente e não como substituição da relação educativa.",
+      "confirmedFacts": [
+        "Instituições europeias e internacionais discutem competências digitais e transformação educativa.",
+        "A integração tecnológica em educação exige formação, acompanhamento e reflexão sobre uso pedagógico."
+      ],
+      "interpretation": [
+        "O debate público tende a focar ferramentas, mas o valor institucional está em libertar tempo docente para acompanhamento, feedback e desenho pedagógico.",
+        "A Educanology pode explicar casos de uso prudentes sem prometer automatização total."
+      ],
+      "suggestedEducanologyAngle": "A IA deve ser tratada como apoio ao professor: planificação, diferenciação de materiais e organização de informação, sempre com validação humana e critérios de qualidade.",
+      "recommendedReviewer": "Juan Jose",
+      "sources": [
+        {
+          "title": "European Commission: Digital skills and jobs",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-skills",
+          "publisher": "European Commission",
+          "sourceType": "official",
+          "confidence": "medium",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página aborda políticas europeias relacionadas com competências digitais."
+          ],
+          "notes": "Verificar ligação específica com educação antes de citar."
+        }
+      ],
+      "recommendation": {
+        "priority": "medium",
+        "score": 78,
+        "rationale": "Tema prático e útil, mas menos estruturante do que uma política inicial de uso para escolas e municípios."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-14T09:30:00+02:00",
+      "updatedAt": "2026-05-14T09:30:00+02:00"
+    },
+    {
+      "id": "topic-ia-educacao-alunos-pensamento-critico",
+      "status": "pending_human_selection",
+      "title": "Como ensinar alunos a usar IA sem transformar a aprendizagem num atalho",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "Famílias, professores e decisores públicos precisam de uma narrativa equilibrada: a IA pode apoiar a aprendizagem, mas também pode reduzir esforço cognitivo se for usada sem orientação.",
+      "confirmedFacts": [
+        "A literacia digital e a educação digital são prioridades em documentos institucionais europeus.",
+        "A IA generativa levanta questões sobre autoria, validação, pensamento crítico e uso responsável em contextos educativos."
+      ],
+      "interpretation": [
+        "O tema permite defender que a IA deve aumentar a exigência da aprendizagem, não simplificar artificialmente o trabalho dos alunos.",
+        "Pode ligar motivação, estilos de aprendizagem e pensamento crítico sem fazer afirmações psicológicas não suportadas."
+      ],
+      "suggestedEducanologyAngle": "A escola deve ensinar os alunos a perguntar melhor, verificar respostas, comparar fontes e explicar o seu raciocínio quando usam IA.",
+      "recommendedReviewer": "Daniel",
+      "sources": [
+        {
+          "title": "OECD Education and skills",
+          "url": "https://www.oecd.org/education/",
+          "publisher": "OECD",
+          "sourceType": "institutional",
+          "confidence": "medium",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A OCDE publica informação e investigação sobre educação e competências."
+          ],
+          "notes": "Selecionar uma fonte específica da OCDE antes de produzir artigo final."
+        },
+        {
+          "title": "UNESCO: Artificial intelligence in education",
+          "url": "https://www.unesco.org/en/digital-education/artificial-intelligence",
+          "publisher": "UNESCO",
+          "sourceType": "institutional",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A UNESCO mantém uma área temática sobre inteligência artificial na educação."
+          ],
+          "notes": "Confirmar conteúdo atualizado antes de citar."
+        }
+      ],
+      "recommendation": {
+        "priority": "medium",
+        "score": 82,
+        "rationale": "Tema forte para LinkedIn e debate público, com bom potencial pedagógico, mas exige cuidado para não simplificar evidência sobre motivação e aprendizagem."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-14T09:30:00+02:00",
+      "updatedAt": "2026-05-14T09:30:00+02:00"
+    },
+    {
+      "id": "topic-ia-educacao-municipios-literacia",
+      "status": "pending_human_selection",
+      "title": "Municípios e literacia em IA: por onde começar sem criar desigualdades",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "A literacia em IA pode tornar-se uma nova dimensão de inclusão digital, especialmente quando municípios querem apoiar escolas, famílias, jovens e adultos.",
+      "confirmedFacts": [
+        "A educação digital é uma prioridade em políticas europeias.",
+        "Municípios podem desempenhar um papel relevante na promoção de competências digitais e aprendizagem ao longo da vida."
+      ],
+      "interpretation": [
+        "Há uma oportunidade para ligar IA na educação a política municipal, bibliotecas, centros de formação e espaços públicos de aprendizagem.",
+        "O artigo poderia funcionar como ponte entre a linha de segunda-feira e a de terça-feira."
+      ],
+      "suggestedEducanologyAngle": "A literacia em IA deve ser pensada como serviço público local: escolas, bibliotecas, formação de adultos e espaços de inovação a trabalhar em conjunto.",
+      "recommendedReviewer": "Daniel",
+      "sources": [
+        {
+          "title": "European Commission: Digital Education",
+          "url": "https://education.ec.europa.eu/focus-topics/digital-education",
+          "publisher": "European Commission",
+          "sourceType": "official",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página agrega informação institucional europeia sobre educação digital."
+          ],
+          "notes": "Confirmar subpáginas mais adequadas antes de redigir."
+        }
+      ],
+      "recommendation": {
+        "priority": "medium",
+        "score": 80,
+        "rationale": "Bom tema transversal para municípios, mas talvez mais adequado para terça-feira se o foco municipal for dominante."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-14T09:30:00+02:00",
+      "updatedAt": "2026-05-14T09:30:00+02:00"
+    }
+  ]
+}
