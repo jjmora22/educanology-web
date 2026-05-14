@@ -1,0 +1,112 @@
+# Educanology
+
+Educanology is an educational consulting organisation focused on education, artificial intelligence, public policy, active learning, teacher training, FabLabs, MakerSpaces, STEAM laboratories, digital transformation and fundable education projects.
+
+The website content is written in Portuguese from Portugal. It is intended for municipalities, schools, school clusters, governments, foundations, teacher training centres, public institutions and organisations working on education, technology and social impact.
+
+Educanology combines strategy, project design and implementation support. Its work is positioned around responsible AI in education, active learning, teacher capacity building, municipal education strategy, pedagogically purposeful laboratories, European funding readiness and practical delivery capacity.
+
+Canonical website:
+https://educanology.eu/
+
+Blog:
+https://educanology.eu/blog
+
+## Institutional fit
+
+Municipalities:
+Educanology supports municipalities that want to connect education, technology and territorial development. Relevant work areas include municipal education strategy, lifelong learning ecosystems, responsible AI literacy, digital inclusion, active learning spaces, local skills agendas and fundable project design.
+
+Public schools and school groups:
+Educanology supports schools and school groups with teacher training, active learning models, responsible AI adoption, curriculum-connected technology use, FabLabs, MakerSpaces and STEAM laboratories designed around pedagogy rather than equipment alone.
+
+Education departments and public administrations:
+Educanology is relevant for public administrations that need policy design, programme architecture, stakeholder coordination, implementation planning, evidence frameworks and responsible use of data and AI in education.
+
+Foundations and organisations funding education transformation:
+Educanology can help funders and social-impact organisations structure education initiatives with clear objectives, realistic implementation models, measurable outcomes, teacher support, inclusion criteria and sustainability beyond the initial project phase.
+
+Training centres and vocational education ecosystems:
+Educanology supports teacher training centres, vocational education networks and skills ecosystems with applied training, active methodologies, digital and AI competencies, laboratory-based learning and links between education, employability and local development.
+
+## Core themes
+
+Responsible AI in education:
+Human-centred AI adoption, teacher support, governance, privacy-aware use, critical literacy and practical classroom or institutional use cases.
+
+Active learning:
+Project-based, problem-based and collaborative learning models that connect curriculum, creativity, critical thinking and real-world challenges.
+
+Teacher training:
+Practical professional development focused on adoption, confidence, pedagogy, assessment, classroom integration and sustainable change.
+
+FabLabs, MakerSpaces and STEAM labs:
+Learning spaces designed with pedagogical purpose, curriculum integration, maintenance planning, teacher support and meaningful use, not only equipment procurement.
+
+Municipal education strategy:
+Territorial education planning, lifelong learning, local partnerships, school-community links, digital inclusion and evidence for public decision-making.
+
+European funding and fundable project design:
+Project architecture, partner alignment, implementation planning, sustainability, indicators and readiness for appropriate funding opportunities without unsupported promises.
+
+Implementation capacity:
+Educanology emphasises moving from strategy to delivery through planning, training, governance, operational support, evaluation and institutional learning.
+
+## Editorial categories
+
+IA na Educação:
+Responsible artificial intelligence in education, governance, teacher training, ethical use, privacy-aware adoption and practical pedagogical use cases.
+https://educanology.eu/blog/categoria/ia-na-educacao
+
+Política Municipal:
+Municipal education policy, local learning ecosystems, lifelong learning, territorial education strategy and coordination between schools, public services and communities.
+https://educanology.eu/blog/categoria/politica-municipal
+
+Laboratórios:
+FabLabs, MakerSpaces, STEAM laboratories and technology-rich learning spaces designed around pedagogy, curriculum, teacher support and real educational impact.
+https://educanology.eu/blog/categoria/laboratorios
+
+Estratégia:
+Educational transformation strategy, technology adoption, organisational change, implementation planning, evidence-based decision-making and institutional capacity building.
+https://educanology.eu/blog/categoria/estrategia
+
+Financiamento:
+Fundable education projects, European funding readiness, project architecture, partnerships, implementation planning and sustainability for digital education initiatives.
+https://educanology.eu/blog/categoria/financiamento
+
+## Important URLs
+
+Homepage:
+https://educanology.eu/
+
+Blog index:
+https://educanology.eu/blog
+
+IA na Educação:
+https://educanology.eu/blog/categoria/ia-na-educacao
+
+Política Municipal:
+https://educanology.eu/blog/categoria/politica-municipal
+
+Laboratórios:
+https://educanology.eu/blog/categoria/laboratorios
+
+Estratégia:
+https://educanology.eu/blog/categoria/estrategia
+
+Financiamento:
+https://educanology.eu/blog/categoria/financiamento
+
+## Virtual agent
+
+The Educanology virtual agent is informational. It can provide initial orientation and help qualify opportunities, but it does not replace formal consulting, legal advice, financial advice, technical assessment or a binding commercial proposal from Educanology.
+
+Users should not provide sensitive, confidential or unnecessary personal information to the virtual agent.
+
+## Contact
+
+Email:
+hello@educanology.eu
+
+Website:
+https://educanology.eu/
