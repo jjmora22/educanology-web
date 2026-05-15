@@ -1,0 +1,38 @@
+{
+  "id": "guided-workflow-2026-05-14-ia-na-educacao",
+  "weekday": "monday",
+  "category": "ia-na-educacao",
+  "currentStep": "humanSelectsTopic",
+  "steps": [
+    "determineCategory",
+    "discoverTopics",
+    "validateSources",
+    "proposeTopics",
+    "humanSelectsTopic",
+    "generateDraftPackage",
+    "review",
+    "approve",
+    "publishBlog",
+    "prepareLinkedIn"
+  ],
+  "topicProposalBatch": {
+    "id": "topic-proposal-batch-2026-05-14-ia-na-educacao",
+    "path": "content/editorial-proposals/sample-topic-proposals.json",
+    "status": "pending_human_selection"
+  },
+  "selectedProposal": {
+    "id": null,
+    "path": null,
+    "status": "not_selected"
+  },
+  "draftPackage": {
+    "id": null,
+    "path": "content/editorial-drafts/sample-editorial-draft.json",
+    "status": "not_generated_for_selected_topic"
+  },
+  "reviewer": "Daniel",
+  "approvalStatus": "pending_human_selection",
+  "nextAction": "Daniel ou Juan Jose deve selecionar uma proposta e aprovar o ângulo editorial antes de gerar o pacote final de rascunho.",
+  "createdAt": "2026-05-14T09:45:00+02:00",
+  "updatedAt": "2026-05-14T09:45:00+02:00"
+}
