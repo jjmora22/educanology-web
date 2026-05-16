@@ -1,0 +1,350 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-05-16T00:00:00+02:00",
+  "purpose": "Índice editorial interno para apoiar decisões sobre duplicação, atualização, seguimento, correção, publicação LinkedIn-only ou rejeição de propostas duplicadas.",
+  "entries": [
+    {
+      "id": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "title": "IA responsável na escola pública: como começar sem errar",
+      "slug": "ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "category": "ia-na-educacao",
+      "status": "published",
+      "publicationChannels": {
+        "blog": {
+          "status": "published",
+          "url": "https://educanology.eu/blog/ia-responsavel-escola-publica-como-comecar-sem-errar",
+          "publishedAt": "2026-05-13"
+        },
+        "linkedIn": {
+          "status": "not_planned"
+        }
+      },
+      "publishedAt": "2026-05-13",
+      "lastUpdatedAt": "2026-05-13",
+      "summary": "Guia institucional para iniciar a adoção de inteligência artificial na escola pública com finalidade pedagógica, proteção de dados, formação docente e governação clara.",
+      "mainTopic": "Adoção responsável de IA na escola pública",
+      "subtopics": [
+        "política de uso de IA",
+        "formação docente",
+        "proteção de dados",
+        "governação educativa",
+        "pilotos com evidência"
+      ],
+      "keywords": [
+        "IA na educação",
+        "inteligência artificial responsável",
+        "escola pública",
+        "formação docente",
+        "governação educativa"
+      ],
+      "sourceUrls": [],
+      "relatedContent": [
+        {
+          "contentId": "draft-2026-05-15-ia-na-educacao",
+          "relation": "related_topic",
+          "notes": "O rascunho de 2026-05-15 aprofunda a doutrina human-first e pode funcionar como seguimento, não como substituição direta."
+        }
+      ],
+      "updatePolicy": {
+        "reviewFrequency": "quarterly",
+        "updateTriggers": [
+          "nova orientação institucional sobre IA em educação",
+          "alteração relevante em políticas públicas de educação digital",
+          "novas recomendações sobre proteção de dados ou uso responsável de IA em escolas"
+        ],
+        "notes": "Evitar novos artigos demasiado semelhantes sem fonte, ângulo ou implicação prática nova."
+      },
+      "duplicationRisk": "medium",
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Propostas futuras sobre primeira política de IA escolar devem atualizar este artigo se não trouxerem ângulo substancialmente novo.",
+        "targetContentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "blog-municipios-motores-aprendizagem-ao-longo-da-vida",
+      "title": "Municípios como motores de aprendizagem ao longo da vida",
+      "slug": "municipios-motores-aprendizagem-ao-longo-da-vida",
+      "category": "politica-municipal",
+      "status": "published",
+      "publicationChannels": {
+        "blog": {
+          "status": "published",
+          "url": "https://educanology.eu/blog/municipios-motores-aprendizagem-ao-longo-da-vida",
+          "publishedAt": "2026-05-13"
+        },
+        "linkedIn": {
+          "status": "not_planned"
+        }
+      },
+      "publishedAt": "2026-05-13",
+      "lastUpdatedAt": "2026-05-13",
+      "summary": "Como os municípios podem articular escolas, bibliotecas, centros de formação, empresas e comunidade para construir ecossistemas locais de aprendizagem contínua.",
+      "mainTopic": "Política municipal de aprendizagem ao longo da vida",
+      "subtopics": [
+        "ecossistemas locais de aprendizagem",
+        "bibliotecas e centros de formação",
+        "competências digitais",
+        "educação territorial",
+        "coordenação municipal"
+      ],
+      "keywords": [
+        "política educativa municipal",
+        "aprendizagem ao longo da vida",
+        "municípios",
+        "educação territorial",
+        "competências digitais"
+      ],
+      "sourceUrls": [],
+      "relatedContent": [],
+      "updatePolicy": {
+        "reviewFrequency": "twice_yearly",
+        "updateTriggers": [
+          "nova política municipal relevante",
+          "novo programa público de aprendizagem ao longo da vida",
+          "exemplo territorial com implicações práticas para municípios"
+        ]
+      },
+      "duplicationRisk": "low",
+      "recommendedAction": {
+        "action": "follow_up",
+        "reason": "Temas municipais relacionados devem avançar como seguimento quando tiverem público, território ou instrumento político distinto.",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "blog-laboratorios-steam-proposito-pedagogico-alem-dos-equipamentos",
+      "title": "Laboratórios STEAM com propósito pedagógico: além dos equipamentos",
+      "slug": "laboratorios-steam-proposito-pedagogico-alem-dos-equipamentos",
+      "category": "laboratorios",
+      "status": "published",
+      "publicationChannels": {
+        "blog": {
+          "status": "published",
+          "url": "https://educanology.eu/blog/laboratorios-steam-proposito-pedagogico-alem-dos-equipamentos",
+          "publishedAt": "2026-05-13"
+        },
+        "linkedIn": {
+          "status": "not_planned"
+        }
+      },
+      "publishedAt": "2026-05-13",
+      "lastUpdatedAt": "2026-05-13",
+      "summary": "Um laboratório STEAM transforma a aprendizagem quando combina espaço, currículo, formação docente, manutenção, segurança e projetos com ligação ao território.",
+      "mainTopic": "Laboratórios STEAM com propósito pedagógico",
+      "subtopics": [
+        "FabLabs educativos",
+        "MakerSpaces",
+        "aprendizagem ativa",
+        "integração curricular",
+        "ligação ao território"
+      ],
+      "keywords": [
+        "laboratórios STEAM",
+        "FabLabs educativos",
+        "MakerSpaces",
+        "aprendizagem ativa",
+        "tecnologia educativa"
+      ],
+      "sourceUrls": [],
+      "relatedContent": [],
+      "updatePolicy": {
+        "reviewFrequency": "twice_yearly",
+        "updateTriggers": [
+          "novo modelo de laboratório educativo",
+          "nova necessidade de manutenção ou operação",
+          "novas práticas de integração curricular"
+        ]
+      },
+      "duplicationRisk": "low",
+      "recommendedAction": {
+        "action": "follow_up",
+        "reason": "Novos textos sobre laboratórios devem ter foco distinto: indústria local, empregabilidade, inclusão, operação ou currículo.",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "blog-compra-equipamentos-transformacao-educativa-real",
+      "title": "Da compra de equipamentos à transformação educativa real",
+      "slug": "compra-equipamentos-transformacao-educativa-real",
+      "category": "estrategia",
+      "status": "published",
+      "publicationChannels": {
+        "blog": {
+          "status": "published",
+          "url": "https://educanology.eu/blog/compra-equipamentos-transformacao-educativa-real",
+          "publishedAt": "2026-05-13"
+        },
+        "linkedIn": {
+          "status": "not_planned"
+        }
+      },
+      "publishedAt": "2026-05-13",
+      "lastUpdatedAt": "2026-05-13",
+      "summary": "A modernização educativa exige mais do que tecnologia: precisa de diagnóstico, liderança, formação, acompanhamento e indicadores de mudança.",
+      "mainTopic": "Transformação educativa para além da compra de equipamentos",
+      "subtopics": [
+        "diagnóstico institucional",
+        "liderança educativa",
+        "adoção tecnológica",
+        "gestão de mudança",
+        "indicadores de transformação"
+      ],
+      "keywords": [
+        "transformação educativa",
+        "modernização escolar",
+        "estratégia digital educativa",
+        "adoção tecnológica",
+        "mudança organizacional"
+      ],
+      "sourceUrls": [],
+      "relatedContent": [
+        {
+          "contentId": "draft-2026-05-15-ia-na-educacao",
+          "relation": "related_topic",
+          "notes": "A doutrina human-first reforça a ideia de adoção tecnológica gradual e estratégica."
+        }
+      ],
+      "updatePolicy": {
+        "reviewFrequency": "quarterly",
+        "updateTriggers": [
+          "nova política pública de transformação digital educativa",
+          "novo instrumento de diagnóstico ou avaliação",
+          "nova evidência sobre implementação tecnológica em escolas"
+        ]
+      },
+      "duplicationRisk": "medium",
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Propostas genéricas sobre tecnologia e transformação devem atualizar este artigo, salvo quando tiverem ângulo específico ou fonte nova relevante.",
+        "targetContentId": "blog-compra-equipamentos-transformacao-educativa-real",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "blog-financiamento-europeu-educacao-digital-guia-municipios",
+      "title": "Financiamento europeu para educação digital: guia para municípios",
+      "slug": "financiamento-europeu-educacao-digital-guia-municipios",
+      "category": "financiamento",
+      "status": "published",
+      "publicationChannels": {
+        "blog": {
+          "status": "published",
+          "url": "https://educanology.eu/blog/financiamento-europeu-educacao-digital-guia-municipios",
+          "publishedAt": "2026-05-13"
+        },
+        "linkedIn": {
+          "status": "not_planned"
+        }
+      },
+      "publishedAt": "2026-05-13",
+      "lastUpdatedAt": "2026-05-13",
+      "summary": "Como preparar projetos municipais de educação digital mais coerentes, financiáveis e orientados para impacto educativo mensurável.",
+      "mainTopic": "Financiamento europeu para educação digital municipal",
+      "subtopics": [
+        "arquitetura de projeto",
+        "candidaturas",
+        "educação digital",
+        "municípios",
+        "sustentabilidade"
+      ],
+      "keywords": [
+        "financiamento europeu educação",
+        "educação digital",
+        "municípios",
+        "projetos financiáveis",
+        "candidaturas educação"
+      ],
+      "sourceUrls": [],
+      "relatedContent": [],
+      "updatePolicy": {
+        "reviewFrequency": "monthly",
+        "updateTriggers": [
+          "nova oportunidade pública de financiamento",
+          "alteração de programa europeu relevante",
+          "novo guia institucional sobre candidaturas ou educação digital"
+        ],
+        "notes": "Não inventar chamadas, prazos, elegibilidade ou resultados. Usar sempre fontes oficiais."
+      },
+      "duplicationRisk": "medium",
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Conteúdos sobre financiamento devem atualizar este artigo quando tratam o mesmo guia geral; oportunidades específicas podem justificar seguimento.",
+        "targetContentId": "blog-financiamento-europeu-educacao-digital-guia-municipios",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "draft-2026-05-15-ia-na-educacao",
+      "title": "IA na escola pública: tecnologia como bicicleta para capacidades humanas",
+      "slug": "ia-na-escola-publica-tecnologia-como-bicicleta-para-capacidades-humanas",
+      "category": "ia-na-educacao",
+      "status": "pending_review",
+      "publicationChannels": {
+        "blog": {
+          "status": "draft",
+          "url": "https://educanology.eu/blog/ia-na-escola-publica-tecnologia-como-bicicleta-para-capacidades-humanas"
+        },
+        "linkedIn": {
+          "status": "draft"
+        }
+      },
+      "lastUpdatedAt": "2026-05-15T09:30:00+02:00",
+      "summary": "Rascunho editorial interno sobre adoção human-first de IA: tecnologia como amplificador de capacidades humanas, não como substituto de leitura, escrita, raciocínio, questionamento e pensamento crítico.",
+      "mainTopic": "Doutrina human-first para adoção de IA na educação",
+      "subtopics": [
+        "tecnologia como amplificador",
+        "competências fundamentais antes da automação",
+        "IA responsável",
+        "personalização sem neuromitos",
+        "formação docente",
+        "proteção de dados",
+        "implementação gradual"
+      ],
+      "keywords": [
+        "IA na educação",
+        "tecnologia educativa",
+        "human-first",
+        "competências fundamentais",
+        "pensamento crítico",
+        "formação docente",
+        "proteção de dados",
+        "personalização"
+      ],
+      "sourceUrls": [
+        "https://www.unesco.org/en/digital-education/artificial-intelligence",
+        "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+        "https://education.ec.europa.eu/focus-topics/digital-education/action-plan"
+      ],
+      "relatedContent": [
+        {
+          "contentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+          "relation": "follow_up_to",
+          "notes": "Pode funcionar como artigo de seguimento ao guia inicial de IA responsável, com foco mais doutrinal e pedagógico."
+        },
+        {
+          "contentId": "blog-compra-equipamentos-transformacao-educativa-real",
+          "relation": "related_topic",
+          "notes": "Reforça a posição de que tecnologia sem estratégia, formação e avaliação não gera transformação educativa real."
+        }
+      ],
+      "updatePolicy": {
+        "reviewFrequency": "as_needed",
+        "updateTriggers": [
+          "validação humana das fontes",
+          "aprovação editorial por Daniel ou Juan José",
+          "nova evidência institucional sobre IA, personalização, ética ou proteção de dados em educação"
+        ],
+        "notes": "Antes de publicação, confirmar fontes, datas e cautelas sobre estilos de aprendizagem fixos."
+      },
+      "duplicationRisk": "medium",
+      "recommendedAction": {
+        "action": "follow_up",
+        "reason": "Há sobreposição com o artigo inicial de IA responsável, mas o ângulo human-first e a metáfora da bicicleta são suficientemente distintos para um seguimento editorial.",
+        "targetContentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+        "requiresHumanReview": true
+      }
+    }
+  ]
+}
