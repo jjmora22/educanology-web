@@ -128,14 +128,131 @@ A principal implicação é que a tecnologia não deve ser tratada como soluçã
 
 Para municípios, isto significa apoiar escolas, bibliotecas, centros de formação e espaços de inovação como partes de um ecossistema de aprendizagem. Para escolas e agrupamentos, significa criar práticas comuns, linguagem clara e pilotos que possam ser observados, avaliados e ajustados.
 
+## Quadro prático de implementação
+
+Uma estratégia responsável de IA deve transformar princípios em decisões operacionais. Para uma escola, agrupamento ou município, isto significa definir regras simples, pilotos observáveis, formação docente aplicada e critérios de avaliação antes de escalar.
+
+Um primeiro quadro de trabalho pode ter cinco perguntas:
+
+- Finalidade: que problema educativo queremos resolver?
+- Capacidade humana: que competência deve ser desenvolvida antes de usar automação?
+- Regra: que usos são permitidos, limitados ou proibidos?
+- Evidência: como saberemos se a aprendizagem melhorou?
+- Governação: quem decide, revê, comunica e corrige?
+
+Este quadro evita duas tentações comuns: comprar ferramentas antes de definir finalidade educativa, ou escrever regras tão abstratas que ninguém sabe como aplicá-las na sala de aula.
+
+## Componentes mínimos de uma política de uso responsável de IA
+
+Uma política inicial não precisa de ser longa. Precisa de ser compreensível, aplicável e revista com regularidade. O seu valor está em orientar decisões quotidianas: o que professores podem fazer, o que alunos podem fazer, que dados nunca devem ser usados e como a escola responde a dúvidas ou incidentes.
+
+A política deve conter, pelo menos:
+
+- Propósito e âmbito: explicar por que razão a escola ou município usa IA, em que contextos e com que objetivos pedagógicos.
+- Usos permitidos: por exemplo, apoiar planificação, comparar explicações, gerar perguntas de estudo, adaptar rascunhos ou preparar feedback, sempre com validação humana.
+- Usos não permitidos: por exemplo, entregar respostas finais sem mostrar raciocínio, introduzir dados pessoais ou sensíveis, ou usar IA para substituir avaliação docente.
+- Regras para alunos: os alunos podem usar IA para estudar, rever textos, comparar fontes ou melhorar perguntas, mas devem explicar o processo, identificar apoio da ferramenta quando solicitado e demonstrar compreensão própria.
+- Regras para professores: os professores devem validar materiais gerados por IA antes de os usar, adaptar resultados ao contexto da turma e manter responsabilidade pedagógica sobre conteúdos, avaliação e feedback.
+- Proteção de dados: dados pessoais, sensíveis, confidenciais ou identificáveis não devem ser introduzidos em ferramentas de IA sem base, autorização e enquadramento institucional adequados.
+- Validação humana: qualquer material, recomendação, classificação, síntese ou comunicação gerada por IA deve ser revista por uma pessoa responsável antes de ser usada.
+- Autoria e citação: a escola deve definir quando o uso de IA deve ser declarado, como deve ser descrito e que diferença existe entre apoio ao processo e autoria final.
+- Avaliação: os critérios devem valorizar raciocínio, processo, fundamentação, revisão e capacidade de explicar escolhas, não apenas produto final.
+- Comunicação com famílias: famílias devem saber que ferramentas são usadas, que dados não são usados, que limites existem e como os professores supervisionam.
+- Gestão de incidentes: a política deve prever o que fazer perante uso indevido, exposição de dados, erro grave de conteúdo ou conflito sobre autoria.
+- Autorização de pilotos: qualquer piloto deve ter objetivo, duração, responsáveis, ferramentas, regras de dados e momento de revisão.
+- Calendário de revisão: uma primeira política deve ser revista, por exemplo, no fim de cada piloto ou período letivo definido pela instituição.
+
+Exemplo de regra para alunos: podem usar IA para gerar perguntas de estudo sobre um texto, mas devem responder com palavras próprias e indicar que perguntas foram úteis. Exemplo de regra para professores: podem usar IA para preparar uma rubrica inicial, mas devem rever linguagem, critérios, adequação curricular e possíveis enviesamentos antes de a aplicar.
+
+## Modelo para desenhar um pequeno piloto de IA
+
+Um piloto é uma experiência limitada, acompanhada e avaliável. Não é uma autorização informal para cada pessoa experimentar o que quiser. O objetivo é aprender com segurança antes de decidir se a prática deve parar, ajustar ou escalar.
+
+Um piloto pequeno deve incluir:
+
+- Objetivo: uma frase concreta, como melhorar a qualidade das perguntas dos alunos, apoiar feedback formativo ou reduzir tempo repetitivo de preparação sem reduzir julgamento pedagógico.
+- Grupo-alvo: turma, disciplina, ano, equipa docente ou agrupamento piloto claramente delimitado.
+- Papel do professor: quem prepara, supervisiona, valida, recolhe evidência e decide ajustes.
+- Ferramentas permitidas: lista curta, com condições de uso e limites de dados.
+- Regras de proteção de dados: que informação não pode ser usada, que contas ou ambientes são permitidos e quem acompanha dúvidas.
+- Atividades de aprendizagem: tarefas concretas, por exemplo comparar duas explicações, melhorar um rascunho, criar perguntas para debate ou rever argumentos.
+- Evidência esperada: trabalhos de alunos, notas de observação, exemplos de perguntas, feedback docente, rubricas ou autoavaliações.
+- Indicadores simples: qualidade das perguntas, clareza das justificações, autonomia, participação, tempo docente poupado e perceção de utilidade.
+- Duração: tempo suficiente para observar uso real, mas curto o bastante para corrigir cedo.
+- Reunião de revisão: momento formal para analisar evidência, riscos, dúvidas e recomendações.
+- Decisão final: parar, ajustar ou escalar, com justificação escrita.
+
+A boa pergunta no fim de um piloto não é se a ferramenta impressionou. É se melhorou compreensão, autonomia, qualidade do feedback, inclusão e capacidade docente sem substituir esforço cognitivo essencial.
+
+## Modelo de formação docente
+
+A formação docente não deve começar por uma demonstração de muitas ferramentas. Deve começar por problemas pedagógicos reais. Uma sessão útil pergunta: que tarefa consome tempo? Que alunos precisam de apoio? Que feedback chega tarde? Que perguntas são pobres? Que materiais precisam de adaptação?
+
+A partir daí, a formação pode trabalhar casos concretos:
+
+- Planificação de aulas: usar IA para estruturar uma sequência inicial, depois rever objetivos, adequação curricular e progressão.
+- Feedback: gerar sugestões de feedback, mas exigir validação docente, linguagem adequada e ligação a critérios.
+- Diferenciação: adaptar textos, exemplos ou desafios a necessidades, progresso, motivação e contexto, sem rotular alunos por estilos fixos de aprendizagem.
+- Questionamento: ajudar alunos a formular melhores perguntas, comparar respostas e justificar raciocínio.
+- Apoio à avaliação: criar rubricas ou exemplos, mas manter a decisão avaliativa no professor.
+- Validação de outputs: identificar erros, simplificações, enviesamentos, dados inventados e falta de contexto.
+- Exemplos de sala de aula: desenhar tarefas em que os alunos usam IA para pensar melhor, não para esconder o processo.
+- Limites e riscos: discutir privacidade, autoria, dependência, desigualdade de acesso e uso superficial.
+
+Uma boa formação deixa produtos utilizáveis: uma regra de turma, uma atividade piloto, uma rubrica revista, uma lista de usos proibidos, um protocolo de validação e uma pergunta de avaliação.
+
+## Critérios para avaliar se a IA está a melhorar a aprendizagem
+
+Avaliar significa recolher sinais suficientes para decidir com prudência. Não exige investigação académica complexa em cada escola, mas exige critérios claros e honestidade sobre o que se observa.
+
+Critérios úteis:
+
+- Compreensão: os alunos explicam melhor os conceitos ou apenas entregam respostas mais polidas?
+- Autonomia: os alunos fazem perguntas melhores, revêm trabalho e tomam decisões mais conscientes?
+- Qualidade das perguntas: a IA ajuda a aprofundar investigação, comparação de fontes e argumentação?
+- Feedback docente: o professor consegue dar feedback mais frequente ou mais claro sem perder julgamento pedagógico?
+- Trabalho repetitivo: há redução de tarefas mecânicas sem reduzir responsabilidade profissional?
+- Esforço cognitivo: a ferramenta apoia leitura, escrita e raciocínio, ou substitui essas etapas cedo demais?
+- Privacidade e equidade: os dados são protegidos e o acesso não cria desigualdades novas?
+- Adequação curricular: a atividade continua ligada a objetivos, critérios e progressão de aprendizagem?
+
+Se a resposta a várias destas perguntas for negativa, a decisão responsável não é escalar. É ajustar, formar melhor, limitar usos ou suspender o piloto.
+
+## Comunicação com famílias e comunidade escolar
+
+A comunicação não deve ser alarmista nem promocional. Deve explicar com simplicidade o que a escola pretende fazer, que limites existem e como a aprendizagem continua centrada no aluno e no professor.
+
+Famílias e comunidade devem compreender:
+
+- Que ferramentas ou tipos de ferramentas podem ser usados.
+- Que dados pessoais, sensíveis ou confidenciais não serão introduzidos.
+- O que os alunos podem e não podem fazer.
+- Como os professores supervisionam, validam e avaliam.
+- Como a autoria e o uso de IA devem ser declarados.
+- O que acontece perante uso indevido ou dúvida sobre integridade académica.
+- Que a IA deve apoiar aprendizagem, não substituir leitura, escrita, cálculo, raciocínio ou pensamento crítico.
+
+Uma comunicação bem feita reduz medo, evita improvisação e cria linguagem comum entre escola, alunos e famílias.
+
+## Erros comuns a evitar
+
+- Comprar ferramentas antes de definir finalidade educativa.
+- Tratar IA como atalho para trabalhos de casa.
+- Usar IA com alunos antes de definir regras de privacidade e autoria.
+- Formar professores apenas em ferramentas, sem ligação a pedagogia, avaliação e sala de aula.
+- Assumir que personalização significa estilos de aprendizagem fixos.
+- Escalar pilotos sem evidência mínima de valor educativo.
+- Apresentar recomendações institucionais como obrigações legais sem verificação.
+- Confundir eficiência administrativa com melhoria da aprendizagem.
+
 ## Recomendações práticas
 
-- Definir uma política inicial de uso responsável, curta e compreensível.
-- Identificar competências humanas que não devem ser substituídas pela ferramenta.
-- Criar pilotos pequenos, com objetivos e indicadores simples.
-- Formar professores com casos reais, não apenas com demonstrações de ferramentas.
-- Definir regras de validação humana, proteção de dados e comunicação aos alunos.
-- Avaliar se a tecnologia aumenta compreensão, autonomia e motivação, ou apenas acelera respostas.
+- Começar por uma política inicial de uso responsável, com regras claras para alunos, professores, dados, avaliação, autoria, comunicação e incidentes.
+- Identificar competências humanas que devem estar protegidas antes da automação: cálculo, leitura, escrita, expressão, raciocínio, questionamento e pensamento crítico.
+- Escolher um piloto pequeno, com objetivo, grupo-alvo, duração, indicadores, revisão e decisão explícita de parar, ajustar ou escalar.
+- Formar professores a partir de problemas pedagógicos reais: planificação, feedback, diferenciação, questionamento, avaliação e validação de resultados.
+- Comunicar com famílias e comunidade escolar em linguagem simples, sem alarmismo e sem marketing tecnológico.
+- Avaliar se a tecnologia melhora compreensão, autonomia, qualidade das perguntas, feedback docente, equidade e proteção de dados.
 
 ## Riscos e cautelas
 
