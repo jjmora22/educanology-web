@@ -4,15 +4,31 @@
 
 ### Resumo executivo
 
-Este pacote apresenta 4 propostas editoriais para a categoria **ia-na-educacao**. O fluxo está no passo **humanSelectsTopic** e aguarda seleção humana antes de qualquer geração final, publicação ou preparação de LinkedIn.
+Este pacote apresenta 4 propostas editoriais para a categoria **ia-na-educacao**. O fluxo está no passo **humanSelectsTopic**. O lote está pendente de seleção humana antes de qualquer geração final, publicação ou preparação de LinkedIn.
 
 - Categoria editorial: ia-na-educacao
 - Dia editorial: monday
 - Passo atual: humanSelectsTopic
 - Revisor indicado no fluxo: Daniel
+- Seleção humana: Não
+- Proposta selecionada: pendente de seleção humana
 - Proposta recomendada: Como uma escola pública pode criar a sua primeira política de uso responsável de IA
 - Verificação humana de fontes necessária: Sim
-- Próxima ação: Daniel ou Juan Jose deve selecionar uma proposta e aprovar o ângulo editorial antes de gerar o pacote final de rascunho.
+- Próxima ação: Daniel ou Juan José deve selecionar uma proposta e aprovar o ângulo editorial antes de gerar o pacote final de rascunho.
+
+### Seleção humana
+
+- Existe seleção humana: Não
+- Estado: lote pendente de seleção humana.
+- selectedProposalId: a confirmar
+- selectedBy: a confirmar
+- selectedAt: a confirmar
+- decision: pending_human_selection
+- notes: Daniel ou Juan José deve selecionar uma proposta antes de gerar o pacote final.
+
+### Tema selecionado
+
+Sem tema selecionado. O lote deve ser validado por Daniel ou Juan José antes de avançar.
 
 ### Recomendação editorial
 
@@ -32,6 +48,29 @@ Escolas, agrupamentos e municípios precisam de orientações práticas para usa
 
 A IA na escola pública deve começar por uma política de uso curta, clara e pedagógica: que dados não introduzir, que tarefas exigem validação humana, que usos são aceitáveis e como formar professores com exemplos reais.
 
+### Temas alternativos
+
+1. **Como uma escola pública pode criar a sua primeira política de uso responsável de IA**
+   - ID: `topic-ia-educacao-politica-uso-escola-publica`
+   - Prioridade: high
+   - Pontuação: 92
+   - Revisor: Daniel
+2. **IA como apoio ao professor: reduzir tarefas repetitivas sem perder critério pedagógico**
+   - ID: `topic-ia-educacao-professores-carga-trabalho`
+   - Prioridade: medium
+   - Pontuação: 78
+   - Revisor: Juan José
+3. **Como ensinar alunos a usar IA sem transformar a aprendizagem num atalho**
+   - ID: `topic-ia-educacao-alunos-pensamento-critico`
+   - Prioridade: medium
+   - Pontuação: 82
+   - Revisor: Daniel
+4. **Municípios e literacia em IA: por onde começar sem criar desigualdades**
+   - ID: `topic-ia-educacao-municipios-literacia`
+   - Prioridade: medium
+   - Pontuação: 80
+   - Revisor: Daniel
+
 ### Lista rápida de propostas
 
 1. **Como uma escola pública pode criar a sua primeira política de uso responsável de IA**
@@ -42,7 +81,7 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 2. **IA como apoio ao professor: reduzir tarefas repetitivas sem perder critério pedagógico**
    - Prioridade: medium
    - Pontuação: 78
-   - Revisor: Juan Jose
+   - Revisor: Juan José
    - Verificação humana: Sim
 3. **Como ensinar alunos a usar IA sem transformar a aprendizagem num atalho**
    - Prioridade: medium
@@ -59,10 +98,11 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 
 - [ ] A categoria corresponde à linha editorial do dia.
 - [ ] O tema recomendado é oportuno e relevante para Educanology.
+- [ ] A seleção humana, quando existe, corresponde ao tema que deve avançar.
 - [ ] As fontes são suficientemente credíveis para avançar.
 - [ ] Os factos confirmados estão separados da interpretação.
 - [ ] Não há promessas, dados privados, chamadas de financiamento inventadas ou afirmações legais/financeiras não verificadas.
-- [ ] Daniel ou Juan José seleciona uma proposta ou pede nova pesquisa.
+- [ ] Daniel ou Juan José confirma a seleção, pede revisão do ângulo ou pede nova pesquisa.
 
 ### Decisões possíveis
 
@@ -73,6 +113,68 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 - Rejeitar o lote.
 
 ## Validação aprofundada
+
+### Fontes e confiança
+
+- [UNESCO guidance on generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research)
+  - Entidade: UNESCO
+  - Tipo: institutional
+  - Data: data a confirmar
+  - Confiança: high
+  - Verificação humana necessária: Sim
+  - Factos confirmados:
+    - A página apresenta orientação da UNESCO sobre IA generativa na educação e investigação.
+  - Notas: Confirmar versão e data antes de usar no artigo final.
+
+- [Digital Education Action Plan](https://education.ec.europa.eu/focus-topics/digital-education/action-plan)
+  - Entidade: European Commission
+  - Tipo: official
+  - Data: data a confirmar
+  - Confiança: high
+  - Verificação humana necessária: Sim
+  - Factos confirmados:
+    - A página apresenta a estratégia da Comissão Europeia para educação digital.
+  - Notas: Usar apenas informação confirmada na página oficial.
+
+- [European Commission: Digital skills and jobs](https://digital-strategy.ec.europa.eu/en/policies/digital-skills)
+  - Entidade: European Commission
+  - Tipo: official
+  - Data: data a confirmar
+  - Confiança: medium
+  - Verificação humana necessária: Sim
+  - Factos confirmados:
+    - A página aborda políticas europeias relacionadas com competências digitais.
+  - Notas: Verificar ligação específica com educação antes de citar.
+
+- [OECD Education and skills](https://www.oecd.org/education/)
+  - Entidade: OECD
+  - Tipo: institutional
+  - Data: data a confirmar
+  - Confiança: medium
+  - Verificação humana necessária: Sim
+  - Factos confirmados:
+    - A OCDE publica informação e investigação sobre educação e competências.
+  - Notas: Selecionar uma fonte específica da OCDE antes de produzir artigo final.
+
+- [UNESCO: Artificial intelligence in education](https://www.unesco.org/en/digital-education/artificial-intelligence)
+  - Entidade: UNESCO
+  - Tipo: institutional
+  - Data: data a confirmar
+  - Confiança: high
+  - Verificação humana necessária: Sim
+  - Factos confirmados:
+    - A UNESCO mantém uma área temática sobre inteligência artificial na educação.
+  - Notas: Confirmar conteúdo atualizado antes de citar.
+
+- [European Commission: Digital Education](https://education.ec.europa.eu/focus-topics/digital-education)
+  - Entidade: European Commission
+  - Tipo: official
+  - Data: data a confirmar
+  - Confiança: high
+  - Verificação humana necessária: Sim
+  - Factos confirmados:
+    - A página agrega informação institucional europeia sobre educação digital.
+  - Notas: Confirmar subpáginas mais adequadas antes de redigir.
 
 ### Cronologia
 
@@ -91,7 +193,8 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 - Confirmar se cada URL continua ativo e aponta para a página institucional correta.
 - Evitar transformar recomendações institucionais gerais em obrigações legais específicas.
 - Não apresentar interpretação Educanology como facto confirmado.
-- Não iniciar artigo final antes de seleção humana do tema e do ângulo.
+- Não iniciar artigo final antes de confirmação humana do tema e do ângulo.
+- Confirmar que a seleção humana, se existir, foi feita pela pessoa indicada.
 
 ## Proposta: Como uma escola pública pode criar a sua primeira política de uso responsável de IA
 
@@ -122,6 +225,7 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 - [UNESCO guidance on generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research)
   - Entidade: UNESCO
   - Tipo: institutional
+  - Data: data a confirmar
   - Confiança: high
   - Verificação humana necessária: Sim
   - Factos confirmados:
@@ -131,6 +235,7 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 - [Digital Education Action Plan](https://education.ec.europa.eu/focus-topics/digital-education/action-plan)
   - Entidade: European Commission
   - Tipo: official
+  - Data: data a confirmar
   - Confiança: high
   - Verificação humana necessária: Sim
   - Factos confirmados:
@@ -141,7 +246,7 @@ A IA na escola pública deve começar por uma política de uso curta, clara e pe
 
 - ID: `topic-ia-educacao-professores-carga-trabalho`
 - Estado: pending_human_selection
-- Revisor recomendado: Juan Jose
+- Revisor recomendado: Juan José
 - Prioridade: medium
 - Pontuação: 78
 - Justificação da recomendação: Tema prático e útil, mas menos estruturante do que uma política inicial de uso para escolas e municípios.
@@ -165,6 +270,7 @@ A IA deve ser tratada como apoio ao professor: planificação, diferenciação d
 - [European Commission: Digital skills and jobs](https://digital-strategy.ec.europa.eu/en/policies/digital-skills)
   - Entidade: European Commission
   - Tipo: official
+  - Data: data a confirmar
   - Confiança: medium
   - Verificação humana necessária: Sim
   - Factos confirmados:
@@ -199,6 +305,7 @@ A escola deve ensinar os alunos a perguntar melhor, verificar respostas, compara
 - [OECD Education and skills](https://www.oecd.org/education/)
   - Entidade: OECD
   - Tipo: institutional
+  - Data: data a confirmar
   - Confiança: medium
   - Verificação humana necessária: Sim
   - Factos confirmados:
@@ -208,6 +315,7 @@ A escola deve ensinar os alunos a perguntar melhor, verificar respostas, compara
 - [UNESCO: Artificial intelligence in education](https://www.unesco.org/en/digital-education/artificial-intelligence)
   - Entidade: UNESCO
   - Tipo: institutional
+  - Data: data a confirmar
   - Confiança: high
   - Verificação humana necessária: Sim
   - Factos confirmados:
@@ -242,6 +350,7 @@ A literacia em IA deve ser pensada como serviço público local: escolas, biblio
 - [European Commission: Digital Education](https://education.ec.europa.eu/focus-topics/digital-education)
   - Entidade: European Commission
   - Tipo: official
+  - Data: data a confirmar
   - Confiança: high
   - Verificação humana necessária: Sim
   - Factos confirmados:
@@ -257,11 +366,13 @@ Olá,
 
 Segue o pacote de revisão editorial para **ia-na-educacao**.
 
+Proposta selecionada: **pendente de seleção**.
+
 Proposta recomendada: **Como uma escola pública pode criar a sua primeira política de uso responsável de IA**.
 
 Motivo: Tema fundacional, útil para decisores públicos e diretamente alinhado com IA responsável, formação docente e implementação.
 
-Próxima ação: selecionar uma proposta, pedir revisão do ângulo ou solicitar nova pesquisa antes de gerar o artigo final.
+Próxima ação: confirmar a seleção, pedir revisão do ângulo ou solicitar nova pesquisa antes de gerar o artigo final.
 
 Obrigado.
 
@@ -270,6 +381,7 @@ Obrigado.
 - Workflow ID: `guided-workflow-2026-05-14-ia-na-educacao`
 - Proposal batch ID: `topic-proposal-batch-2026-05-14-ia-na-educacao`
 - Estado do lote: pending_human_selection
+- Fonte da seleção: pending_human_selection
 - Aprovação: pending_human_selection
 - Criado em: 2026-05-14T09:45:00+02:00
 - Atualizado em: 2026-05-14T09:45:00+02:00

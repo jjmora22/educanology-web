@@ -6,13 +6,20 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "../..");
 
-const proposalPath = path.join(
+const defaultProposalPath = path.join(
   projectRoot,
   "content/editorial-proposals/sample-topic-proposals.json"
 );
+const inputProposalPath = process.argv[2]
+  ? path.resolve(projectRoot, process.argv[2])
+  : defaultProposalPath;
+const inputBaseName = path.basename(inputProposalPath, ".json");
+const safeName = slugify(inputBaseName || "sample-draft-package");
+const isDefaultInput = inputProposalPath === defaultProposalPath;
+const outputBaseName = isDefaultInput ? "sample-draft-package" : safeName;
 const outputDir = path.join(projectRoot, "content/editorial-draft-packages");
-const markdownOutputPath = path.join(outputDir, "sample-draft-package.md");
-const jsonOutputPath = path.join(outputDir, "sample-draft-package.json");
+const markdownOutputPath = path.join(outputDir, `${outputBaseName}.md`);
+const jsonOutputPath = path.join(outputDir, `${outputBaseName}.json`);
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -28,17 +35,49 @@ function slugify(value) {
 }
 
 function selectProposal(batch) {
+  const selection = batch.humanSelection;
+  const isHumanSelected =
+    selection &&
+    ["selected", "approved"].includes(selection.decision) &&
+    selection.selectedProposalId;
+
+  if (isHumanSelected) {
+    const selected = batch.proposals.find(
+      (proposal) => proposal.id === selection.selectedProposalId
+    );
+
+    if (selected) {
+      return {
+        proposal: selected,
+        approvalStatus:
+          selection.decision === "approved" ? "approved" : "pending_review",
+        selectionMode: "human_selection",
+      };
+    }
+  }
+
   const approved = batch.proposals.find(
     (proposal) => proposal.approvalDecision === "approved"
   );
 
-  if (approved) return approved;
+  if (approved) {
+    return {
+      proposal: approved,
+      approvalStatus: "approved",
+      selectionMode: "approved_proposal",
+    };
+  }
 
-  return (
+  const recommended =
     batch.proposals.find(
       (proposal) => proposal.id === batch.recommendedProposalId
-    ) || batch.proposals[0]
-  );
+    ) || batch.proposals[0];
+
+  return {
+    proposal: recommended,
+    approvalStatus: "pending_human_approval",
+    selectionMode: "recommended_fallback",
+  };
 }
 
 function formatList(items) {
@@ -73,130 +112,206 @@ function formatSources(sources) {
     .join("\n\n");
 }
 
+function isHumanFirstTopic(proposal) {
+  return (
+    proposal.category === "ia-na-educacao" ||
+    /IA|inteligência artificial|tecnologia|digital/i.test(proposal.title)
+  );
+}
+
 function createBlogDraft(proposal) {
+  const humanFirst = isHumanFirstTopic(proposal);
+  const doctrineSection = humanFirst
+    ? [
+        "## Análise por eixos",
+        "",
+        "### 1. Tecnologia como amplificador, não como substituto",
+        "",
+        "A Educanology defende uma adoção gradual, pedagógica e human-first da tecnologia. A tecnologia deve funcionar como uma bicicleta para as capacidades humanas: aumenta alcance, velocidade e autonomia, mas não substitui equilíbrio, direção ou esforço humano.",
+        "",
+        "Em educação, isto significa que a tecnologia deve chegar no momento certo e com finalidade clara. Antes da calculadora, os alunos precisam de compreender as operações aritméticas básicas. Antes de dependerem do computador para escrever, precisam de desenvolver coordenação motora, escrita manual e expressão escrita básica. Antes de usarem IA para produzir respostas, precisam de ler, escrever, raciocinar, questionar e pensar criticamente.",
+        "",
+        "### 2. IA como apoio a aprendizagem mais exigente",
+        "",
+        "A IA não deve tornar os trabalhos de casa apenas superficialmente mais fáceis. Deve tornar a aprendizagem mais significativa, desafiante, personalizada e motivadora. O seu valor está em ajudar a formular melhores perguntas, apoiar feedback, adaptar percursos e libertar tempo docente para acompanhamento humano.",
+        "",
+        "### 3. Personalização sem neuromitos",
+        "",
+        "A personalização pode considerar interesses, progresso, necessidades, motivação, conhecimentos prévios e contexto dos alunos. Mas o artigo deve evitar apresentar teorias de estilos de aprendizagem fixos como facto científico estabelecido. A linha editorial deve distinguir personalização baseada em evidência de neuromitos sobre correspondência rígida entre ensino e estilos fixos.",
+        "",
+        "### 4. Professor, ética e dados no centro da implementação",
+        "",
+        "A adoção de IA exige formação docente, critérios de avaliação, proteção de dados, supervisão humana e regras éticas. O professor não é um utilizador passivo da ferramenta: é a pessoa que interpreta, adapta, valida e decide.",
+        "",
+        "### 5. Implementação gradual e verificável",
+        "",
+        "A escola ou o município deve começar por pilotos claros, objetivos limitados e acompanhamento próximo. Escalar sem evidência pode criar dependência, desigualdade, uso superficial ou perda de esforço cognitivo.",
+      ]
+    : [
+        "## Análise por eixos",
+        "",
+        "### 1. Estratégia antes da execução",
+        "",
+        "A decisão deve começar por uma finalidade pública e educativa clara, antes de avançar para instrumentos, equipamentos ou comunicação.",
+        "",
+        "### 2. Implementação como critério de qualidade",
+        "",
+        "Uma boa estratégia só cria valor quando prevê governação, formação, responsabilidades, recursos, acompanhamento e avaliação.",
+        "",
+        "### 3. Evidência e aprendizagem institucional",
+        "",
+        "As decisões devem produzir informação útil para ajustar práticas, melhorar programas e apoiar novas escolhas.",
+      ];
+
   return [
     `# ${proposal.title}`,
     "",
-    "## Contexto",
+    "## Sumário / deck",
     "",
-    `${proposal.whyItMatters} Esta é uma questão especialmente relevante para escolas, agrupamentos e municípios que querem integrar inteligência artificial sem transformar a tecnologia num fim em si mesma.`,
+    `${proposal.whyItMatters} O artigo propõe uma leitura Educanology: tecnologia e IA devem ampliar capacidades humanas, não substituir o desenvolvimento das competências fundamentais que sustentam a autonomia dos alunos.`,
     "",
-    "A adoção de IA em contexto educativo deve começar por uma decisão institucional: definir para que serve, que limites deve respeitar e como será acompanhada por professores, direções e responsáveis públicos.",
+    "## Objetivo do artigo",
     "",
-    "## Factos confirmados",
+    "Explicar como escolas, agrupamentos, municípios e organizações educativas podem abordar este tema com clareza institucional, prudência pedagógica e capacidade prática de implementação.",
+    "",
+    "## O que o artigo procura explicar",
+    "",
+    "O artigo procura mostrar por que razão a adoção de tecnologia em educação deve ser gradual, acompanhada por professores e orientada por objetivos de aprendizagem, proteção de dados, ética e avaliação.",
+    "",
+    "## Tese orientadora / perguntas de investigação",
+    "",
+    "- Que problema educativo queremos resolver?",
+    "- Que capacidades humanas precisam de ser desenvolvidas antes da automação?",
+    "- Que factos estão confirmados pelas fontes disponíveis?",
+    "- Que interpretação faz a Educanology?",
+    "- Que passos práticos podem ser adotados por decisores públicos e educativos?",
+    "",
+    "## Contexto e factos confirmados",
     "",
     formatList(proposal.confirmedFacts),
     "",
     "As fontes associadas a este rascunho devem ser verificadas antes de publicação. Quando não há data confirmada, deve ser usada a indicação \"data a confirmar\" e não deve ser inventada qualquer cronologia.",
     "",
-    "## Interpretação Educanology",
+    ...doctrineSection,
     "",
-    formatList(proposal.interpretation),
+    "## Implicações para decisores",
     "",
-    "Para a Educanology, a questão central não é escolher rapidamente uma ferramenta de IA. A questão central é criar uma estrutura de uso responsável, pedagógica e compreensível. Essa estrutura deve ajudar professores e alunos a usar a IA com critério, sem substituir a relação educativa nem reduzir a exigência da aprendizagem.",
+    "A principal implicação é que a tecnologia não deve ser tratada como solução isolada. A decisão deve articular currículo, formação docente, regras de uso, avaliação, infraestrutura, proteção de dados e comunicação com a comunidade educativa.",
     "",
-    "## O que deve conter uma primeira política de uso",
+    "Para municípios, isto significa apoiar escolas, bibliotecas, centros de formação e espaços de inovação como partes de um ecossistema de aprendizagem. Para escolas e agrupamentos, significa criar práticas comuns, linguagem clara e pilotos que possam ser observados, avaliados e ajustados.",
     "",
-    "Uma primeira política de uso de IA não precisa de ser extensa. Deve ser suficientemente clara para orientar decisões quotidianas. Pode começar por cinco pontos:",
+    "## Recomendações práticas",
     "",
-    "- que dados pessoais, sensíveis ou confidenciais não devem ser introduzidos em ferramentas de IA;",
-    "- que usos são aceitáveis para professores, alunos e equipas técnicas;",
-    "- que respostas ou materiais exigem validação humana;",
-    "- como se explica aos alunos a diferença entre apoio, autoria e atalho;",
-    "- como serão avaliados os primeiros pilotos antes de escalar.",
+    "- Definir uma política inicial de uso responsável, curta e compreensível.",
+    "- Identificar competências humanas que não devem ser substituídas pela ferramenta.",
+    "- Criar pilotos pequenos, com objetivos e indicadores simples.",
+    "- Formar professores com casos reais, não apenas com demonstrações de ferramentas.",
+    "- Definir regras de validação humana, proteção de dados e comunicação aos alunos.",
+    "- Avaliar se a tecnologia aumenta compreensão, autonomia e motivação, ou apenas acelera respostas.",
     "",
-    "## Implicações para municípios e escolas",
+    "## Riscos e cautelas",
     "",
-    "Municípios e escolas têm papéis complementares. As escolas conhecem a prática pedagógica e as necessidades dos alunos. Os municípios podem apoiar condições de formação, infraestrutura, literacia digital e articulação territorial. A adoção responsável de IA deve juntar estas duas dimensões.",
-    "",
-    "O risco de uma adoção sem orientação é duplo: por um lado, usos superficiais que empobrecem a aprendizagem; por outro, bloqueios excessivos que impedem professores e alunos de desenvolver competências críticas para o presente.",
+    "- Não transformar recomendações institucionais gerais em obrigações legais específicas.",
+    "- Não apresentar a tecnologia como inerentemente positiva.",
+    "- Não substituir esforço cognitivo por produção automática de respostas.",
+    "- Não usar teorias de estilos de aprendizagem fixos como base científica não questionada.",
+    "- Não publicar sem verificar fontes, datas e contexto.",
     "",
     "## Como a Educanology pode apoiar",
     "",
-    "A Educanology pode apoiar o diagnóstico, a definição de orientações de uso, a formação docente, a criação de pilotos, a seleção de casos práticos e a avaliação da implementação. O objetivo é transformar preocupação institucional em capacidade concreta de decisão e de execução.",
+    "A Educanology pode apoiar diagnóstico, estratégia responsável de tecnologia, política de IA responsável, formação docente, desenho de pilotos, apoio à implementação, desenho de projetos e preparação de candidaturas/financiamento quando relevante.",
+    "",
+    "O objetivo é transformar uma intenção institucional em capacidade real de execução: regras claras, professores preparados, pilotos bem desenhados, proteção de dados, avaliação e aprendizagem organizacional.",
+    "",
+    "Contacto: hello@educanology.eu",
     "",
     "Este rascunho não constitui aconselhamento jurídico, financeiro ou técnico vinculativo. Qualquer decisão institucional deve ser revista e validada pela equipa responsável.",
+    "",
+    "## Fontes",
+    "",
+    formatSources(proposal.sources),
   ].join("\n");
 }
 
 function createLinkedInDraft(proposal, blogLink) {
   return {
     hook:
-      "A IA na escola pública não deve começar pela ferramenta. Deve começar pela pedagogia.",
+      "A tecnologia em educação deve funcionar como uma bicicleta: amplia capacidades humanas, mas não substitui equilíbrio, direção ou esforço.",
     mainText: [
-      "A inteligência artificial pode apoiar professores, personalizar percursos e tornar a aprendizagem mais desafiante.",
+      "Na Educanology, defendemos uma adoção human-first da tecnologia educativa.",
       "",
-      "Mas também pode criar ruído, dependência e usos superficiais se entrar na escola sem regras claras.",
+      "Antes da calculadora, é preciso compreender operações básicas.",
+      "Antes do computador substituir a escrita, é preciso desenvolver coordenação, letra e expressão.",
+      "Antes de usar IA para produzir respostas, é preciso ler, escrever, raciocinar, questionar e pensar criticamente.",
       "",
-      "Antes de escolher ferramentas, escolas, agrupamentos e municípios devem responder a perguntas simples:",
-      "",
-      "- Que problema educativo queremos resolver?",
-      "- Que dados não devem ser introduzidos?",
-      "- Que tarefas exigem validação humana?",
-      "- Como formamos professores com exemplos reais?",
-      "- Como avaliamos se a adoção está a melhorar a aprendizagem?",
+      "A IA não deve tornar a aprendizagem superficialmente mais fácil.",
+      "Deve torná-la mais significativa, desafiante, personalizada e motivadora.",
       "",
       proposal.suggestedEducanologyAngle,
+      "",
+      "A questão não é tecnologia sim ou não.",
+      "A questão é quando, porquê, com que regras, com que formação docente e com que proteção da autonomia humana.",
     ].join("\n"),
     cta:
-      "Municípios, escolas e organizações que queiram iniciar este caminho com responsabilidade podem falar com a Educanology.",
+      "Se a sua escola, município ou organização quer desenhar uma estratégia responsável de IA e tecnologia educativa, fale com a Educanology.",
     hashtags: [
       "#Educação",
       "#IAnaEducação",
-      "#InteligênciaArtificial",
+      "#TecnologiaEducativa",
       "#EscolaPública",
-      "#TransformaçãoDigital"
+      "#TransformaçãoDigital",
+      "#Educanology",
     ],
     suggestedFirstComment:
-      "Artigo completo no blog da Educanology, com uma proposta prática para iniciar a adoção responsável de IA em contexto educativo.",
+      "Artigo completo no blog da Educanology, com uma abordagem human-first para adoção responsável de tecnologia e IA em educação.",
     blogLink,
-    imageReference: "sample-draft-package-visual-brief"
+    imageReference: `${safeName}-visual-brief`,
   };
 }
 
 function createVisualBrief(proposal) {
   const blogImagePrompt = [
     "Create a realistic editorial photograph for Educanology, a Portuguese educational consulting organisation.",
-    "Scene: a public school classroom or municipal education space in Portugal, with a teacher supporting a small group of students using laptops and printed learning materials.",
-    "The visual tone should be European, Iberian, Portuguese, municipal, educational, institutional, human, realistic and strategic.",
-    "Technology should be present but not dominant. The focus is thoughtful teacher support, responsible AI adoption and meaningful learning.",
-    "Natural light, real public education context, grounded atmosphere, no visible readable text on screens.",
-    "Avoid exaggerated sci-fi, cartoon robots, fake stock-photo perfection, chaotic collages, empty iconography, excessive text and unrealistic holograms.",
-    "Format: blog hero image, 16:9."
+    "Scene: a public school classroom or municipal education space in Portugal, with a teacher guiding students through a thoughtful technology-supported activity.",
+    "The image should express human-first technology adoption: technology amplifies learning, but the teacher, student reasoning, reading, writing, discussion and human effort remain central.",
+    "European, Iberian, Portuguese, municipal, educational, institutional, human, realistic and strategic visual style.",
+    "Natural light, grounded public education context, credible people, no visible readable text on screens.",
+    "Avoid exaggerated sci-fi, cartoon robots, fake stock-photo perfection, chaotic collages, empty iconography, excessive text, unrealistic holograms and artificial elements without real educational context.",
+    "Format: blog hero image, 16:9.",
   ].join(" ");
 
   const linkedInImagePrompt = [
-    "Create a LinkedIn editorial image variant for Educanology based on the same concept.",
-    "Use a realistic Portuguese public education or municipal learning context, with teacher support and thoughtful technology use.",
-    "Keep the image human, institutional, grounded and uncluttered.",
+    "Create a LinkedIn editorial image variant for Educanology based on human-first technology adoption.",
+    "Use a realistic Portuguese public education or municipal learning context, showing teacher support, student attention, foundational skills and thoughtful use of digital tools.",
+    "Keep the image human, institutional, grounded, uncluttered and strategic.",
     "Avoid text-heavy composition, sci-fi aesthetics, cartoon robots, fake stock-photo perfection and chaotic collages.",
-    "Format: LinkedIn image, 1.91:1."
+    "Format: LinkedIn image, 1.91:1.",
   ].join(" ");
 
   return {
-    id: "sample-draft-package-visual-brief",
+    id: `${safeName}-visual-brief`,
     concept:
-      "Professor e alunos numa escola pública portuguesa a usar tecnologia de forma acompanhada, responsável e pedagogicamente orientada.",
+      "Professor e alunos numa escola pública portuguesa a usar tecnologia como amplificador de capacidades humanas, com foco em leitura, escrita, raciocínio, orientação docente e aprendizagem significativa.",
     visualCategoryStyle:
-      "IA na Educação: human-centred AI in schools, teacher support, personalised learning and thoughtful technology use.",
+      "IA na Educação: human-centred AI in schools, teacher support, personalised learning, foundational skills and thoughtful technology use.",
     blogHeroFormat: "16:9",
     linkedInFormat: "1.91:1",
     blogImagePrompt,
     linkedInImagePrompt,
     altText:
-      "Professor a apoiar estudantes numa sala de aula portuguesa com tecnologia usada de forma colaborativa e responsável.",
+      "Professor a orientar estudantes numa sala de aula portuguesa com tecnologia usada para apoiar aprendizagem, leitura, escrita e raciocínio.",
     notes:
-      "A imagem deve parecer institucional, realista e educativa, sem estética futurista exagerada."
+      "A imagem deve parecer institucional, realista e educativa, sem estética futurista exagerada.",
   };
 }
 
-function createPackage(batch, proposal) {
+function createPackage(batch, proposal, selection) {
   const slug = slugify(proposal.title);
   const blogLink = `https://educanology.eu/blog/${slug}`;
   const visualBrief = createVisualBrief(proposal);
 
   return {
-    id: "sample-draft-package",
+    id: outputBaseName,
     sourceProposalId: proposal.id,
     status: "draft",
     category: proposal.category,
@@ -205,21 +320,22 @@ function createPackage(batch, proposal) {
     summary:
       "Pacote interno de rascunho editorial para revisão humana antes de qualquer publicação.",
     reviewer: proposal.recommendedReviewer,
+    selectionMode: selection.selectionMode,
     sources: proposal.sources,
     confirmedFacts: proposal.confirmedFacts,
     interpretation: proposal.interpretation,
     blogDraft: createBlogDraft(proposal),
     seoTitle: `${proposal.title} | Educanology`,
     seoDescription:
-      "Orientações práticas para escolas, agrupamentos e municípios iniciarem a adoção responsável de inteligência artificial com finalidade pedagógica e validação humana.",
+      "Análise Educanology sobre adoção human-first de tecnologia e inteligência artificial em educação, com foco em competências fundamentais, professores, ética e implementação responsável.",
     linkedInDraft: createLinkedInDraft(proposal, blogLink),
     visualBrief,
     blogImagePrompt: visualBrief.blogImagePrompt,
     linkedInImagePrompt: visualBrief.linkedInImagePrompt,
     altText: visualBrief.altText,
-    approvalStatus: "pending_review",
+    approvalStatus: selection.approvalStatus,
     createdAt: batch.generatedAt,
-    updatedAt: batch.generatedAt
+    updatedAt: batch.generatedAt,
   };
 }
 
@@ -236,6 +352,7 @@ function createMarkdown(draftPackage) {
     `- Tema selecionado: ${draftPackage.title}`,
     `- Categoria editorial: ${draftPackage.category}`,
     `- Revisor recomendado: ${draftPackage.reviewer}`,
+    `- Modo de seleção: ${draftPackage.selectionMode}`,
     `- Slug sugerido: \`${draftPackage.slug}\``,
     "",
     "## 2. Tema selecionado",
@@ -326,7 +443,9 @@ function createMarkdown(draftPackage) {
     "- [ ] Os factos confirmados estão separados da interpretação.",
     "- [ ] Não há estatísticas, chamadas de financiamento, elegibilidade ou afirmações legais inventadas.",
     "- [ ] O texto está em português de Portugal.",
-    "- [ ] O tom é institucional, estratégico, prático e útil.",
+    "- [ ] O rascunho segue a doutrina human-first de adoção tecnológica.",
+    "- [ ] A personalização evita neuromitos sobre estilos de aprendizagem fixos.",
+    "- [ ] O tom é claro, franco, amigável, positivo, construtivo, resolutivo, empático, institucional e prático.",
     "- [ ] O LinkedIn está pronto para copiar/colar com pequenas edições.",
     "- [ ] O brief visual segue a identidade Educanology.",
     "- [ ] Nenhuma publicação foi feita sem aprovação humana.",
@@ -344,11 +463,12 @@ function createMarkdown(draftPackage) {
   ].join("\n");
 }
 
-const batch = readJson(proposalPath);
-const proposal = selectProposal(batch);
-const draftPackage = createPackage(batch, proposal);
+const batch = readJson(inputProposalPath);
+const selection = selectProposal(batch);
+const draftPackage = createPackage(batch, selection.proposal, selection);
 const markdown = createMarkdown(draftPackage);
 
+fs.mkdirSync(outputDir, { recursive: true });
 fs.writeFileSync(jsonOutputPath, `${JSON.stringify(draftPackage, null, 2)}\n`);
 fs.writeFileSync(markdownOutputPath, `${markdown}\n`);
 

@@ -225,19 +225,23 @@ Title
 
 Summary / deck
 
-Context: why this topic matters now
+Objective of the article
 
-Confirmed facts
+What the article seeks to explain
 
-Educanology interpretation
+Guiding thesis or research questions
 
-Practical implications for municipalities, schools or organisations
+Context and confirmed facts
 
-What decision-makers should do next
+Analysis by 3 to 5 main axes
+
+Findings or key implications for municipalities, schools, school groups or education organisations
+
+Practical recommendations
+
+Risks, cautions or points requiring verification
 
 How Educanology can help
-
-FAQ, if useful
 
 Sources
 ```
@@ -245,12 +249,30 @@ Sources
 Article requirements:
 
 - Portuguese from Portugal.
-- Institutional and practical tone.
+- Articles should be serious editorial analyses, not short notes, generic summaries or promotional posts.
+- Suggested length: 1,200 to 1,800 words.
+- Maximum length: up to approximately 2,500 words only if the topic requires deeper analysis.
+- Do not add filler, repetition or irrelevant background just to reach length.
+- Articles should maintain the reader's attention through clear structure, useful arguments, concrete implications and practical recommendations.
+- Articles should have a clear Educanology editorial line: frank, friendly, positive, constructive, resolutive, empathetic, institutional and practical.
+- Articles should help the reader understand what Educanology believes should be done and why.
+- Tone should be confident but not arrogant, useful but not simplistic, strategic but not bureaucratic.
+- Articles should take a clear position when appropriate, while distinguishing confirmed facts from Educanology interpretation.
 - Clear distinction between confirmed information and Educanology interpretation.
 - No legal, financial or commercial commitments.
 - No unsupported statistics.
 - Avoid generic introductory filler.
 - Include concrete implications and next steps.
+
+Each article should answer:
+
+- Why does this topic matter now?
+- What is confirmed by credible sources?
+- What interpretation does Educanology make?
+- What should decision-makers understand?
+- What practical steps could they take?
+- Where should they be cautious?
+- How could Educanology support them?
 
 ## 9. LinkedIn Post Structure
 
@@ -635,8 +657,14 @@ Before publishing, confirm:
 - No unsupported claims.
 - No invented funding details, dates, eligibility rules or legal claims.
 - Portuguese from Portugal.
-- Tone is institutional, useful, strategic and practical.
+- Article is a serious editorial analysis, not a generic summary or promotional note.
+- Article has a clear Educanology point of view while separating confirmed facts from interpretation.
+- Article is long enough to be useful, normally 1,200 to 1,800 words, without filler or irrelevant background.
+- Tone is frank, friendly, positive, constructive, resolutive, empathetic, institutional and practical.
 - Blog article has clear implications for the intended audience.
+- Blog article explains what Educanology believes decision-makers should do and why.
+- For AI and education technology topics, the human-first technology adoption doctrine is reflected.
+- Personalization claims avoid unsupported fixed learning-style theories and distinguish evidence from interpretation.
 - LinkedIn post is ready to publish with minimal edits.
 - CTA is clear but not overly promotional.
 - Image prompt follows Educanology visual identity.
@@ -729,3 +757,58 @@ Treat every phase as a step toward one final editorial product, not disconnected
 Start with a safe first version that creates structured drafts and visual briefs. Then move quickly toward AI image generation and human-approved publication once the first version works.
 
 The system should reduce manual rewriting and formatting while preserving human judgment, institutional credibility and public responsibility.
+
+## 25. Educanology Editorial Doctrine: Human-first technology adoption
+
+Educanology defends a gradual, pedagogical and human-first adoption of technology in education.
+
+Technology should amplify human capabilities, not replace the development of foundational skills. A useful metaphor is technology as a bicycle for human capabilities: it extends reach, speed and autonomy, but it does not replace balance, direction or human effort.
+
+This doctrine should guide articles, LinkedIn posts, visual briefs and topic selection, especially in AI and digital education content.
+
+Core principles:
+
+- Before using a calculator, learners should understand basic arithmetic operations.
+- Before relying on computers for writing, learners should develop motor coordination, handwriting and basic written expression.
+- Before using AI to produce answers, learners should develop reading comprehension, written expression, reasoning, questioning and critical thinking.
+- AI should not make homework superficially easier. It should make learning more meaningful, challenging, personalized and motivating.
+- Personalization may consider learner interests, progress, needs, motivation, prior knowledge and context.
+- Personalization must avoid presenting unsupported fixed "learning styles" theories as scientific fact.
+- Articles should distinguish evidence-based personalization from neuromyths about fixed learning styles.
+- Technology adoption should be connected with teacher training, assessment, ethical use, data protection, human agency and gradual implementation.
+- Teacher agency is central: teachers need training, time, examples, confidence and professional judgment to use technology well.
+- Technology adoption should be proportional to learner development: tools should be introduced when they strengthen understanding, autonomy and inclusion, not when they bypass necessary cognitive effort.
+
+Editorial tone for this doctrine:
+
+- Clear
+- Frank
+- Friendly
+- Positive
+- Constructive
+- Resolutive
+- Empathetic
+- Institutional
+- Practical
+
+The editorial line should not be anti-technology. It should be pro-human development. Technology is valuable when it helps teachers teach better, students think more deeply, schools include more learners and municipalities build stronger learning ecosystems.
+
+At the same time, technology adoption should not be presented as inherently positive. Educanology should explain the conditions under which technology can improve learning and the risks that appear when tools replace cognitive effort too early.
+
+Educanology articles should avoid generic neutrality. They should have a clear point of view and help the reader understand what Educanology believes should be done and why, while keeping a clear separation between confirmed facts and Educanology interpretation.
+
+For AI in education, the doctrine should normally lead to the following editorial position:
+
+- AI can support teachers and students, but it should not be treated as a replacement for reading, writing, calculation, reasoning or critical thinking.
+- AI can personalize practice and feedback, but the personalization must be evidence-aware and should not rely on unsupported fixed learning-style categories.
+- AI can make learning more motivating when it creates better questions, richer feedback, more relevant challenges and more timely support.
+- AI can damage learning when it rewards superficial completion, removes productive struggle or hides the reasoning process.
+- Schools and municipalities should begin with policies, pilots, teacher training, ethical guidelines, data protection and assessment criteria before scaling use.
+
+Evidence note:
+
+- For AI and digital education topics, use credible current sources such as UNESCO, OECD, European Commission, education ministries, universities and peer-reviewed research.
+- Do not invent scientific claims, statistics, funding rules, legal obligations or learning-science conclusions.
+- When discussing personalization, motivation or learning differences, distinguish confirmed evidence from interpretation.
+- When mentioning learning styles, avoid treating fixed learning-style categories as established scientific fact.
+- When sources are uncertain or general, mark them clearly and require human verification before publication.
