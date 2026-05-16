@@ -24,9 +24,9 @@ export type EditorialWorkingDay =
   | "thursday"
   | "friday";
 
-export type EditorialVoice = "Daniel" | "Juan Jose" | "combined";
+export type EditorialVoice = "Daniel" | "Juan José" | "combined";
 
-export type EditorialReviewer = "Daniel" | "Juan Jose";
+export type EditorialReviewer = "Daniel" | "Juan José";
 
 export type EditorialSourceType =
   | "official"
