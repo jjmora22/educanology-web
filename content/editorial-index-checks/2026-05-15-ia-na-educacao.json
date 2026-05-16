@@ -1,0 +1,133 @@
+{
+  "id": "2026-05-15-ia-na-educacao",
+  "inputProposalFile": "/Users/jjmora/educanology-web/content/editorial-proposals/2026-05-15-ia-na-educacao.json",
+  "editorialIndexFile": "/Users/jjmora/educanology-web/content/editorial-index/editorial-index.json",
+  "generatedAt": "2026-05-16T11:06:21.762Z",
+  "selectionSource": "humanSelection",
+  "selectedProposal": {
+    "id": "topic-ia-educacao-human-first-tecnologia-bicicleta",
+    "title": "IA na escola pública: tecnologia como bicicleta para capacidades humanas",
+    "category": "ia-na-educacao",
+    "recommendedReviewer": "Daniel",
+    "score": 94
+  },
+  "recommendation": "follow_up",
+  "duplicationRisk": "medium",
+  "bestMatch": {
+    "contentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+    "title": "IA responsável na escola pública: como começar sem errar",
+    "slug": "ia-responsavel-escola-publica-como-comecar-sem-errar",
+    "status": "published",
+    "category": "ia-na-educacao",
+    "categoryMatch": true,
+    "keywordOverlap": 0.9,
+    "subtopicOverlap": 0.1,
+    "mainTopicSimilarity": 0.3157894736842105,
+    "sourceOverlap": 0,
+    "score": 0.5531578947368422,
+    "recommendedAction": {
+      "action": "update_existing",
+      "reason": "Propostas futuras sobre primeira política de IA escolar devem atualizar este artigo se não trouxerem ângulo substancialmente novo.",
+      "targetContentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "requiresHumanReview": true
+    }
+  },
+  "matches": [
+    {
+      "contentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "title": "IA responsável na escola pública: como começar sem errar",
+      "slug": "ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "status": "published",
+      "category": "ia-na-educacao",
+      "categoryMatch": true,
+      "keywordOverlap": 0.9,
+      "subtopicOverlap": 0.1,
+      "mainTopicSimilarity": 0.3157894736842105,
+      "sourceOverlap": 0,
+      "score": 0.5531578947368422,
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Propostas futuras sobre primeira política de IA escolar devem atualizar este artigo se não trouxerem ângulo substancialmente novo.",
+        "targetContentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "contentId": "blog-municipios-motores-aprendizagem-ao-longo-da-vida",
+      "title": "Municípios como motores de aprendizagem ao longo da vida",
+      "slug": "municipios-motores-aprendizagem-ao-longo-da-vida",
+      "status": "published",
+      "category": "politica-municipal",
+      "categoryMatch": false,
+      "keywordOverlap": 0.45454545454545453,
+      "subtopicOverlap": 0.16666666666666666,
+      "mainTopicSimilarity": 0,
+      "sourceOverlap": 0,
+      "score": 0.16969696969696968,
+      "recommendedAction": {
+        "action": "follow_up",
+        "reason": "Temas municipais relacionados devem avançar como seguimento quando tiverem público, território ou instrumento político distinto.",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "contentId": "blog-financiamento-europeu-educacao-digital-guia-municipios",
+      "title": "Financiamento europeu para educação digital: guia para municípios",
+      "slug": "financiamento-europeu-educacao-digital-guia-municipios",
+      "status": "published",
+      "category": "financiamento",
+      "categoryMatch": false,
+      "keywordOverlap": 0.375,
+      "subtopicOverlap": 0,
+      "mainTopicSimilarity": 0.058823529411764705,
+      "sourceOverlap": 0,
+      "score": 0.12426470588235293,
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Conteúdos sobre financiamento devem atualizar este artigo quando tratam o mesmo guia geral; oportunidades específicas podem justificar seguimento.",
+        "targetContentId": "blog-financiamento-europeu-educacao-digital-guia-municipios",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "contentId": "blog-compra-equipamentos-transformacao-educativa-real",
+      "title": "Da compra de equipamentos à transformação educativa real",
+      "slug": "compra-equipamentos-transformacao-educativa-real",
+      "status": "published",
+      "category": "estrategia",
+      "categoryMatch": false,
+      "keywordOverlap": 0.2,
+      "subtopicOverlap": 0.1,
+      "mainTopicSimilarity": 0.11764705882352941,
+      "sourceOverlap": 0,
+      "score": 0.10352941176470588,
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Propostas genéricas sobre tecnologia e transformação devem atualizar este artigo, salvo quando tiverem ângulo específico ou fonte nova relevante.",
+        "targetContentId": "blog-compra-equipamentos-transformacao-educativa-real",
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "contentId": "blog-laboratorios-steam-proposito-pedagogico-alem-dos-equipamentos",
+      "title": "Laboratórios STEAM com propósito pedagógico: além dos equipamentos",
+      "slug": "laboratorios-steam-proposito-pedagogico-alem-dos-equipamentos",
+      "status": "published",
+      "category": "laboratorios",
+      "categoryMatch": false,
+      "keywordOverlap": 0.2222222222222222,
+      "subtopicOverlap": 0.1111111111111111,
+      "mainTopicSimilarity": 0.05,
+      "sourceOverlap": 0,
+      "score": 0.09888888888888889,
+      "recommendedAction": {
+        "action": "follow_up",
+        "reason": "Novos textos sobre laboratórios devem ter foco distinto: indústria local, empregabilidade, inclusão, operação ou currículo.",
+        "requiresHumanReview": true
+      }
+    }
+  ],
+  "reasoning": "A proposta está relacionada com conteúdo existente, mas tem ângulo editorial distinto e útil para um artigo de seguimento.",
+  "nextAction": "Avançar como follow-up após validação humana das fontes e confirmação de que o artigo anterior será referenciado ou ligado.",
+  "totalIndexEntries": 6
+}
