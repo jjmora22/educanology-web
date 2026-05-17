@@ -1,0 +1,332 @@
+{
+  "id": "2026-05-15-ia-na-educacao-topic-suggestions",
+  "status": "selected",
+  "category": "ia-na-educacao",
+  "selectedProposal": {
+    "id": "topic-ia-educacao-human-first-tecnologia-bicicleta",
+    "status": "selected",
+    "title": "IA na escola pública: tecnologia como bicicleta para capacidades humanas",
+    "category": "ia-na-educacao",
+    "workingDay": "monday",
+    "whyItMatters": "Escolas, agrupamentos e municípios precisam de uma posição clara sobre IA: nem rejeição automática, nem adoção acrítica. A questão central é como introduzir tecnologia sem substituir o desenvolvimento de leitura, escrita, raciocínio, questionamento e pensamento crítico.",
+    "confirmedFacts": [
+      "A UNESCO mantém orientação e recursos institucionais sobre inteligência artificial em educação.",
+      "A Comissão Europeia mantém uma agenda pública para educação digital e competências digitais.",
+      "A adoção de IA em educação é tratada por instituições públicas como tema de governação, competências, responsabilidade e implementação."
+    ],
+    "interpretation": [
+      "A Educanology pode defender que a tecnologia deve funcionar como uma bicicleta para as capacidades humanas: amplia alcance, velocidade e autonomia, mas não substitui equilíbrio, direção ou esforço.",
+      "A IA deve apoiar aprendizagem mais significativa, desafiante, personalizada e motivadora, sem transformar tarefas escolares em produção automática de respostas.",
+      "A adoção responsável deve começar por formação docente, regras simples, proteção de dados, supervisão humana e pilotos graduais."
+    ],
+    "suggestedEducanologyAngle": "A escola pública deve introduzir IA de forma gradual e pedagógica: antes da automação, consolidar competências fundamentais; durante a implementação, garantir agência docente, ética, proteção de dados e avaliação; depois, escalar apenas o que demonstra valor educativo real.",
+    "recommendedReviewer": "Daniel",
+    "sources": [
+      {
+        "title": "UNESCO: Artificial intelligence in education",
+        "url": "https://www.unesco.org/en/digital-education/artificial-intelligence",
+        "publisher": "UNESCO",
+        "sourceType": "institutional",
+        "publishedAt": "data a confirmar",
+        "confidence": "high",
+        "requiresHumanVerification": true,
+        "confirmedFacts": [
+          "A UNESCO mantém uma área temática sobre inteligência artificial na educação."
+        ],
+        "notes": "Confirmar data da página, documentos associados e formulações antes de citação final."
+      },
+      {
+        "title": "UNESCO guidance on generative AI in education and research",
+        "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+        "publisher": "UNESCO",
+        "sourceType": "institutional",
+        "publishedAt": "data a confirmar",
+        "confidence": "high",
+        "requiresHumanVerification": true,
+        "confirmedFacts": [
+          "A página apresenta orientação da UNESCO sobre IA generativa na educação e investigação."
+        ],
+        "notes": "Verificar versão, data e recomendações relevantes antes de usar no artigo final."
+      },
+      {
+        "title": "Digital Education Action Plan",
+        "url": "https://education.ec.europa.eu/focus-topics/digital-education/action-plan",
+        "publisher": "European Commission",
+        "sourceType": "official",
+        "publishedAt": "data a confirmar",
+        "confidence": "high",
+        "requiresHumanVerification": true,
+        "confirmedFacts": [
+          "A página apresenta a estratégia da Comissão Europeia para educação digital."
+        ],
+        "notes": "Usar apenas informação confirmada em página oficial da Comissão Europeia."
+      }
+    ],
+    "recommendation": {
+      "priority": "high",
+      "score": 94,
+      "rationale": "Tema fundacional para a posição Educanology: combina IA responsável, competências humanas, formação docente, ética, proteção de dados e implementação gradual."
+    },
+    "approvalDecision": "pending_review",
+    "selected": true,
+    "createdAt": "2026-05-15T09:30:00+02:00",
+    "updatedAt": "2026-05-15T10:00:00+02:00"
+  },
+  "alternatives": [
+    {
+      "id": "topic-ia-educacao-personalizacao-sem-neuromitos",
+      "status": "pending_review",
+      "title": "Personalização sem neuromitos: como usar IA sem cair nos estilos de aprendizagem fixos",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "A personalização é uma das promessas mais repetidas da IA em educação, mas pode ser mal explicada quando é confundida com teorias fixas de estilos de aprendizagem.",
+      "confirmedFacts": [
+        "Organizações internacionais publicam orientações sobre educação digital, competências e IA em educação.",
+        "A personalização educativa pode considerar progresso, necessidades, motivação, conhecimentos prévios e contexto.",
+        "A utilização de IA em contextos educativos exige critérios pedagógicos e validação humana."
+      ],
+      "interpretation": [
+        "A Educanology pode ajudar decisores a separar personalização útil de simplificações sem base suficiente.",
+        "O valor da IA não está em etiquetar alunos, mas em apoiar professores a propor percursos mais atentos, exigentes e ajustados."
+      ],
+      "suggestedEducanologyAngle": "A personalização com IA deve apoiar atenção pedagógica, feedback e motivação, mas não deve apresentar estilos de aprendizagem fixos como ciência estabelecida nem reduzir alunos a perfis rígidos.",
+      "recommendedReviewer": "Daniel",
+      "sources": [
+        {
+          "title": "OECD Education and skills",
+          "url": "https://www.oecd.org/education/",
+          "publisher": "OECD",
+          "sourceType": "institutional",
+          "publishedAt": "data a confirmar",
+          "confidence": "medium",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A OCDE publica investigação e informação sobre educação e competências."
+          ],
+          "notes": "Selecionar uma publicação específica da OCDE antes de redigir uma versão final."
+        },
+        {
+          "title": "European Commission: Digital Education",
+          "url": "https://education.ec.europa.eu/focus-topics/digital-education",
+          "publisher": "European Commission",
+          "sourceType": "official",
+          "publishedAt": "data a confirmar",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página agrega informação institucional europeia sobre educação digital."
+          ],
+          "notes": "Confirmar subpáginas relevantes antes de publicação."
+        }
+      ],
+      "recommendation": {
+        "priority": "high",
+        "score": 88,
+        "rationale": "Tema forte para diferenciar uma visão pedagogicamente séria de IA educativa, com cuidado académico sobre personalização."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-15T09:30:00+02:00",
+      "updatedAt": "2026-05-15T09:30:00+02:00"
+    },
+    {
+      "id": "topic-ia-educacao-antes-da-resposta-automatica",
+      "status": "pending_review",
+      "title": "Antes da resposta automática: leitura, escrita e raciocínio na era da IA",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "A IA generativa pode facilitar a produção de respostas, mas escolas e famílias precisam de proteger o esforço cognitivo que torna a aprendizagem profunda.",
+      "confirmedFacts": [
+        "A IA generativa é discutida por instituições internacionais como tema relevante para educação e investigação.",
+        "A educação digital envolve competências, literacia, responsabilidade e orientação pedagógica.",
+        "A validação humana continua a ser necessária quando ferramentas automáticas produzem informação."
+      ],
+      "interpretation": [
+        "A Educanology pode defender que a IA deve elevar a qualidade das perguntas, da revisão e do raciocínio, não substituir o processo de aprender.",
+        "O artigo pode explicar que a escola precisa de desenhar tarefas em que o aluno tenha de justificar, comparar fontes e demonstrar compreensão."
+      ],
+      "suggestedEducanologyAngle": "Antes de pedir à IA que responda, o aluno deve aprender a ler, escrever, perguntar, argumentar e verificar. A ferramenta pode apoiar esse processo, mas não deve ocupar o lugar do pensamento.",
+      "recommendedReviewer": "Daniel",
+      "sources": [
+        {
+          "title": "UNESCO guidance on generative AI in education and research",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+          "publisher": "UNESCO",
+          "sourceType": "institutional",
+          "publishedAt": "data a confirmar",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página apresenta orientação da UNESCO sobre IA generativa na educação e investigação."
+          ],
+          "notes": "Confirmar recomendações específicas antes de redigir."
+        },
+        {
+          "title": "Digital Education Action Plan",
+          "url": "https://education.ec.europa.eu/focus-topics/digital-education/action-plan",
+          "publisher": "European Commission",
+          "sourceType": "official",
+          "publishedAt": "data a confirmar",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página apresenta a estratégia da Comissão Europeia para educação digital."
+          ],
+          "notes": "Verificar atualidade e enquadramento antes de citar."
+        }
+      ],
+      "recommendation": {
+        "priority": "medium",
+        "score": 84,
+        "rationale": "Tema claro e relevante para professores e famílias, com boa ligação à doutrina human-first."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-15T09:30:00+02:00",
+      "updatedAt": "2026-05-15T09:30:00+02:00"
+    },
+    {
+      "id": "topic-ia-educacao-professores-no-centro",
+      "status": "pending_review",
+      "title": "Professores no centro: formação docente para IA responsável",
+      "category": "ia-na-educacao",
+      "workingDay": "monday",
+      "whyItMatters": "A qualidade da adoção de IA depende menos da ferramenta escolhida e mais da capacidade dos professores para interpretar, adaptar, validar e orientar o seu uso.",
+      "confirmedFacts": [
+        "A formação e as competências digitais são temas recorrentes em políticas públicas de educação digital.",
+        "As fontes institucionais tratam a tecnologia educativa como assunto de competências, governação e implementação.",
+        "A IA em educação exige supervisão, validação e responsabilidade humana."
+      ],
+      "interpretation": [
+        "A Educanology pode defender que a formação docente deve partir de problemas pedagógicos reais, não de demonstrações genéricas de ferramentas.",
+        "Municípios e agrupamentos podem começar com pilotos pequenos, regras claras e acompanhamento sistemático."
+      ],
+      "suggestedEducanologyAngle": "O professor deve estar no centro da IA responsável: define objetivos, protege dados, ajusta atividades, valida resultados e ajuda os alunos a transformar tecnologia em aprendizagem real.",
+      "recommendedReviewer": "Juan José",
+      "sources": [
+        {
+          "title": "European Commission: Digital skills and jobs",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-skills",
+          "publisher": "European Commission",
+          "sourceType": "official",
+          "publishedAt": "data a confirmar",
+          "confidence": "medium",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A página aborda políticas europeias relacionadas com competências digitais."
+          ],
+          "notes": "Confirmar ligação mais direta com educação e formação docente antes de publicar."
+        },
+        {
+          "title": "UNESCO: Artificial intelligence in education",
+          "url": "https://www.unesco.org/en/digital-education/artificial-intelligence",
+          "publisher": "UNESCO",
+          "sourceType": "institutional",
+          "publishedAt": "data a confirmar",
+          "confidence": "high",
+          "requiresHumanVerification": true,
+          "confirmedFacts": [
+            "A UNESCO mantém uma área temática sobre inteligência artificial na educação."
+          ],
+          "notes": "Confirmar documentos específicos para fundamentar recomendações."
+        }
+      ],
+      "recommendation": {
+        "priority": "medium",
+        "score": 82,
+        "rationale": "Tema prático, especialmente útil para municípios, agrupamentos e centros de formação."
+      },
+      "approvalDecision": "pending",
+      "selected": false,
+      "createdAt": "2026-05-15T09:30:00+02:00",
+      "updatedAt": "2026-05-15T09:30:00+02:00"
+    }
+  ],
+  "humanSelection": {
+    "selectedProposalId": "topic-ia-educacao-human-first-tecnologia-bicicleta",
+    "selectedBy": "Daniel",
+    "selectedAt": "2026-05-15T10:00:00+02:00",
+    "decision": "selected",
+    "notes": "Selecionado como exemplo editorial por alinhar IA na Educação com a doutrina Educanology de adoção tecnológica gradual, pedagógica e centrada nas capacidades humanas."
+  },
+  "indexCheck": {
+    "recommendation": "follow_up",
+    "duplicationRisk": "medium",
+    "bestMatch": {
+      "contentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "title": "IA responsável na escola pública: como começar sem errar",
+      "slug": "ia-responsavel-escola-publica-como-comecar-sem-errar",
+      "status": "published",
+      "category": "ia-na-educacao",
+      "categoryMatch": true,
+      "keywordOverlap": 0.9,
+      "subtopicOverlap": 0.1,
+      "mainTopicSimilarity": 0.3157894736842105,
+      "sourceOverlap": 0,
+      "score": 0.5531578947368422,
+      "recommendedAction": {
+        "action": "update_existing",
+        "reason": "Propostas futuras sobre primeira política de IA escolar devem atualizar este artigo se não trouxerem ângulo substancialmente novo.",
+        "targetContentId": "blog-ia-responsavel-escola-publica-como-comecar-sem-errar",
+        "requiresHumanReview": true
+      }
+    },
+    "reasoning": "A proposta está relacionada com conteúdo existente, mas tem ângulo editorial distinto e útil para um artigo de seguimento.",
+    "nextAction": "Avançar como follow-up após validação humana das fontes e confirmação de que o artigo anterior será referenciado ou ligado."
+  },
+  "sources": [
+    {
+      "title": "UNESCO: Artificial intelligence in education",
+      "url": "https://www.unesco.org/en/digital-education/artificial-intelligence",
+      "publisher": "UNESCO",
+      "sourceType": "institutional",
+      "publishedAt": "data a confirmar",
+      "confidence": "high",
+      "requiresHumanVerification": true,
+      "confirmedFacts": [
+        "A UNESCO mantém uma área temática sobre inteligência artificial na educação."
+      ],
+      "notes": "Confirmar data da página, documentos associados e formulações antes de citação final."
+    },
+    {
+      "title": "UNESCO guidance on generative AI in education and research",
+      "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "publisher": "UNESCO",
+      "sourceType": "institutional",
+      "publishedAt": "data a confirmar",
+      "confidence": "high",
+      "requiresHumanVerification": true,
+      "confirmedFacts": [
+        "A página apresenta orientação da UNESCO sobre IA generativa na educação e investigação."
+      ],
+      "notes": "Verificar versão, data e recomendações relevantes antes de usar no artigo final."
+    },
+    {
+      "title": "Digital Education Action Plan",
+      "url": "https://education.ec.europa.eu/focus-topics/digital-education/action-plan",
+      "publisher": "European Commission",
+      "sourceType": "official",
+      "publishedAt": "data a confirmar",
+      "confidence": "high",
+      "requiresHumanVerification": true,
+      "confirmedFacts": [
+        "A página apresenta a estratégia da Comissão Europeia para educação digital."
+      ],
+      "notes": "Usar apenas informação confirmada em página oficial da Comissão Europeia."
+    }
+  ],
+  "sourceFiles": {
+    "proposalJson": "content/editorial-proposals/2026-05-15-ia-na-educacao.json",
+    "indexCheckMarkdown": "content/editorial-index-checks/2026-05-15-ia-na-educacao.md",
+    "indexCheckJson": "content/editorial-index-checks/2026-05-15-ia-na-educacao.json",
+    "reviewPacketMarkdown": "content/editorial-review-packets/2026-05-15-ia-na-educacao.md",
+    "draftPackageMarkdown": "content/editorial-draft-packages/2026-05-15-ia-na-educacao.md",
+    "draftPackageJson": "content/editorial-draft-packages/2026-05-15-ia-na-educacao.json",
+    "finalReviewMarkdown": "content/editorial-final-reviews/2026-05-15-ia-na-educacao.md",
+    "finalReviewJson": "content/editorial-final-reviews/2026-05-15-ia-na-educacao.json",
+    "publicationCandidateMarkdown": "content/editorial-publication-candidates/2026-05-15-ia-na-educacao.md",
+    "publicationCandidateJson": "content/editorial-publication-candidates/2026-05-15-ia-na-educacao.json",
+    "editorialIndexJson": "content/editorial-index/editorial-index.json"
+  },
+  "generatedAt": "2026-05-17T16:57:30.026Z"
+}
