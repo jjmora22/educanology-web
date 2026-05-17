@@ -1,0 +1,46 @@
+{
+  "id": "2026-05-15-ia-na-educacao",
+  "status": "pending_review",
+  "approvalStatus": "pending_review",
+  "title": "IA na escola pública: tecnologia como bicicleta para capacidades humanas",
+  "slug": "ia-na-escola-publica-tecnologia-como-bicicleta-para-capacidades-humanas",
+  "category": "ia-na-educacao",
+  "seoTitle": "IA na escola pública: tecnologia como bicicleta para capacidades humanas | Educanology",
+  "seoDescription": "Análise Educanology sobre adoção human-first de tecnologia e inteligência artificial em educação, com foco em competências fundamentais, professores, ética e implementação responsável.",
+  "selectedProposalId": "topic-ia-educacao-human-first-tecnologia-bicicleta",
+  "indexRecommendation": "follow_up",
+  "duplicationRisk": "medium",
+  "finalBlogArticlePath": "03-final-blog-article.md",
+  "linkedInPostPath": "03-linkedin-post.md",
+  "approvedImageReference": null,
+  "imageStatus": "pending_generation",
+  "publishedAt": null,
+  "publicationChannels": {
+    "blog": {
+      "status": "pending_review",
+      "url": "https://educanology.eu/blog/ia-na-escola-publica-tecnologia-como-bicicleta-para-capacidades-humanas"
+    },
+    "linkedIn": {
+      "status": "pending_review",
+      "url": null
+    }
+  },
+  "sourceFiles": {
+    "proposalJson": "content/editorial-proposals/2026-05-15-ia-na-educacao.json",
+    "indexCheckMarkdown": "content/editorial-index-checks/2026-05-15-ia-na-educacao.md",
+    "indexCheckJson": "content/editorial-index-checks/2026-05-15-ia-na-educacao.json",
+    "reviewPacketMarkdown": "content/editorial-review-packets/2026-05-15-ia-na-educacao.md",
+    "draftPackageMarkdown": "content/editorial-draft-packages/2026-05-15-ia-na-educacao.md",
+    "draftPackageJson": "content/editorial-draft-packages/2026-05-15-ia-na-educacao.json",
+    "finalReviewMarkdown": "content/editorial-final-reviews/2026-05-15-ia-na-educacao.md",
+    "finalReviewJson": "content/editorial-final-reviews/2026-05-15-ia-na-educacao.json",
+    "publicationCandidateMarkdown": "content/editorial-publication-candidates/2026-05-15-ia-na-educacao.md",
+    "publicationCandidateJson": "content/editorial-publication-candidates/2026-05-15-ia-na-educacao.json",
+    "editorialIndexJson": "content/editorial-index/editorial-index.json"
+  },
+  "generatedAt": "2026-05-17T16:57:30.026Z",
+  "modelProvider": "api.deepseek.com",
+  "modelName": "deepseek-chat",
+  "notes": "Pacote consolidado para revisão humana. Não foi publicado automaticamente.",
+  "sourceProposalBatchStatus": "selected"
+}

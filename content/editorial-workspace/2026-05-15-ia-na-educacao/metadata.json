@@ -1,0 +1,45 @@
+{
+  "id": "2026-05-15-ia-na-educacao",
+  "title": "IA na escola pública: tecnologia como bicicleta para capacidades humanas",
+  "slug": "ia-na-escola-publica-tecnologia-como-bicicleta-para-capacidades-humanas",
+  "category": "ia-na-educacao",
+  "currentPhase": "article_proposal",
+  "status": "pending_review",
+  "sourceFiles": {
+    "proposalJson": "content/editorial-proposals/2026-05-15-ia-na-educacao.json",
+    "indexCheckMarkdown": "content/editorial-index-checks/2026-05-15-ia-na-educacao.md",
+    "indexCheckJson": "content/editorial-index-checks/2026-05-15-ia-na-educacao.json",
+    "reviewPacketMarkdown": "content/editorial-review-packets/2026-05-15-ia-na-educacao.md",
+    "draftPackageMarkdown": "content/editorial-draft-packages/2026-05-15-ia-na-educacao.md",
+    "draftPackageJson": "content/editorial-draft-packages/2026-05-15-ia-na-educacao.json",
+    "finalReviewMarkdown": "content/editorial-final-reviews/2026-05-15-ia-na-educacao.md",
+    "finalReviewJson": "content/editorial-final-reviews/2026-05-15-ia-na-educacao.json",
+    "publicationCandidateMarkdown": "content/editorial-publication-candidates/2026-05-15-ia-na-educacao.md",
+    "publicationCandidateJson": "content/editorial-publication-candidates/2026-05-15-ia-na-educacao.json",
+    "editorialIndexJson": "content/editorial-index/editorial-index.json"
+  },
+  "generatedAt": "2026-05-17T16:57:30.026Z",
+  "approvalStatus": "pending_review",
+  "nextHumanAction": "Daniel ou Juan José deve rever o artigo, validar fontes, aprovar ou pedir alterações e decidir se a imagem hero deve ser gerada.",
+  "notes": "Workspace consolidado a partir dos artefactos editoriais existentes. Os ficheiros antigos foram preservados.",
+  "phaseStatus": {
+    "topicSuggestions": "completed",
+    "articleProposal": "pending_review",
+    "image": "pending_generation",
+    "finalPublication": "pending_review"
+  },
+  "futureUi": {
+    "topicSuggestionsPath": "01-topic-suggestions.md",
+    "editableArticlePath": "02-article-proposal.md",
+    "imageBriefPath": "02-image-brief.md",
+    "finalBlogArticlePath": "03-final-blog-article.md",
+    "linkedInPostPath": "03-linkedin-post.md",
+    "publicationMetadataPath": "03-publication-metadata.json"
+  },
+  "futureKnowledge": {
+    "shouldEnrichKnowledgeBase": true,
+    "knowledgeStatus": "not_created",
+    "suggestedKnowledgeSummaryPath": "content/editorial-knowledge/2026-05-15-ia-na-educacao.json",
+    "notes": "Depois de publicado, este artigo deve ser resumido num registo de conhecimento reutilizável com tese editorial, decisões práticas, cautelas, fontes e posicionamento Educanology, para futuras gerações LLM sem enviar o artigo completo."
+  }
+}
