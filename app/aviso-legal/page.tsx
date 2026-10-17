@@ -33,10 +33,6 @@ export default function AvisoLegalPage() {
                 educanology.eu
               </a>
             </p>
-            <p className="mt-3">
-              Os dados da conservatória do registo comercial competente devem ser confirmados
-              pela Educanology antes da publicação definitiva desta versão.
-            </p>
           </section>
 
           <section>

@@ -176,6 +176,7 @@ function isRequestRateLimited(request: Request, now: Date) {
 }
 
 function getMailConfiguration(env: NodeJS.ProcessEnv): MailConfiguration | null {
+  const enabled = text(env.MEETING_REQUEST_ENABLED) === "true";
   const apiKey = text(env.MAIL_API_KEY);
   const projectId = text(env.MAIL_PROJECT_ID);
   const region = text(env.MAIL_REGION) || "fr-par";
@@ -183,6 +184,7 @@ function getMailConfiguration(env: NodeJS.ProcessEnv): MailConfiguration | null 
   const toEmail = text(env.MEETING_TO_EMAIL).toLowerCase();
 
   if (
+    !enabled ||
     !apiKey ||
     !UUID_PATTERN.test(projectId) ||
     !ALLOWED_MAIL_REGIONS.has(region) ||

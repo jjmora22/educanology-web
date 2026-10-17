@@ -68,8 +68,9 @@ export default function PoliticaPrivacidadePage() {
                       contratual, interesse legítimo em responder ao contacto.
                     </td>
                     <td className="p-4">
-                      Até 24 meses após o último contacto relevante, salvo relação contratual,
-                      obrigação legal ou necessidade de defesa de direitos.
+                      Durante o período necessário para responder ao pedido e acompanhar as
+                      diligências solicitadas. Uma relação contratual, obrigação legal ou necessidade
+                      de defesa de direitos poderá justificar conservação adicional.
                     </td>
                   </tr>
                   <tr>

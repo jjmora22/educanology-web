@@ -13,6 +13,7 @@ const validPayload = {
 };
 
 const validEnv = {
+  MEETING_REQUEST_ENABLED: "true",
   MAIL_API_KEY: "fake-development-key",
   MAIL_PROJECT_ID: "00000000-0000-4000-8000-000000000000",
   MAIL_REGION: "fr-par",
@@ -104,6 +105,23 @@ test("permanece inativo quando faltam credenciais", async () => {
 
   assert.equal(response.status, 503);
   assert.equal(result.message, "O envio de pedidos ainda não está disponível.");
+});
+
+test("permanece inativo até existir autorização explícita", async () => {
+  let called = false;
+  const configuredButDisabled = { ...validEnv };
+  delete configuredButDisabled.MEETING_REQUEST_ENABLED;
+  const response = await handleMeetingRequest(makeRequest(), {
+    env: configuredButDisabled,
+    isRateLimited: noRateLimit,
+    sendEmail: async () => {
+      called = true;
+      return new Response(null, { status: 200 });
+    },
+  });
+
+  assert.equal(response.status, 503);
+  assert.equal(called, false);
 });
 
 test("simula um envio válido sem efetuar chamadas externas", async () => {

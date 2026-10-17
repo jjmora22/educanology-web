@@ -9,7 +9,7 @@ Data da revisão técnica: 17 de outubro de 2026. Este documento é interno e n�
 | Denominação `Educanology Unipessoal Lda.`, NIPC 509746276, sede e `hello@educanology.eu` | Constam das páginas existentes | Verificado apenas contra o repositório | Confirmar com certidão comercial atualizada |
 | Formulário de reuniões | O código recolhe nome, email, organização/cargo opcionais e mensagem | Verificado tecnicamente | Manter minimização e não reutilizar para marketing |
 | Base do pedido de reunião | Resposta a pedido e diligências pré-contratuais; interesse legítimo quando não há intenção contratual | Documentado | Validar juridicamente o teste de ponderação do interesse legítimo |
-| Scaleway TEM | Endpoint `fr-par`, envio server-side e `Reply-To` validado | Implementado, inativo sem credenciais | Concluir checklist de ativação |
+| Scaleway TEM | Endpoint `fr-par`, envio server-side e `Reply-To` validado | Implementado; inativo enquanto `MEETING_REQUEST_ENABLED` não for `true` | Concluir checklist de ativação e autorizar expressamente a mudança do interruptor |
 | Google Analytics 4 | Script só é injetado após consentimento; `ga-disable` impede novos eventos após retirada | Verificado tecnicamente | Confirmar configuração da propriedade, retenção e termos Google |
 | Vercel Web Analytics | Componente só é montado após consentimento e `beforeSend` volta a verificar a escolha | Verificado tecnicamente | Confirmar plano, DPA e configuração da conta |
 | Preferência de cookies | `localStorage` com chave `educanology-cookie-consent`, sem caducidade automática | Verificado tecnicamente | Decidir e implementar um prazo de renovação se aprovado |
@@ -23,8 +23,8 @@ Data da revisão técnica: 17 de outubro de 2026. Este documento é interno e n�
 |---|---|---|---|
 | Renovação do consentimento | A escolha local não caduca automaticamente | Recomendado | Definir prazo e versão da política antes de alterar o código |
 | Eliminação de cookies Google ao retirar consentimento | O bloqueio impede novas medições, mas cookies existentes podem permanecer | Recomendado | Avaliar eliminação segura por domínio e testar todos os navegadores |
-| WAF no formulário | O limite em memória não é global em serverless | Recomendado antes de produção | Criar regra para `POST /api/meeting-request` e alertas de consumo |
-| Retenção de pedidos | O texto público indica 24 meses como regra operacional proposta | Recomendado | Aprovar política interna, responsáveis e rotina de eliminação |
+| WAF no formulário | O limite em memória não é global em serverless | Regra documentada; configuração manual não confirmada | Criar a regra descrita em `docs/meeting-request-setup.md` em cada projeto Vercel que sirva o website |
+| Retenção de pedidos | A política pública utiliza critérios de necessidade, obrigação legal e defesa de direitos, sem prazo fixo não aprovado | Pendente de decisão interna | Aprovar prazos operacionais, responsáveis e rotina de eliminação |
 | Logs sem conteúdo | Reduz exposição de mensagens e dados de contacto | Implementado no endpoint novo | Rever também logs e observabilidade externos |
 | Avaliação de impacto/transferência DeepSeek | Envio de texto para a China e falta de garantias verificadas publicamente | Prioridade alta | Concluir avaliação, contrato e alternativa UE se necessário |
 | API do assistente | Atualmente aceita um histórico enviado pelo cliente e não limita expressamente o tamanho no servidor | Risco técnico identificado; não alterado por preservar comportamento | Especificar validação, limites, rate limiting e filtragem de papéis antes de implementar |
@@ -49,7 +49,7 @@ Data da revisão técnica: 17 de outubro de 2026. Este documento é interno e n�
 | Dado ou decisão | Motivo | Estado | Ação requerida |
 |---|---|---|---|
 | Aviso Legal e identificação comercial | Confirmar suficiência ao abrigo do Decreto-Lei n.º 7/2004 e legislação societária | Revisão jurídica necessária | Validar antes de publicar |
-| Bases jurídicas e prazos | Dependem dos processos empresariais reais | Revisão jurídica necessária | Validar tabela de tratamentos e prazo de 24 meses |
+| Bases jurídicas e prazos | Dependem dos processos empresariais reais | Revisão jurídica necessária | Validar a tabela de tratamentos e aprovar os prazos internos aplicáveis |
 | Transferências internacionais | Google, Vercel e especialmente DeepSeek exigem análise contratual e do capítulo V do RGPD | Revisão jurídica necessária | Documentar adequação/SCC, TIA e medidas suplementares |
 | Papéis de responsável/encarregado | Dependem dos contratos e configurações | Revisão jurídica necessária | Confirmar DPA e instruções de tratamento de cada fornecedor |
 | Limitação de responsabilidade e foro | Não pode afastar normas imperativas | Revisão jurídica necessária | Validar Termos de Utilização segundo público real |
