@@ -1,34 +1,18 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import {
+  hasAnalyticsConsent,
+  useCookieConsent,
+} from "@/lib/cookie-consent";
 
-const STORAGE_KEY = "educanology-cookie-consent";
 const MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-
-type CookiePreferences = {
-  analytics?: boolean;
-};
 
 declare global {
   interface Window {
     dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
-  }
-}
-
-function hasAnalyticsConsent() {
-  if (typeof window === "undefined") return false;
-
-  const saved = window.localStorage.getItem(STORAGE_KEY);
-
-  if (!saved) return false;
-
-  try {
-    const preferences = JSON.parse(saved) as CookiePreferences;
-    return Boolean(preferences.analytics);
-  } catch {
-    return false;
   }
 }
 
@@ -42,27 +26,13 @@ function setGoogleAnalyticsDisabled(disabled: boolean) {
 
 export default function GoogleAnalytics() {
   const pathname = usePathname();
-  const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+  const { isLoaded, preferences } = useCookieConsent();
+  const analyticsEnabled = isLoaded && Boolean(preferences?.analytics);
   const scriptLoaded = useRef(false);
 
   useEffect(() => {
-    function syncConsent() {
-      const enabled = hasAnalyticsConsent();
-      setGoogleAnalyticsDisabled(!enabled);
-      setAnalyticsEnabled(enabled);
-    }
-
-    syncConsent();
-
-    window.addEventListener("educanology-cookie-consent-updated", syncConsent);
-
-    return () => {
-      window.removeEventListener(
-        "educanology-cookie-consent-updated",
-        syncConsent
-      );
-    };
-  }, []);
+    setGoogleAnalyticsDisabled(!analyticsEnabled);
+  }, [analyticsEnabled]);
 
   useEffect(() => {
     if (!MEASUREMENT_ID || !analyticsEnabled || scriptLoaded.current) return;
@@ -70,8 +40,8 @@ export default function GoogleAnalytics() {
     window.dataLayer = window.dataLayer || [];
     window.gtag =
       window.gtag ||
-      function gtag() {
-        window.dataLayer?.push(arguments);
+      function gtag(...args: unknown[]) {
+        window.dataLayer?.push(args);
       };
 
     const script = document.createElement("script");
@@ -79,6 +49,8 @@ export default function GoogleAnalytics() {
     script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
     script.onload = () => {
       scriptLoaded.current = true;
+      if (!hasAnalyticsConsent()) return;
+
       window.gtag?.("js", new Date());
       window.gtag?.("config", MEASUREMENT_ID, {
         page_path: window.location.pathname,
