@@ -1,82 +1,27 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-type CookiePreferences = {
-  necessary: true;
-  analytics: boolean;
-  functional: boolean;
-  marketing: boolean;
-};
-
-const defaultPreferences: CookiePreferences = {
-  necessary: true,
-  analytics: false,
-  functional: false,
-  marketing: false,
-};
-
-const STORAGE_KEY = "educanology-cookie-consent";
+import { useState } from "react";
+import {
+  DEFAULT_COOKIE_PREFERENCES,
+  saveCookiePreferences,
+  type CookiePreferences,
+  useCookieConsent,
+} from "@/lib/cookie-consent";
 
 export default function CookieConsent() {
-  const [visible, setVisible] = useState(false);
-  const [hasSavedPreferences, setHasSavedPreferences] = useState(false);
+  const { isLoaded, preferences: savedPreferences } = useCookieConsent();
+  const [forceVisible, setForceVisible] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [preferences, setPreferences] = useState<CookiePreferences>(defaultPreferences);
-
-  useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-
-    if (!saved) {
-      setVisible(true);
-      return;
-    }
-
-    try {
-      const parsed = JSON.parse(saved) as CookiePreferences;
-      setPreferences({
-        necessary: true,
-        analytics: Boolean(parsed.analytics),
-        functional: Boolean(parsed.functional),
-        marketing: Boolean(parsed.marketing),
-      });
-      setHasSavedPreferences(true);
-
-      window.dispatchEvent(
-        new CustomEvent("educanology-cookie-consent-updated", {
-          detail: {
-            necessary: true,
-            analytics: Boolean(parsed.analytics),
-            functional: Boolean(parsed.functional),
-            marketing: Boolean(parsed.marketing),
-          },
-        })
-      );
-    } catch {
-      localStorage.removeItem(STORAGE_KEY);
-      setVisible(true);
-    }
-  }, []);
+  const [preferences, setPreferences] = useState<CookiePreferences>(
+    DEFAULT_COOKIE_PREFERENCES
+  );
+  const hasSavedPreferences = savedPreferences !== null;
+  const visible = isLoaded && (!hasSavedPreferences || forceVisible);
 
   function savePreferences(nextPreferences: CookiePreferences) {
-    const normalizedPreferences: CookiePreferences = {
-      necessary: true,
-      analytics: Boolean(nextPreferences.analytics),
-      functional: Boolean(nextPreferences.functional),
-      marketing: Boolean(nextPreferences.marketing),
-    };
-
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(normalizedPreferences));
-
-    window.dispatchEvent(
-      new CustomEvent("educanology-cookie-consent-updated", {
-        detail: normalizedPreferences,
-      })
-    );
-
+    const normalizedPreferences = saveCookiePreferences(nextPreferences);
     setPreferences(normalizedPreferences);
-    setHasSavedPreferences(true);
-    setVisible(false);
+    setForceVisible(false);
     setShowSettings(false);
   }
 
@@ -90,7 +35,7 @@ export default function CookieConsent() {
   }
 
   function rejectNonEssential() {
-    savePreferences(defaultPreferences);
+    savePreferences(DEFAULT_COOKIE_PREFERENCES);
   }
 
   function togglePreference(key: keyof Omit<CookiePreferences, "necessary">) {
@@ -101,7 +46,8 @@ export default function CookieConsent() {
   }
 
   function openSettings() {
-    setVisible(true);
+    setPreferences(savedPreferences ?? DEFAULT_COOKIE_PREFERENCES);
+    setForceVisible(true);
     setShowSettings(true);
   }
 

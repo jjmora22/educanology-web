@@ -773,8 +773,8 @@ export default function Home() {
           {/* Mensaje fuerte */}
           <div className="mt-10 rounded-2xl border border-white/20 bg-white/10 p-6">
             <p className="text-lg font-bold italic text-white/90">
-              "A IA deve entrar na educação como cultura, não como moda. Sem formação, governança e projeto
-              pedagógico, a IA aumenta o ruído. Com método, aumenta a capacidade humana."
+              &quot;A IA deve entrar na educação como cultura, não como moda. Sem formação, governança e projeto
+              pedagógico, a IA aumenta o ruído. Com método, aumenta a capacidade humana.&quot;
             </p>
           </div>
         </motion.div>
@@ -826,8 +826,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#17202a]/80 via-[#17202a]/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 flex flex-col gap-4 p-8 md:flex-row md:items-end md:justify-between">
                 <p className="text-xl font-black text-white md:text-2xl max-w-lg">
-                  "Da estratégia à sala de aula —{" "}
-                  <span className="text-[#8ce2cc]">com acompanhamento em cada fase.</span>"
+                  &quot;Da estratégia à sala de aula —{" "}
+                  <span className="text-[#8ce2cc]">com acompanhamento em cada fase.</span>&quot;
                 </p>
                 <a
                   href="mailto:hello@educanology.eu?subject=Pedido%20de%20reunião%20Educanology"
