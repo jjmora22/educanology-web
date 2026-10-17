@@ -13,8 +13,9 @@ export default function TermosUtilizacaoPage() {
             <section>
               <h2 className="text-xl font-black text-[#17202a]">1. Aceitação dos termos</h2>
               <p className="mt-3">
-                Ao aceder e utilizar este website, o utilizador aceita estes termos de utilização. Caso
-                não concorde com os mesmos, deverá abster-se de utilizar o website.
+                Estes termos regulam a utilização do website. O acesso ao conteúdo implica o
+                cumprimento das regras legais e de uso aqui descritas, sem limitar direitos
+                imperativos que sejam aplicáveis ao utilizador.
               </p>
             </section>
   
@@ -52,10 +53,10 @@ export default function TermosUtilizacaoPage() {
             <section>
               <h2 className="text-xl font-black text-[#17202a]">5. Agente educativo e ferramentas digitais</h2>
               <p className="mt-3">
-                Caso o website disponibilize um agente educativo, chatbot ou ferramenta baseada em
-                inteligência artificial, as respostas fornecidas deverão ser entendidas como apoio
-                informativo inicial. A Educanology poderá rever, adaptar ou complementar qualquer
-                informação antes da tomada de decisões institucionais, técnicas, financeiras ou jurídicas.
+                O assistente virtual utiliza um modelo de inteligência artificial fornecido pela
+                DeepSeek. As respostas são geradas automaticamente e devem ser entendidas como apoio
+                informativo inicial. Podem conter imprecisões e devem ser verificadas antes de qualquer
+                decisão institucional, técnica, financeira ou jurídica.
               </p>
               <p className="mt-3">
                 O agente virtual orienta e qualifica oportunidades, mas não substitui uma consultoria
@@ -63,9 +64,9 @@ export default function TermosUtilizacaoPage() {
                 orçamentos, contratos, prazos ou condições específicas de prestação de serviços.
               </p>
               <p className="mt-3">
-                O utilizador deve evitar introduzir informação sensível, confidencial ou dados pessoais
-                desnecessários nas interações com o agente virtual ou com outras ferramentas digitais
-                disponibilizadas no website.
+                O utilizador não deve introduzir informação sensível ou confidencial, dados de menores
+                nem dados pessoais desnecessários. O tratamento associado é descrito na Política de
+                Privacidade.
               </p>
             </section>
 
@@ -80,6 +81,10 @@ export default function TermosUtilizacaoPage() {
                 Qualquer proposta comercial, plano de trabalho, orçamento, contrato ou compromisso
                 institucional deverá ser confirmado expressamente pela Educanology através dos meios
                 adequados.
+              </p>
+              <p className="mt-3">
+                Um pedido de reunião está sujeito a análise e disponibilidade. A mensagem de receção
+                do formulário confirma apenas a entrega técnica do pedido, não uma reserva ou marcação.
               </p>
             </section>
 
@@ -119,6 +124,11 @@ export default function TermosUtilizacaoPage() {
                 erros ou que todos os conteúdos estejam sempre atualizados, embora procure manter a
                 informação correta, segura e adequada às finalidades do website.
               </p>
+              <p className="mt-3">
+                Estas limitações aplicam-se apenas na medida permitida por lei e não excluem
+                responsabilidade por dolo, culpa grave ou qualquer responsabilidade legalmente
+                indisponível.
+              </p>
             </section>
   
             <section>
@@ -141,12 +151,14 @@ export default function TermosUtilizacaoPage() {
             <section>
               <h2 className="text-xl font-black text-[#17202a]">12. Lei aplicável</h2>
               <p className="mt-3">
-                Estes termos regem-se pela legislação portuguesa aplicável.
+                Estes termos regem-se pela legislação portuguesa. Eventuais litígios serão submetidos
+                aos tribunais competentes segundo as regras legais aplicáveis, sem prejudicar os direitos
+                imperativos de consumidores ou de outros utilizadores protegidos por lei.
               </p>
             </section>
   
             <p className="pt-4 text-sm text-[#58736b]">
-              Última atualização: maio de 2026.
+              Última revisão técnica e documental: 17 de outubro de 2026.
             </p>
           </div>
         </article>

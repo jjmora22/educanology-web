@@ -192,10 +192,16 @@ export default function EducanologyAgent() {
               </div>
 
               <p className="mt-3 text-xs leading-5 text-[#41514c]/70">
-                O agente orienta e qualifica oportunidades. 
-                Não substitui uma consultoria formal nem assume compromissos comerciais. 
-                Por favor, não introduza informação sensível, confidencial 
-                ou dados pessoais desnecessários.
+                O agente orienta e qualifica oportunidades. O texto é enviado à
+                DeepSeek para gerar a resposta. Não introduza informação sensível,
+                confidencial, dados de menores ou dados pessoais desnecessários. Consulte
+                a{" "}
+                <a
+                  href="/politica-de-privacidade"
+                  className="font-bold text-[#6f3e5c] underline underline-offset-2"
+                >
+                  Política de Privacidade
+                </a>.
               </p>
             </div>
           </div>

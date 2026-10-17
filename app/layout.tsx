@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { MeetingRequestProvider } from "@/components/MeetingRequestProvider";
 import VercelAnalytics from "@/components/VercelAnalytics";
 
 const geistSans = Geist({
@@ -33,7 +34,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
+        <MeetingRequestProvider>{children}</MeetingRequestProvider>
         <GoogleAnalytics />
         <VercelAnalytics />
         <CookieConsent />
