@@ -1,158 +1,221 @@
+import Link from "next/link";
+
 export default function PoliticaPrivacidadePage() {
-    return (
-      <main className="min-h-screen bg-[#f7f3ee] px-6 py-16 text-[#17202a] md:px-10 lg:px-16">
-        <article className="mx-auto max-w-4xl rounded-[2rem] bg-white/80 p-8 shadow-xl md:p-12">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#6f3e5c]">
-            Proteção de dados
-          </p>
-          <h1 className="mt-4 text-4xl font-black tracking-[-0.04em]">
-            Política de privacidade
-          </h1>
-  
-          <div className="mt-8 space-y-6 leading-8 text-[#41514c]">
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">1. Responsável pelo tratamento</h2>
-              <p className="mt-3">
-                A entidade responsável pelo tratamento dos dados pessoais recolhidos através deste
-                website é <strong>Educanology Unipessoal Lda.</strong>
-              </p>
-              <p className="mt-3">
-                <strong>NIPC:</strong> 509746276
-                <br />
-                <strong>Sede:</strong> Largo da Graça, 82, 3. Direito - 1170-165 Lisboa
-                <br />
-                <strong>Email:</strong>{" "}
-                <a href="mailto:hello@educanology.eu" className="font-bold text-[#6f3e5c]">
-                  hello@educanology.eu
-                </a>
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">2. Dados pessoais tratados</h2>
-              <p className="mt-3">
-                Podemos tratar dados pessoais fornecidos voluntariamente pelo utilizador, nomeadamente
-                nome, email, organização, cargo, telefone, mensagem enviada através de formulário,
-                pedido de contacto, pedido de reunião ou interação com ferramentas digitais
-                disponibilizadas no website.
-              </p>
-              <p className="mt-3">
-                Quando o utilizador interage com o agente virtual, a Educanology pode tratar os dados
-                fornecidos voluntariamente, como nome, email, organização, país/município, tema de interesse
-                e conteúdo da mensagem, com a finalidade de responder ao pedido, qualificar a oportunidade
-                e preparar eventual contacto comercial ou institucional.
-              </p>
-              <p className="mt-3">
-                O utilizador deve evitar introduzir dados sensíveis, confidenciais ou dados pessoais
-                desnecessários. As interações com o agente podem ser processadas por fornecedores
-                tecnológicos utilizados para disponibilizar a funcionalidade de inteligência artificial,
-                sempre de acordo com as condições aplicáveis e medidas razoáveis de segurança.
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">3. Finalidades do tratamento</h2>
-              <p className="mt-3">Os dados pessoais podem ser tratados para:</p>
-              <ul className="mt-3 list-disc space-y-2 pl-6">
-                <li>Responder a pedidos de contacto ou informação;</li>
-                <li>Agendar reuniões ou sessões de apresentação;</li>
-                <li>Prestar serviços de consultoria, formação ou acompanhamento;</li>
-                <li>Gerir relações comerciais ou institucionais;</li>
-                <li>Enviar comunicações relacionadas com projetos, serviços ou conteúdos, quando exista base legal;</li>
-                <li>Melhorar o funcionamento, segurança e desempenho do website.</li>
-              </ul>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">4. Fundamento jurídico</h2>
-              <p className="mt-3">
-                O tratamento dos dados pessoais pode basear-se no consentimento do titular dos dados,
-                na execução de diligências pré-contratuais ou contratuais, no cumprimento de obrigações
-                legais ou no interesse legítimo da Educanology, sempre em conformidade com o RGPD e a
-                Lei n.º 58/2019.
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">5. Conservação dos dados</h2>
-              <p className="mt-3">
-                Os dados serão conservados apenas durante o período necessário para cumprir as finalidades
-                para as quais foram recolhidos, salvo quando exista obrigação legal de conservação por
-                prazo superior.
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">6. Partilha de dados com terceiros</h2>
-              <p className="mt-3">
-                A Educanology poderá recorrer a prestadores de serviços tecnológicos necessários para
-                disponibilizar, manter, proteger e melhorar o website, bem como para gerir pedidos de
-                contacto, comunicações, análise estatística e funcionalidades baseadas em inteligência
-                artificial.
-              </p>
+  return (
+    <main className="min-h-screen bg-[#f7f3ee] px-6 py-16 text-[#17202a] md:px-10 lg:px-16">
+      <article className="mx-auto max-w-4xl rounded-[2rem] bg-white/80 p-8 shadow-xl md:p-12">
+        <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#6f3e5c]">
+          Proteção de dados
+        </p>
+        <h1 className="mt-4 text-4xl font-black tracking-[-0.04em]">
+          Política de privacidade
+        </h1>
 
-              <p className="mt-3">
-                Estes prestadores poderão incluir serviços de alojamento e infraestrutura web, como
-                Vercel; serviços de desenvolvimento, versionamento e gestão técnica de código, como
-                GitHub; serviços de email e comunicação utilizados pela Educanology; ferramentas de
-                análise estatística, como Google Analytics 4, quando ativadas mediante consentimento;
-                e serviços de inteligência artificial utilizados para disponibilizar o agente virtual,
-                incluindo Vercel AI Gateway e os respetivos fornecedores de modelos de IA configurados
-                pela Educanology.
-              </p>
-
-              <p className="mt-3">
-                Estes terceiros apenas deverão tratar os dados pessoais na medida necessária para
-                prestar os respetivos serviços, de acordo com as condições contratadas, as instruções
-                aplicáveis e a legislação em vigor, incluindo o Regulamento Geral sobre a Proteção de
-                Dados.
-              </p>
-
-              <p className="mt-3">
-                A Educanology não vende dados pessoais a terceiros. Sempre que possível, serão adotadas
-                medidas de minimização, segurança e limitação de acesso, de forma a reduzir a exposição
-                de dados pessoais desnecessários.
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">7. Transferências internacionais</h2>
-              <p className="mt-3">
-                Caso sejam utilizados prestadores localizados fora do Espaço Económico Europeu, serão
-                adotadas garantias adequadas nos termos do RGPD, incluindo decisões de adequação,
-                cláusulas contratuais-tipo ou outros mecanismos legalmente previstos.
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">8. Direitos dos titulares dos dados</h2>
-              <p className="mt-3">
-                O titular dos dados pode exercer os direitos de acesso, retificação, apagamento,
-                limitação do tratamento, oposição, portabilidade e retirada do consentimento, quando
-                aplicável, através do email{" "}
-                <a href="mailto:hello@educanology.eu" className="font-bold text-[#6f3e5c]">
-                  hello@educanology.eu
-                </a>.
-              </p>
-              <p className="mt-3">
-                O titular dos dados tem ainda o direito de apresentar reclamação junto da Comissão
-                Nacional de Proteção de Dados.
-              </p>
-            </section>
-  
-            <section>
-              <h2 className="text-xl font-black text-[#17202a]">9. Segurança</h2>
-              <p className="mt-3">
-                A Educanology adota medidas técnicas e organizativas adequadas para proteger os dados
-                pessoais contra acesso não autorizado, alteração, divulgação, perda ou destruição.
-              </p>
-            </section>
-  
-            <p className="pt-4 text-sm text-[#58736b]">
-              Última atualização: maio de 2026.
+        <div className="mt-8 space-y-6 leading-8 text-[#41514c]">
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">
+              1. Responsável pelo tratamento
+            </h2>
+            <p className="mt-3">
+              A responsável pelo tratamento é <strong>Educanology Unipessoal Lda.</strong>,
+              NIPC 509746276, com sede no Largo da Graça, 82, 3.º Direito, 1170-165
+              Lisboa, Portugal. Para questões sobre privacidade ou para exercer direitos,
+              contacte{" "}
+              <a href="mailto:hello@educanology.eu" className="font-bold text-[#6f3e5c]">
+                hello@educanology.eu
+              </a>.
             </p>
-          </div>
-        </article>
-      </main>
-    );
-  }
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">
+              2. Tratamentos, dados e fundamentos jurídicos
+            </h2>
+            <div className="mt-4 overflow-x-auto rounded-2xl border border-[#17202a]/10">
+              <table className="w-full min-w-[860px] text-left text-sm leading-6">
+                <thead className="bg-[#edf7f3] text-[#17202a]">
+                  <tr>
+                    <th className="p-4">Tratamento</th>
+                    <th className="p-4">Dados e finalidade</th>
+                    <th className="p-4">Base jurídica</th>
+                    <th className="p-4">Conservação</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#17202a]/10 align-top">
+                  <tr>
+                    <td className="p-4 font-bold">Navegação e segurança</td>
+                    <td className="p-4">
+                      Endereço IP, data, pedido, dispositivo e registos técnicos necessários para
+                      disponibilizar, proteger e diagnosticar o website.
+                    </td>
+                    <td className="p-4">
+                      Interesse legítimo na segurança e funcionamento do serviço, sem prejuízo dos
+                      direitos do titular.
+                    </td>
+                    <td className="p-4">
+                      Pelo período tecnicamente necessário e segundo os prazos do fornecedor de
+                      alojamento, a confirmar contratualmente.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-bold">Pedidos de reunião e contacto</td>
+                    <td className="p-4">
+                      Nome, email, organização e cargo opcionais, mensagem e data de receção, para
+                      responder e avaliar uma eventual relação profissional.
+                    </td>
+                    <td className="p-4">
+                      Diligências pré-contratuais a pedido do titular; quando não exista intenção
+                      contratual, interesse legítimo em responder ao contacto.
+                    </td>
+                    <td className="p-4">
+                      Durante o período necessário para responder ao pedido e acompanhar as
+                      diligências solicitadas. Uma relação contratual, obrigação legal ou necessidade
+                      de defesa de direitos poderá justificar conservação adicional.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-bold">Assistente de IA</td>
+                    <td className="p-4">
+                      Conteúdo escrito pelo utilizador e dados técnicos inerentes à ligação, para
+                      gerar uma resposta informativa. Não introduza dados sensíveis, confidenciais,
+                      de menores ou dados pessoais desnecessários.
+                    </td>
+                    <td className="p-4">
+                      Diligências pré-contratuais solicitadas pelo utilizador ou interesse legítimo
+                      em prestar orientação inicial, consoante o teor da interação.
+                    </td>
+                    <td className="p-4">
+                      A aplicação não mantém um histórico persistente; aplicam-se ainda os prazos
+                      técnicos do alojamento e do fornecedor do modelo, sujeitos a confirmação.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-bold">Medição de audiência</td>
+                    <td className="p-4">
+                      Identificadores analíticos, páginas visitadas, informação do dispositivo,
+                      origem aproximada e eventos de navegação, para produzir estatísticas.
+                    </td>
+                    <td className="p-4">Consentimento, que pode ser retirado a qualquer momento.</td>
+                    <td className="p-4">
+                      Segundo a configuração e os prazos dos fornecedores; consulte a{" "}
+                      <Link href="/politica-de-cookies" className="font-bold text-[#6f3e5c]">
+                        Política de Cookies
+                      </Link>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3">
+              Os dados dos pedidos de reunião não serão utilizados para newsletters, campanhas
+              comerciais não solicitadas nem treino de modelos de inteligência artificial.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">
+              3. Destinatários e prestadores de serviços
+            </h2>
+            <p className="mt-3">
+              Os dados são acessíveis apenas à Educanology e aos prestadores necessários à
+              operação do website, sujeitos às condições e configurações aplicáveis:
+            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-6">
+              <li>
+                <strong>Vercel:</strong> alojamento, infraestrutura, registos técnicos e Vercel
+                Web Analytics, sendo esta última ativada apenas após consentimento;
+              </li>
+              <li>
+                <strong>Google Analytics 4:</strong> medição de audiência, apenas após
+                consentimento;
+              </li>
+              <li>
+                <strong>Scaleway Transactional Email:</strong> transmissão do pedido de reunião
+                para a caixa de correio indicada pela Educanology, apenas quando o serviço estiver
+                configurado e ativado;
+              </li>
+              <li>
+                <strong>DeepSeek:</strong> fornecedor do modelo utilizado diretamente pelo
+                assistente virtual para processar o texto introduzido e gerar a resposta.
+              </li>
+            </ul>
+            <p className="mt-3">
+              A Educanology não vende dados pessoais. Outros destinatários apenas receberão dados
+              quando isso seja necessário para cumprir uma obrigação legal ou defender direitos.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">
+              4. Transferências internacionais
+            </h2>
+            <p className="mt-3">
+              Alguns prestadores podem tratar dados fora do Espaço Económico Europeu. A Google e a
+              Vercel disponibilizam mecanismos contratuais próprios cuja aplicabilidade depende da
+              conta e do plano contratados. A documentação pública da DeepSeek indica que os seus
+              serviços utilizam servidores na República Popular da China. A base de transferência,
+              as cláusulas contratuais, a avaliação de impacto da transferência e os prazos aplicáveis
+              ao uso da API pela Educanology devem ser formalmente validados antes da exploração em
+              produção com dados pessoais.
+            </p>
+            <p className="mt-3">
+              Segundo a documentação da Scaleway, a infraestrutura técnica do serviço Transactional
+              Email selecionado é operada na União Europeia; esta condição e o acordo de tratamento
+              de dados devem ser confirmados na conta contratada antes da ativação.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">5. Dados obrigatórios</h2>
+            <p className="mt-3">
+              No formulário de reunião, nome, email, mensagem e confirmação de leitura desta política
+              são necessários para receber e tratar o pedido. Organização e cargo são facultativos.
+              Sem os dados obrigatórios não é possível responder através deste canal. O envio do
+              formulário não confirma uma reunião nem celebra um contrato.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">6. Direitos dos titulares</h2>
+            <p className="mt-3">
+              Nos termos aplicáveis, o titular pode pedir acesso, retificação, apagamento, limitação,
+              portabilidade, opor-se ao tratamento baseado em interesse legítimo e retirar o
+              consentimento sem comprometer a licitude do tratamento anterior. Pode exercer estes
+              direitos através de{" "}
+              <a href="mailto:hello@educanology.eu" className="font-bold text-[#6f3e5c]">
+                hello@educanology.eu
+              </a>. Poderá ser solicitada informação estritamente necessária para confirmar a
+              identidade do requerente.
+            </p>
+            <p className="mt-3">
+              O titular pode ainda apresentar reclamação à Comissão Nacional de Proteção de Dados
+              (CNPD), sem prejuízo de outros meios administrativos ou judiciais.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">7. Segurança</h2>
+            <p className="mt-3">
+              São aplicadas medidas proporcionais ao risco, incluindo validação no servidor,
+              limitação de tamanho e frequência dos pedidos, controlo de origem, minimização dos
+              campos, credenciais apenas no servidor e ausência deliberada de dados pessoais nos
+              registos da aplicação. Nenhum sistema é totalmente isento de risco.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black text-[#17202a]">8. Alterações</h2>
+            <p className="mt-3">
+              Esta política será atualizada quando se alterem os tratamentos, fornecedores ou
+              requisitos legais. A versão em vigor é a publicada nesta página.
+            </p>
+          </section>
+
+          <p className="pt-4 text-sm text-[#58736b]">
+            Última revisão técnica e documental: 17 de outubro de 2026.
+          </p>
+        </div>
+      </article>
+    </main>
+  );
+}

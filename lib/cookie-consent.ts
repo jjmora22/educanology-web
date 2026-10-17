@@ -5,15 +5,11 @@ import { useMemo, useSyncExternalStore } from "react";
 export type CookiePreferences = {
   necessary: true;
   analytics: boolean;
-  functional: boolean;
-  marketing: boolean;
 };
 
 export const DEFAULT_COOKIE_PREFERENCES: CookiePreferences = {
   necessary: true,
   analytics: false,
-  functional: false,
-  marketing: false,
 };
 
 export const COOKIE_CONSENT_STORAGE_KEY = "educanology-cookie-consent";
@@ -25,8 +21,6 @@ function normalizePreferences(
   return {
     necessary: true,
     analytics: Boolean(preferences.analytics),
-    functional: Boolean(preferences.functional),
-    marketing: Boolean(preferences.marketing),
   };
 }
 

@@ -29,8 +29,6 @@ export default function CookieConsent() {
     savePreferences({
       necessary: true,
       analytics: true,
-      functional: true,
-      marketing: true,
     });
   }
 
@@ -71,9 +69,10 @@ export default function CookieConsent() {
                 <div className="max-w-3xl">
                   <p className="text-lg font-black">Utilizamos cookies</p>
                   <p className="mt-2 text-sm leading-6 text-[#41514c]">
-                    Usamos cookies necessárias para o funcionamento do website e, com o seu consentimento,
-                    cookies analíticas, funcionais e de marketing para melhorar a experiência e medir a
-                    utilização do site. Pode aceitar, rejeitar ou configurar as suas preferências.
+                    Guardamos a sua preferência de consentimento no navegador e,
+                    apenas com a sua autorização, ativamos Google Analytics e
+                    Vercel Analytics para medir a utilização do website. Pode
+                    aceitar, rejeitar ou configurar esta preferência.
                   </p>
                   <a
                     href="/politica-de-cookies"
@@ -103,7 +102,7 @@ export default function CookieConsent() {
                     onClick={acceptAll}
                     className="rounded-full bg-[#6f3e5c] px-5 py-3 text-sm font-bold text-white hover:bg-[#563048]"
                   >
-                    Aceitar todas
+                    Aceitar analíticas
                   </button>
                 </div>
               </div>
@@ -111,8 +110,8 @@ export default function CookieConsent() {
               <div>
                 <p className="text-lg font-black">Configurar cookies</p>
                 <p className="mt-2 text-sm leading-6 text-[#41514c]">
-                  Escolha que categorias de cookies autoriza. As cookies necessárias estão sempre ativas
-                  porque permitem o funcionamento técnico do website.
+                  Escolha se autoriza as tecnologias analíticas. O armazenamento
+                  estritamente necessário à sua escolha permanece sempre ativo.
                 </p>
 
                 <div className="mt-5 space-y-3">
@@ -120,7 +119,9 @@ export default function CookieConsent() {
                     <div className="flex items-center justify-between gap-4">
                       <div>
                         <p className="font-black">Necessárias</p>
-                        <p className="text-sm text-[#41514c]">Essenciais para o funcionamento do website.</p>
+                        <p className="text-sm text-[#41514c]">
+                          Guardam localmente a sua preferência de consentimento.
+                        </p>
                       </div>
                       <span className="rounded-full bg-[#edf7f3] px-3 py-1 text-xs font-bold text-[#24675a]">
                         Sempre ativas
@@ -132,17 +133,7 @@ export default function CookieConsent() {
                     {
                       key: "analytics" as const,
                       title: "Analíticas",
-                      text: "Ajudam a medir visitas e melhorar conteúdos e desempenho.",
-                    },
-                    {
-                      key: "functional" as const,
-                      title: "Funcionais",
-                      text: "Permitem funcionalidades adicionais e preferências.",
-                    },
-                    {
-                      key: "marketing" as const,
-                      title: "Marketing e terceiros",
-                      text: "Apoiam medição de campanhas, conteúdos incorporados ou plataformas externas.",
+                      text: "Ativam Google Analytics e Vercel Analytics para medir visitas, conteúdos consultados e desempenho.",
                     },
                   ].map((item) => (
                     <label

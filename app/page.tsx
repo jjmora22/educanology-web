@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import FloatingConversion from "@/components/FloatingConversion";
+import MeetingRequestButton from "@/components/MeetingRequestButton";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import {
@@ -224,13 +225,12 @@ export default function Home() {
               transition={{ duration: 0.9 }}
               className="mt-10 flex flex-col gap-4 sm:flex-row"
             >
-              <a
-                href="mailto:hello@educanology.eu?subject=Pedido%20de%20reuni%C3%A3o%20Educanology"
+              <MeetingRequestButton
                 className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#6f3e5c] px-7 py-4 text-base font-bold text-white shadow-2xl shadow-[#6f3e5c]/25 transition hover:-translate-y-1 hover:bg-[#563048]"
               >
                 Marcar uma reunião de 45 min
-                <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
-              </a>
+                <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" aria-hidden="true" />
+              </MeetingRequestButton>
 
               <a
                 href="#transformacao"
@@ -402,13 +402,12 @@ export default function Home() {
                 É isto que a Educanology ajuda a construir — em escolas, municípios e governos.
               </p>
               <div className="mt-8">
-                <a
-                  href="mailto:hello@educanology.eu?subject=Pedido%20de%20reunião%20Educanology"
+                <MeetingRequestButton
                   className="inline-flex items-center gap-3 rounded-full bg-[#6f3e5c] px-7 py-4 font-bold text-white shadow-xl transition hover:-translate-y-1 hover:bg-[#563048]"
                 >
                   Falar com a equipa
-                  <ArrowRight className="h-5 w-5" />
-                </a>
+                  <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                </MeetingRequestButton>
               </div>
             </div>
           </motion.div>
@@ -829,13 +828,12 @@ export default function Home() {
                   &quot;Da estratégia à sala de aula —{" "}
                   <span className="text-[#8ce2cc]">com acompanhamento em cada fase.</span>&quot;
                 </p>
-                <a
-                  href="mailto:hello@educanology.eu?subject=Pedido%20de%20reunião%20Educanology"
+                <MeetingRequestButton
                   className="inline-flex shrink-0 items-center gap-3 rounded-full bg-white px-6 py-3 font-bold text-[#17202a] transition hover:bg-[#8ce2cc]"
                 >
                   Iniciar um projeto
-                  <ArrowRight className="h-4 w-4" />
-                </a>
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </MeetingRequestButton>
               </div>
             </div>
           </motion.div>
@@ -906,13 +904,12 @@ export default function Home() {
 
           {/* CTA de financiamento */}
           <motion.div variants={fadeUp} className="mt-12 flex justify-center">
-            <a
-              href="mailto:hello@educanology.eu?subject=Projetos%20financiáveis%20Educanology"
+            <MeetingRequestButton
               className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-8 py-4 font-bold text-white transition hover:bg-white/20"
             >
-              <Euro className="h-5 w-5 text-[#8ce2cc]" />
+              <Euro className="h-5 w-5 text-[#8ce2cc]" aria-hidden="true" />
               Avaliar oportunidades de financiamento
-            </a>
+            </MeetingRequestButton>
           </motion.div>
         </motion.div>
       </section>
@@ -967,13 +964,12 @@ export default function Home() {
                 Experiência em política pública, educação, tecnologia e transformação institucional.
               </h2>
             </div>
-            <a
-              href="mailto:hello@educanology.eu"
+            <MeetingRequestButton
               className="inline-flex items-center justify-center gap-3 rounded-full bg-[#17202a] px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-[#6f3e5c]"
             >
               Falar com a equipa
-              <Handshake className="h-5 w-5" />
-            </a>
+              <Handshake className="h-5 w-5" aria-hidden="true" />
+            </MeetingRequestButton>
           </div>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2">

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { getAllPosts, getPostBySlug } from "@/lib/blog/posts";
 import FloatingConversion from "@/components/FloatingConversion";
+import MeetingRequestButton from "@/components/MeetingRequestButton";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 
@@ -177,13 +178,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               de projetos de educação, tecnologia e inteligência artificial
               responsável.
             </p>
-            <a
-              href="mailto:hello@educanology.eu?subject=Contacto%20sobre%20projeto%20educativo"
+            <MeetingRequestButton
               className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#8ce2cc] px-5 py-3 text-sm font-black text-[#17202a] transition hover:bg-white"
             >
               Contactar Educanology
-              <ArrowRight className="h-4 w-4" />
-            </a>
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </MeetingRequestButton>
           </section>
         </div>
       </article>
